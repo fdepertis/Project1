@@ -1,0 +1,173 @@
+<application>
+  <component name="VimSettings">
+    <state version="4" enabled="true" />
+    <globalmarks />
+    <filemarks>
+      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tecniche di Programmazione/TdP_collections/TdP_collections/tree/tree.py" timestamp="1538903064336">
+        <mark key="[" line="115" column="0" />
+      </file>
+      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tecniche di Programmazione/TdP_collections/TdP_collections/tree/linked_binary_tree.py" timestamp="1538985580403">
+        <mark key="[" line="59" column="31" />
+        <mark key="]" line="110" column="30" />
+        <mark key="^" line="110" column="30" />
+        <mark key="." line="110" column="30" />
+      </file>
+      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/venv/tdp_test/ese_tree_binarySearchTree.py" timestamp="1538990604157">
+        <mark key="'" line="12" column="91" />
+        <mark key="[" line="80" column="0" />
+        <mark key="]" line="80" column="0" />
+        <mark key="." line="80" column="0" />
+      </file>
+      <file name="/Python Console" timestamp="1538989633490">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/venv/util.py" timestamp="1538997020032">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tecniche di Programmazione/TdP_collections/TdP_collections/tree/binary_tree.py" timestamp="1538985562353">
+        <mark key="[" line="78" column="0" />
+      </file>
+      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/venv/MyList.py" timestamp="1539016068746">
+        <mark key="]" line="4" column="0" />
+        <mark key="." line="4" column="0" />
+      </file>
+    </filemarks>
+    <jumps>
+      <jump line="12" column="91" filename="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/venv/tdp_test/ese_tree_binarySearchTree.py" />
+    </jumps>
+    <registers>
+      <register name="1" type="4">
+        <text encoding="base64">CnB0eSBsaXN0IiIiCmVsZi5Ob2RlKE5vbmUsIE5vbmUsIE5vbmUpCnNlbGYuTm9kZShOb25lLCBOb25lLCBOb25lKQp0ID0gc2VsZi50cmFpbGVyICMgdHJhaWxlciBpcyBhZnRlciBoZWFkZXIKZXYgPSBzZWxmLmhlYWRlciAjIGhlYWRlciBpcyBiZWZvcmUgdHJhaWxlcgo=</text>
+      </register>
+      <register name="&quot;" type="4">
+        <text encoding="base64">CnB0eSBsaXN0IiIiCmVsZi5Ob2RlKE5vbmUsIE5vbmUsIE5vbmUpCnNlbGYuTm9kZShOb25lLCBOb25lLCBOb25lKQp0ID0gc2VsZi50cmFpbGVyICMgdHJhaWxlciBpcyBhZnRlciBoZWFkZXIKZXYgPSBzZWxmLmhlYWRlciAjIGhlYWRlciBpcyBiZWZvcmUgdHJhaWxlcgo=</text>
+      </register>
+      <register name="2" type="4">
+        <text>class _DoublyLinkedBase:
+    class _Node:
+        def __init__(self):
+            &quot;&quot;&quot;Create an em
+            self.header = s
+            self.trailer = 
+            self.header.nex
+            self.trailer.pr
+            self.size = 0</text>
+      </register>
+      <register name="3" type="4">
+        <text encoding="base64">CmZyb20gVGRQX2NvbGxlY3Rpb25zLnRyZWUubGlua2VkX2JpbmFyeV90cmVlIGltcG9ydCBsaW4=</text>
+      </register>
+      <register name="4" type="4">
+        <text encoding="base64">aSA9IDAKICAgIGogPSAwCiAgICBhID0gVDEuaXNfbGVhZihsZWZ0MSkgaXMgVHJ1ZQogICAgYiA9IFQxLmlzX2xlYWYocmlnaHQxKSBpcyBUcnVlCiAgICBjID0gVDIuaXNfbGVhZihsZWZ0MikgaXMgVHJ1ZQogICAgZCA9IFQyLmlzX2xlYWYocmlnaHQyKSBpcyBUcnVlCgogICAgaWYgYSA9PSBUcnVlIG9yIGIgPT0gVHJ1ZSBvciBjID09IFRydWUgb3IgZCA9PSBUcnVlOgogICAgICAgIGlmIGEgPT0gVHJ1ZSA6CiAgICAgICAgICAgIGkgKz0gMQogICAgICAgIGlmIGIgPT0gVHJ1ZToKICAgICAgICAgICAgaSArPSAxCiAgICAgICAgaWYgYyA9PSBUcnVlOgogICAgICAgICAgICBqICs9IDEKICAgICAgICBpZiBkID09IFRydWU6CiAgICAgICAgICAgIGogKz0gMQogICAg</text>
+      </register>
+      <register name="5" type="4">
+        <text>for k in T1.breadthfirst():
+            print(&quot;start&quot;, i, k.element())
+
+
+        left1 = T1.left(T1.root())
+        right1 = T1.right(T1.root())
+        left2 = T2.left(T1.root())
+        right2 = T2.right(T1.root())
+        a=[]
+        a.append(left1)
+        a.append(right1)
+        a2=[]
+        a2.append(left2)
+        a2.append(right2)
+        for k in T1.children(T1.root()):
+
+        var = False
+        for k in T1._subtree_inorder():
+            for k2 in T2._subtree_inorder(T2):
+            var = move_on(T1, T2,left1,left2,right1,right2)
+            if var == False:
+                break
+            a=[]
+            for k in T1.children(left1):
+                for k2 in T1.children(right1):
+                    for h in T2.children(left2):
+                        for h2 in T2.children(right2):
+                            
+
+
+        return var</text>
+      </register>
+      <register name="6" type="4">
+        <text>print(tree.breadthfirst())
+i=0 #indicatore numero figli aggiornato
+l=0 #indice livelli
+j = 0 #indicatore numero figli
+f = {}
+a = []
+for k in tree.breadthfirst():
+    if tree.is_root(k) is True:
+        l += 1
+        f[str(l)] = k.element()
+        j = tree.num_children(k)
+    else:
+        print(&quot;hei&quot;,j)
+        if j == 0:
+            l += 1
+            f[str(l)] = a
+            a = []
+            j=i
+            i=0
+        j -= 1
+        print(&quot;ELEMENT&quot;, k.element())
+        a.append(k.element())
+
+        if tree.is_leaf(k) is True and j == 0 and i == 0:
+            l += 1
+            f[str(l)] = a
+        else:
+            i += tree.num_children(k)
+        #print(&quot;update index&quot;,i)</text>
+      </register>
+      <register name="7" type="4">
+        <text>if tree.is_leaf(k) is True:
+            status = 1</text>
+      </register>
+      <register name="8" type="4">
+        <text encoding="base64">ICBpZiB0cmVlLmlzX2xlYWYoaykgaXMgVHJ1ZToKICAgICAgICAgICAgaSArPSAxCiAgICAgICAgZWxzZTo=</text>
+      </register>
+      <register name="9" type="4">
+        <text>print(&quot;livel&quot;,i)
+    j -= 1
+    if j == 0:
+        
+    j = tree.num_children(k)
+    
+    if j ==0:
+        
+    print(&quot;start&quot;,i,k.element())</text>
+      </register>
+      <register name="-" type="4">
+        <text />
+      </register>
+    </registers>
+    <search>
+      <last-dir>0</last-dir>
+      <show-last>false</show-last>
+    </search>
+    <history>
+      <history-search />
+      <history-cmd />
+      <history-expr />
+      <history-input />
+    </history>
+    <shortcut-conflicts>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed V</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed C</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed S</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed F</text>
+      </shortcut-conflict>
+    </shortcut-conflicts>
+  </component>
+</application>
