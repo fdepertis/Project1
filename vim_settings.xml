@@ -12,6 +12,9 @@
         <mark key="^" line="110" column="30" />
         <mark key="." line="110" column="30" />
       </file>
+      <file name="/Dummy.txt" timestamp="1539018895598">
+        <mark key="[" line="0" column="0" />
+      </file>
       <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/venv/tdp_test/ese_tree_binarySearchTree.py" timestamp="1538990604157">
         <mark key="'" line="12" column="91" />
         <mark key="[" line="80" column="0" />
@@ -21,15 +24,17 @@
       <file name="/Python Console" timestamp="1538989633490">
         <mark key="[" line="0" column="0" />
       </file>
+      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tecniche di Programmazione/TdP_collections/TdP_collections/list/doubly_linked_base.py" timestamp="1539019285245" />
       <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/venv/util.py" timestamp="1538997020032">
         <mark key="[" line="0" column="0" />
       </file>
       <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tecniche di Programmazione/TdP_collections/TdP_collections/tree/binary_tree.py" timestamp="1538985562353">
         <mark key="[" line="78" column="0" />
       </file>
-      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/venv/MyList.py" timestamp="1539016068746">
-        <mark key="]" line="4" column="0" />
-        <mark key="." line="4" column="0" />
+      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/venv/MyList.py" timestamp="1539019573747">
+        <mark key="[" line="41" column="2" />
+        <mark key="]" line="41" column="2" />
+        <mark key="." line="41" column="2" />
       </file>
     </filemarks>
     <jumps>
@@ -37,12 +42,36 @@
     </jumps>
     <registers>
       <register name="1" type="4">
-        <text encoding="base64">CnB0eSBsaXN0IiIiCmVsZi5Ob2RlKE5vbmUsIE5vbmUsIE5vbmUpCnNlbGYuTm9kZShOb25lLCBOb25lLCBOb25lKQp0ID0gc2VsZi50cmFpbGVyICMgdHJhaWxlciBpcyBhZnRlciBoZWFkZXIKZXYgPSBzZWxmLmhlYWRlciAjIGhlYWRlciBpcyBiZWZvcmUgdHJhaWxlcgo=</text>
+        <text>def _insert_between(self, e, predecessor, successor):
+    &quot;&quot;&quot;Add element e between two existing nodes and return new node.&quot;&quot;&quot;
+    newest = self._Node(e, predecessor, successor)      # linked to neighbors
+    predecessor._next = newest
+    successor._prev = newest
+    self._size += 1
+    return newest</text>
       </register>
       <register name="&quot;" type="4">
-        <text encoding="base64">CnB0eSBsaXN0IiIiCmVsZi5Ob2RlKE5vbmUsIE5vbmUsIE5vbmUpCnNlbGYuTm9kZShOb25lLCBOb25lLCBOb25lKQp0ID0gc2VsZi50cmFpbGVyICMgdHJhaWxlciBpcyBhZnRlciBoZWFkZXIKZXYgPSBzZWxmLmhlYWRlciAjIGhlYWRlciBpcyBiZWZvcmUgdHJhaWxlcgo=</text>
+        <text>def _insert_between(self, e, predecessor, successor):
+    &quot;&quot;&quot;Add element e between two existing nodes and return new node.&quot;&quot;&quot;
+    newest = self._Node(e, predecessor, successor)      # linked to neighbors
+    predecessor._next = newest
+    successor._prev = newest
+    self._size += 1
+    return newest</text>
       </register>
       <register name="2" type="4">
+        <text encoding="base64">ICBzZWxmLl9oZWFkZXIgPSBzZWxmLl9Ob2RlKE5vbmUsIE5vbmUsIE5vbmUpCiAgICBzZWxmLl90cmFpbGVyID0gc2VsZi5fTm9kZShOb25lLCBOb25lLCBOb25lKQogICAgc2VsZi5faGVhZGVyLl9uZXh0ID0gc2VsZi5fdHJhaWxlciAgICAgICAgICAgICAgICAgICMgdHJhaWxlciBpcyBhZnRlciBoZWFkZXIKICAgIHNlbGYuX3RyYWlsZXIuX3ByZXYgPSBzZWxmLl9oZWFkZXIgICAgICAgICAgICAgICAgICAjIGhlYWRlciBpcyBiZWZvcmUgdHJhaWxlcgogICAgc2VsZi5fc2l6ZSA9IDAgIA==</text>
+      </register>
+      <register name="3" type="4">
+        <text encoding="base64">IG5ld2VzdCA9IHNlbGYuX05vZGUoZSwgcHJlZGVjZXNzb3IsIHN1Y2Nlc3NvcikgICAgICAjIGxpbmtlZCB0byBuZWlnaGJvcnMKICAgIHByZWRlY2Vzc29yLl9uZXh0ID0gbmV3ZXN0CiAgICBzdWNjZXNzb3IuX3ByZXYgPSBuZXdlc3QKICAgIHNlbGYuX3NpemUgKz0gMQogICAgcmV0dXJuIG5ld2VzdA==</text>
+      </register>
+      <register name="4" type="4">
+        <text encoding="base64">IHByZWRlY2Vzc29yID0gbm9kZS5fcHJldgogICAgc3VjY2Vzc29yID0gbm9kZS5fbmV4dAogICAgcHJlZGVjZXNzb3IuX25leHQgPSBzdWNjZXNzb3IKICAgIHN1Y2Nlc3Nvci5fcHJldiA9IHByZWRlY2Vzc29yCiAgICBzZWxmLl9zaXplIC09IDEKICAgIGVsZW1lbnQgPSBub2RlLl9lbGVtZW50ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAjIHJlY29yZCBkZWxldGVkIGVsZW1lbnQKICAgIG5vZGUuX3ByZXYgPSBub2RlLl9uZXh0ID0gbm9kZS5fZWxlbWVudCA9IE5vbmUgICAgICAjIGRlcHJlY2F0ZSBub2RlCiAgICByZXR1cm4gZWxlbWVudCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIyByZXR1cm4gZGVsZXRlZCBlbGVtZW50</text>
+      </register>
+      <register name="5" type="4">
+        <text encoding="base64">CnB0eSBsaXN0IiIiCmVsZi5Ob2RlKE5vbmUsIE5vbmUsIE5vbmUpCnNlbGYuTm9kZShOb25lLCBOb25lLCBOb25lKQp0ID0gc2VsZi50cmFpbGVyICMgdHJhaWxlciBpcyBhZnRlciBoZWFkZXIKZXYgPSBzZWxmLmhlYWRlciAjIGhlYWRlciBpcyBiZWZvcmUgdHJhaWxlcgo=</text>
+      </register>
+      <register name="6" type="4">
         <text>class _DoublyLinkedBase:
     class _Node:
         def __init__(self):
@@ -53,13 +82,13 @@
             self.trailer.pr
             self.size = 0</text>
       </register>
-      <register name="3" type="4">
+      <register name="7" type="4">
         <text encoding="base64">CmZyb20gVGRQX2NvbGxlY3Rpb25zLnRyZWUubGlua2VkX2JpbmFyeV90cmVlIGltcG9ydCBsaW4=</text>
       </register>
-      <register name="4" type="4">
+      <register name="8" type="4">
         <text encoding="base64">aSA9IDAKICAgIGogPSAwCiAgICBhID0gVDEuaXNfbGVhZihsZWZ0MSkgaXMgVHJ1ZQogICAgYiA9IFQxLmlzX2xlYWYocmlnaHQxKSBpcyBUcnVlCiAgICBjID0gVDIuaXNfbGVhZihsZWZ0MikgaXMgVHJ1ZQogICAgZCA9IFQyLmlzX2xlYWYocmlnaHQyKSBpcyBUcnVlCgogICAgaWYgYSA9PSBUcnVlIG9yIGIgPT0gVHJ1ZSBvciBjID09IFRydWUgb3IgZCA9PSBUcnVlOgogICAgICAgIGlmIGEgPT0gVHJ1ZSA6CiAgICAgICAgICAgIGkgKz0gMQogICAgICAgIGlmIGIgPT0gVHJ1ZToKICAgICAgICAgICAgaSArPSAxCiAgICAgICAgaWYgYyA9PSBUcnVlOgogICAgICAgICAgICBqICs9IDEKICAgICAgICBpZiBkID09IFRydWU6CiAgICAgICAgICAgIGogKz0gMQogICAg</text>
       </register>
-      <register name="5" type="4">
+      <register name="9" type="4">
         <text>for k in T1.breadthfirst():
             print(&quot;start&quot;, i, k.element())
 
@@ -92,57 +121,8 @@
 
         return var</text>
       </register>
-      <register name="6" type="4">
-        <text>print(tree.breadthfirst())
-i=0 #indicatore numero figli aggiornato
-l=0 #indice livelli
-j = 0 #indicatore numero figli
-f = {}
-a = []
-for k in tree.breadthfirst():
-    if tree.is_root(k) is True:
-        l += 1
-        f[str(l)] = k.element()
-        j = tree.num_children(k)
-    else:
-        print(&quot;hei&quot;,j)
-        if j == 0:
-            l += 1
-            f[str(l)] = a
-            a = []
-            j=i
-            i=0
-        j -= 1
-        print(&quot;ELEMENT&quot;, k.element())
-        a.append(k.element())
-
-        if tree.is_leaf(k) is True and j == 0 and i == 0:
-            l += 1
-            f[str(l)] = a
-        else:
-            i += tree.num_children(k)
-        #print(&quot;update index&quot;,i)</text>
-      </register>
-      <register name="7" type="4">
-        <text>if tree.is_leaf(k) is True:
-            status = 1</text>
-      </register>
-      <register name="8" type="4">
-        <text encoding="base64">ICBpZiB0cmVlLmlzX2xlYWYoaykgaXMgVHJ1ZToKICAgICAgICAgICAgaSArPSAxCiAgICAgICAgZWxzZTo=</text>
-      </register>
-      <register name="9" type="4">
-        <text>print(&quot;livel&quot;,i)
-    j -= 1
-    if j == 0:
-        
-    j = tree.num_children(k)
-    
-    if j ==0:
-        
-    print(&quot;start&quot;,i,k.element())</text>
-      </register>
       <register name="-" type="4">
-        <text />
+        <text encoding="base64">ICByZXR1cm4gc2VsZi5fc2l6ZQ==</text>
       </register>
     </registers>
     <search>
@@ -167,6 +147,9 @@ for k in tree.breadthfirst():
       </shortcut-conflict>
       <shortcut-conflict owner="vim">
         <text>ctrl pressed F</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed X</text>
       </shortcut-conflict>
     </shortcut-conflicts>
   </component>
