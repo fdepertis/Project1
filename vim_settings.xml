@@ -1,0 +1,196 @@
+<application>
+  <component name="VimSettings">
+    <state version="4" enabled="true" />
+    <globalmarks />
+    <filemarks>
+      <file name="$USER_HOME$/PycharmProjects/untitled/Tree.py" timestamp="1538487662465">
+        <mark key="[" line="46" column="7" />
+        <mark key="]" line="46" column="7" />
+        <mark key="." line="46" column="7" />
+      </file>
+      <file name="/Python Console" timestamp="1538756670388">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/PycharmProjects/untitled/Dequeue.py" timestamp="1538251853275">
+        <mark key="[" line="0" column="7" />
+      </file>
+      <file name="$USER_HOME$/PycharmProjects/TdP/Esercizi/strutture_dati_elementari_es1.py" timestamp="1538667687783">
+        <mark key="[" line="19" column="30" />
+        <mark key="]" line="0" column="0" />
+        <mark key="." line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/PycharmProjects/untitled/Queue.py" timestamp="1537956462382">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="/a.dummy" timestamp="1538757452263">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/PycharmProjects/TdP_collections/my_files/strutture_dati_elementari_es1.py" timestamp="1538650845989">
+        <mark key="'" line="0" column="32" />
+        <mark key="[" line="0" column="33" />
+        <mark key="]" line="0" column="33" />
+        <mark key="." line="0" column="33" />
+      </file>
+      <file name="$USER_HOME$/PycharmProjects/TdP_collections/queue/array_queue.py" timestamp="1538650814748">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/PycharmProjects/untitled/ArrayDequeue.py" timestamp="1538486247306">
+        <mark key="[" line="46" column="3" />
+        <mark key="]" line="46" column="3" />
+        <mark key="." line="46" column="3" />
+      </file>
+      <file name="$USER_HOME$/PycharmProjects/untitled/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/__init__.py" timestamp="1537955529925">
+        <mark key="[" line="1" column="0" />
+        <mark key="]" line="0" column="0" />
+        <mark key="." line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/PycharmProjects/TdP/Esercizi/array_dequeue.py" timestamp="1538652662561">
+        <mark key="[" line="0" column="29" />
+        <mark key="]" line="0" column="29" />
+        <mark key="." line="0" column="29" />
+      </file>
+      <file name="$USER_HOME$/PycharmProjects/TdP/TdP_collections/queue/array_queue.py" timestamp="1538652376591">
+        <mark key="[" line="3" column="5" />
+      </file>
+      <file name="$USER_HOME$/PycharmProjects/TdP_collections/tree/tree.py" timestamp="1538946299093">
+        <mark key="'" line="153" column="10" />
+        <mark key="[" line="152" column="34" />
+        <mark key="]" line="90" column="32" />
+        <mark key="." line="90" column="32" />
+      </file>
+      <file name="$USER_HOME$/PycharmProjects/Project1/MyList.py" timestamp="1539018398745">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/PycharmProjects/untitled/venv/Lib/site-packages/pip-10.0.1-py3.7.egg/pip/__main__.py" timestamp="1537349368404">
+        <mark key="[" line="18" column="4" />
+        <mark key="]" line="18" column="4" />
+        <mark key="." line="18" column="4" />
+      </file>
+      <file name="$USER_HOME$/PycharmProjects/untitled/lez1.py" timestamp="1537954528120">
+        <mark key="[" line="0" column="0" />
+        <mark key="]" line="0" column="0" />
+        <mark key="." line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/PycharmProjects/untitled/LinkedBinaryTree.py" timestamp="1538556470628">
+        <mark key="[" line="68" column="19" />
+        <mark key="]" line="58" column="8" />
+        <mark key="." line="58" column="8" />
+      </file>
+      <file name="$USER_HOME$/PycharmProjects/TdP/Esercizi/dequeue.py" timestamp="1538652625276">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/PycharmProjects/untitled/BinaryTree.py" timestamp="1538494231055">
+        <mark key="[" line="3" column="4" />
+        <mark key="]" line="3" column="4" />
+        <mark key="." line="3" column="4" />
+      </file>
+      <file name="$USER_HOME$/PycharmProjects/TdP_collections/list/doubly_linked_base.py" timestamp="1538998432012">
+        <mark key="[" line="17" column="0" />
+      </file>
+      <file name="$USER_HOME$/PycharmProjects/untitled/ArrayStack.py" timestamp="1538244826382">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/PycharmProjects/TdP_collections/map/binary_search_tree.py" timestamp="1538991689695">
+        <mark key="[" line="22" column="28" />
+      </file>
+      <file name="$USER_HOME$/PycharmProjects/TdP/Esercizi/alberi_binari_ricerca_es1.py" timestamp="1538941820344">
+        <mark key="[" line="4" column="8" />
+        <mark key="]" line="4" column="8" />
+        <mark key="." line="4" column="8" />
+      </file>
+      <file name="$USER_HOME$/PycharmProjects/untitled/ArrayQueue.py" timestamp="1538421556071">
+        <mark key="'" line="31" column="12" />
+        <mark key="[" line="39" column="43" />
+        <mark key="]" line="98" column="3" />
+        <mark key="." line="98" column="3" />
+      </file>
+      <file name="$USER_HOME$/PycharmProjects/TdP/Esercizi/alberi_binari_ricerca_es1.1.py" timestamp="1538757133135">
+        <mark key="[" line="12" column="8" />
+        <mark key="]" line="12" column="8" />
+        <mark key="." line="12" column="8" />
+      </file>
+    </filemarks>
+    <jumps>
+      <jump line="33" column="16" filename="$USER_HOME$/PycharmProjects/untitled/ArrayQueue.py" />
+      <jump line="32" column="15" filename="$USER_HOME$/PycharmProjects/untitled/ArrayQueue.py" />
+      <jump line="31" column="12" filename="$USER_HOME$/PycharmProjects/untitled/ArrayQueue.py" />
+      <jump line="0" column="32" filename="$USER_HOME$/PycharmProjects/TdP_collections/my_files/strutture_dati_elementari_es1.py" />
+      <jump line="90" column="32" filename="$USER_HOME$/PycharmProjects/TdP_collections/tree/tree.py" />
+      <jump line="153" column="10" filename="$USER_HOME$/PycharmProjects/TdP_collections/tree/tree.py" />
+    </jumps>
+    <registers>
+      <register name="1" type="4">
+        <text encoding="base64">aWYgc3RhcnQgaXMgbm90IE5vbmU6CiAgICAgICAgICAgIGlmIHR5cGUoc3RhcnQpIGlzIG5vdCBpbnQgb3Igc3RhcnQgPCAwOgogICAgICAgICAgICAgICAgcmFpc2UgRXhjZXB0aW9uKCJzdGFydCBwYXJhbWV0ZXIgbXVzdCBiZSBhbiB1bnNpZ25lZCBpbnRlZ2VyIikKICAgICAgICBlbHNlOgogICAgICAgICAgICBzdGFydCA9IDAKCiAgICAgICAgaWYgc3RvcCBpcyBub3QgTm9uZToKICAgICAgICAgICAgaWYgdHlwZShzdG9wKSBpcyBub3QgaW50IG9yIHN0b3AgPCBzdGFydDoKICAgICAgICAgICAgICAgIHJhaXNlIEV4Y2VwdGlvbigic3RvcCBwYXJhbWV0ZXIgbXVzdCBiZSBhbiB1bnNpZ25lZCBpbnRlZ2VyIGJpZ2dlciB0aGFuIHN0YXJ0IHBhcmFtZXRlciIpCiAgICAgICAgICAgIGVsaWYgc3RvcCA+IGxlbihzZWxmKToKCiAgICAgICAgZWxzZTo=</text>
+      </register>
+      <register name="&quot;" type="4">
+        <text>i</text>
+      </register>
+      <register name="2" type="4">
+        <text encoding="base64">ZWxpZiBzdG9wIDwgc3RhcnQ6CiAgICAgICAgICAgIHJhaXNlIEV4Y2VwdGlvbigic3RvcCBwYXJhbWV0ZXIgbXVzdCBiZSAp</text>
+      </register>
+      <register name="3" type="4">
+        <text encoding="base64">ZWxpZiBzdG9wIDwgc3RhcnQ6CiAgICAgICAgICAgIHJhaXNlIEV4Y2VwdGlvbigic3RvcCBwYXJhbWV0ZXIgbXVzdCBiZSBiaWdnZXIgdGhhbiBzdGFydCBwYXJhbWV0ZXIiKQogICAgICAgIGVsaWYg</text>
+      </register>
+      <register name="4" type="4">
+        <text encoding="base64">IGFuZCAKICAgICAgICAgICAgcmFpc2UgRXhjZQ==</text>
+      </register>
+      <register name="5" type="4">
+        <text encoding="base64">IiIiUmVzPHR1aXNjZSBsYSBQb3NpPG9uIGFzc29jaWF0YSBhbCBmaWdsaW8gZHggZGkgcCAobyBOb25lIHNlIHAgbm9uIGhhIGZpZ2xpbyBkeCkuIiIiCg==</text>
+      </register>
+      <register name="6" type="4">
+        <text encoding="base64">IiJSZXM8dHVpc2NlIGxhIFBvc2k8b24gYXNzb2NpYXRhIGFsIGZpZ2xpbyBzeCBkaSBwIChvIE5vbmUgc2UgcCBub24gaGEgZmlnbGlvIHN4KS4iIiIK</text>
+      </register>
+      <register name="7" type="4">
+        <text encoding="base64">IiJSZXM8dHVpc2NlIGxhIFBvc2k8b24gYXNzb2NpYXRhIGFsIHBhZHJlIGRpIHAgKG8gTm9uZSBzZSBwIOggbGEgcmFkaWNlKS4iIiIK</text>
+      </register>
+      <register name="8" type="4">
+        <text encoding="base64">ICIilFJlcyA8IHR1aXNjZQogICAgICAgIGxhCiAgICAgICAgUG9zaSA8IG9uCiAgICAgICAgYXNzb2NpYXRhCiAgICAgICAgYWxsYQogICAgICAgIHJhZGljZShvCiAgICAgICAgTm9uZQogICAgICAgIGySYWxiZXJvCiAgICAgICAg6AogICAgICAgIHZ1b3RvKS4iIiI=</text>
+      </register>
+      <register name="9" type="4">
+        <text encoding="base64">IGRlZiBkZWxldGVfZmlyc3Qoc2VsZik6CiAgICAgICAgaWYgc2VsZi5pc19lbXB0eSgpOgogICAgICAgICAgICByYWlzZSBFeGNlcHRpb24oIlF1ZXVlIGlzIGVtcHR5LiIpCiAgICAgICAgZWxzZToKICAgICAgICAgICAgcmlzID0gc2VsZi5fZGF0YVtzZWxmLl9mcm9udF0KICAgICAgICAgICAgc2VsZi5fZGF0YVtzZWxmLl9mcm9udF0gPSBOb25lCiAgICAgICAgICAgIHNlbGYuX2Zyb250ID0gKHNlbGYuX2Zyb250ICsgMSkgJSBsZW4oc2VsZi5fZGF0YSkKICAgICAgICAgICAgc2VsZi5fc2l6ZSAtPSAxCiAgICAgICAgICAgICNpZiBzZWxmLl9zaXplIDwgMC4yNSAqIGxlbihzZWxmLl9kYXRhKSBhbmQgc2VsZi5fc2l6ZSA+IDA6CiAgICAgICAgICAgICMgICAgc2VsZi5fcmVzaXplKGludCgwLjUgKiBsZW4oc2VsZi5fZGF0YSkpKQogICAgICAgICAgICByZXR1cm4gcmlz</text>
+      </register>
+      <register name="-" type="4">
+        <text>i</text>
+      </register>
+      <register name="/" type="4">
+        <text encoding="base64">XDxBcnJheVF1ZXVlXD4=</text>
+      </register>
+    </registers>
+    <search>
+      <last-search encoding="base64">XDxBcnJheVF1ZXVlXD4=</last-search>
+      <last-offset />
+      <last-pattern encoding="base64">XDxBcnJheVF1ZXVlXD4=</last-pattern>
+      <last-dir>1</last-dir>
+      <show-last>false</show-last>
+    </search>
+    <history>
+      <history-search>
+        <entry encoding="base64">XDxzZWxmXD4=</entry>
+        <entry encoding="base64">XDxBcnJheVF1ZXVlXD4=</entry>
+      </history-search>
+      <history-cmd />
+      <history-expr />
+      <history-input />
+    </history>
+    <shortcut-conflicts>
+      <shortcut-conflict owner="ide">
+        <text>ctrl pressed C</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="ide">
+        <text>ctrl pressed V</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="ide">
+        <text>ctrl pressed H</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="ide">
+        <text>ctrl pressed G</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="ide">
+        <text>ctrl pressed X</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed Y</text>
+      </shortcut-conflict>
+    </shortcut-conflicts>
+  </component>
+</application>
