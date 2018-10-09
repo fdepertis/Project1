@@ -36,8 +36,10 @@
       <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tecniche di Programmazione/TdP_collections/TdP_collections/tree/binary_tree.py" timestamp="1538985562353">
         <mark key="[" line="78" column="0" />
       </file>
-      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/venv/CircularPositionalList.py" timestamp="1539097177711">
-        <mark key="[" line="13" column="77" />
+      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/venv/CircularPositionalList.py" timestamp="1539098461496">
+        <mark key="[" line="6" column="2" />
+        <mark key="]" line="6" column="2" />
+        <mark key="." line="6" column="2" />
       </file>
       <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/project1/ese_tree_binarySearchTree.py" timestamp="1539095263335">
         <mark key="[" line="184" column="10" />
@@ -57,14 +59,19 @@
     </jumps>
     <registers>
       <register name="1" type="4">
-        <text>class TreeMap():
-    pass</text>
+        <text encoding="base64">ICAjLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0gbmVzdGVkIF9Ob2RlIGNsYXNzIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCg==</text>
       </register>
       <register name="&quot;" type="4">
+        <text encoding="base64">ICAjLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0gbmVzdGVkIF9Ob2RlIGNsYXNzIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCg==</text>
+      </register>
+      <register name="2" type="4">
+        <text encoding="base64">ICAgICIiIgogICAgIyBuZXN0ZWQgX05vZGUgY2xhc3MKICAgIGNsYXNzIF9Ob2RlOgogICAgICAgICIiIkxpZ2h0d2VpZ2h0LCBub25wdWJsaWMgY2xhc3MgZm9yIHN0b3JpbmcgYSBkb3VibHkgbGlua2VkIG5vZGUuIiIiCiAgICAgICAgX19zbG90c19fID0gJ19lbGVtZW50JywgJ19uZXh0JyMsICdfcHJldicgICAgICAgICAgICAjIHN0cmVhbWxpbmUgbWVtb3J5CgogICAgICAgIGRlZiBfX2luaXRfXyhzZWxmLCBlbGVtZW50LCBuZXh0KTogICAgICAgICAgICAjIGluaXRpYWxpemUgbm9kZSdzIGZpZWxkcwogICAgICAgICAgICBzZWxmLl9lbGVtZW50ID0gZWxlbWVudCAgICAgICAgICAgICAgICAgICAgICAgICAgICMgdXNlcidzIGVsZW1lbnQKICAgICAgICAgICAgI3NlbGYuX3ByZXYgPSBwcmV2ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIyBwcmV2aW91cyBub2RlIHJlZmVyZW5jZQogICAgICAgICAgICBzZWxmLl9uZXh0ID0gbmV4dCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICMgbmV4dCBub2RlIHJlZmVyZW5jZQoKICAjLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0gbGlzdCBjb25zdHJ1Y3RvciAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQoKICAgIGRlZiBfX2luaXRfXyhzZWxmKToKICAgICAgICAiIiJDcmVhdGUgYW4gZW1wdHkgbGlzdC4iIiIKICAgICAgICBzZWxmLl9oZWFkZXIgPSBzZWxmLl9Ob2RlKE5vbmUsIE5vbmUsIE5vbmUpCiAgICAgICAgc2VsZi5fdHJhaWxlciA9IHNlbGYuX05vZGUoTm9uZSwgTm9uZSwgTm9uZSkKICAgICAgICBzZWxmLl9oZWFkZXIuX25leHQgPSBzZWxmLl90cmFpbGVyICAgICAgICAgICAgICAgICAgIyB0cmFpbGVyIGlzIGFmdGVyIGhlYWRlcgogICAgICAgICNzZWxmLl90cmFpbGVyLl9wcmV2ID0gc2VsZi5faGVhZGVyICAgICAgICAgICAgICAgICAgIyBoZWFkZXIgaXMgYmVmb3JlIHRyYWlsZXIKICAgICAgICBzZWxmLl9zaXplID0gMCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIyBudW1iZXIgb2YgZWxlbWVudHMKICAgICIiIg==</text>
+      </register>
+      <register name="3" type="4">
         <text>class TreeMap():
     pass</text>
       </register>
-      <register name="2" type="4">
+      <register name="4" type="4">
         <text>def _insert_between(self, e, predecessor, successor):
     &quot;&quot;&quot;Add element e between two existing nodes and return new node.&quot;&quot;&quot;
     newest = self._Node(e, predecessor, successor)      # linked to neighbors
@@ -73,19 +80,19 @@
     self._size += 1
     return newest</text>
       </register>
-      <register name="3" type="4">
+      <register name="5" type="4">
         <text encoding="base64">ICBzZWxmLl9oZWFkZXIgPSBzZWxmLl9Ob2RlKE5vbmUsIE5vbmUsIE5vbmUpCiAgICBzZWxmLl90cmFpbGVyID0gc2VsZi5fTm9kZShOb25lLCBOb25lLCBOb25lKQogICAgc2VsZi5faGVhZGVyLl9uZXh0ID0gc2VsZi5fdHJhaWxlciAgICAgICAgICAgICAgICAgICMgdHJhaWxlciBpcyBhZnRlciBoZWFkZXIKICAgIHNlbGYuX3RyYWlsZXIuX3ByZXYgPSBzZWxmLl9oZWFkZXIgICAgICAgICAgICAgICAgICAjIGhlYWRlciBpcyBiZWZvcmUgdHJhaWxlcgogICAgc2VsZi5fc2l6ZSA9IDAgIA==</text>
       </register>
-      <register name="4" type="4">
+      <register name="6" type="4">
         <text encoding="base64">IG5ld2VzdCA9IHNlbGYuX05vZGUoZSwgcHJlZGVjZXNzb3IsIHN1Y2Nlc3NvcikgICAgICAjIGxpbmtlZCB0byBuZWlnaGJvcnMKICAgIHByZWRlY2Vzc29yLl9uZXh0ID0gbmV3ZXN0CiAgICBzdWNjZXNzb3IuX3ByZXYgPSBuZXdlc3QKICAgIHNlbGYuX3NpemUgKz0gMQogICAgcmV0dXJuIG5ld2VzdA==</text>
       </register>
-      <register name="5" type="4">
+      <register name="7" type="4">
         <text encoding="base64">IHByZWRlY2Vzc29yID0gbm9kZS5fcHJldgogICAgc3VjY2Vzc29yID0gbm9kZS5fbmV4dAogICAgcHJlZGVjZXNzb3IuX25leHQgPSBzdWNjZXNzb3IKICAgIHN1Y2Nlc3Nvci5fcHJldiA9IHByZWRlY2Vzc29yCiAgICBzZWxmLl9zaXplIC09IDEKICAgIGVsZW1lbnQgPSBub2RlLl9lbGVtZW50ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAjIHJlY29yZCBkZWxldGVkIGVsZW1lbnQKICAgIG5vZGUuX3ByZXYgPSBub2RlLl9uZXh0ID0gbm9kZS5fZWxlbWVudCA9IE5vbmUgICAgICAjIGRlcHJlY2F0ZSBub2RlCiAgICByZXR1cm4gZWxlbWVudCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIyByZXR1cm4gZGVsZXRlZCBlbGVtZW50</text>
       </register>
-      <register name="6" type="4">
+      <register name="8" type="4">
         <text encoding="base64">CnB0eSBsaXN0IiIiCmVsZi5Ob2RlKE5vbmUsIE5vbmUsIE5vbmUpCnNlbGYuTm9kZShOb25lLCBOb25lLCBOb25lKQp0ID0gc2VsZi50cmFpbGVyICMgdHJhaWxlciBpcyBhZnRlciBoZWFkZXIKZXYgPSBzZWxmLmhlYWRlciAjIGhlYWRlciBpcyBiZWZvcmUgdHJhaWxlcgo=</text>
       </register>
-      <register name="7" type="4">
+      <register name="9" type="4">
         <text>class _DoublyLinkedBase:
     class _Node:
         def __init__(self):
@@ -95,12 +102,6 @@
             self.header.nex
             self.trailer.pr
             self.size = 0</text>
-      </register>
-      <register name="8" type="4">
-        <text encoding="base64">CmZyb20gVGRQX2NvbGxlY3Rpb25zLnRyZWUubGlua2VkX2JpbmFyeV90cmVlIGltcG9ydCBsaW4=</text>
-      </register>
-      <register name="9" type="4">
-        <text encoding="base64">aSA9IDAKICAgIGogPSAwCiAgICBhID0gVDEuaXNfbGVhZihsZWZ0MSkgaXMgVHJ1ZQogICAgYiA9IFQxLmlzX2xlYWYocmlnaHQxKSBpcyBUcnVlCiAgICBjID0gVDIuaXNfbGVhZihsZWZ0MikgaXMgVHJ1ZQogICAgZCA9IFQyLmlzX2xlYWYocmlnaHQyKSBpcyBUcnVlCgogICAgaWYgYSA9PSBUcnVlIG9yIGIgPT0gVHJ1ZSBvciBjID09IFRydWUgb3IgZCA9PSBUcnVlOgogICAgICAgIGlmIGEgPT0gVHJ1ZSA6CiAgICAgICAgICAgIGkgKz0gMQogICAgICAgIGlmIGIgPT0gVHJ1ZToKICAgICAgICAgICAgaSArPSAxCiAgICAgICAgaWYgYyA9PSBUcnVlOgogICAgICAgICAgICBqICs9IDEKICAgICAgICBpZiBkID09IFRydWU6CiAgICAgICAgICAgIGogKz0gMQogICAg</text>
       </register>
       <register name="-" type="4">
         <text encoding="base64">ICByZXR1cm4gc2VsZi5fc2l6ZQ==</text>
