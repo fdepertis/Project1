@@ -21,7 +21,7 @@
         <mark key="]" line="184" column="0" />
         <mark key="." line="184" column="0" />
       </file>
-      <file name="/Python Console" timestamp="1539095218401">
+      <file name="/Python Console" timestamp="1539122890002">
         <mark key="[" line="0" column="0" />
       </file>
       <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tecniche di Programmazione/TdP_collections/TdP_collections/map/map_base.py" timestamp="1539071427306">
@@ -36,16 +36,16 @@
       <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tecniche di Programmazione/TdP_collections/TdP_collections/tree/binary_tree.py" timestamp="1538985562353">
         <mark key="[" line="78" column="0" />
       </file>
-      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/venv/CircularPositionalList.py" timestamp="1539122199727">
-        <mark key="[" line="43" column="10" />
-        <mark key="]" line="85" column="0" />
-        <mark key="." line="85" column="0" />
+      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/venv/CircularPositionalList.py" timestamp="1539123583558">
+        <mark key="[" line="15" column="12" />
+        <mark key="]" line="15" column="12" />
+        <mark key="." line="15" column="12" />
       </file>
       <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/project1/ese_tree_binarySearchTree.py" timestamp="1539095263335">
         <mark key="[" line="184" column="10" />
       </file>
-      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tecniche di Programmazione/TdP_collections/TdP_collections/list/positional_list.py" timestamp="1539097354485">
-        <mark key="[" line="23" column="6" />
+      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tecniche di Programmazione/TdP_collections/TdP_collections/list/positional_list.py" timestamp="1539123519726">
+        <mark key="[" line="51" column="66" />
       </file>
       <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/venv/util.py" timestamp="1538997020032">
         <mark key="[" line="0" column="0" />
@@ -59,41 +59,36 @@
     </jumps>
     <registers>
       <register name="1" type="4">
-        <text encoding="base64">CiAgICAgICAgbm9kZSA9IHNlbGYuX05vZGUoZSwgc2VsZi5faGVhZGVyLl9wcmV2LCBzZWxmLl9oZWFkZXIpCiAgICAgICAgc2VsZi5faGVhZGVyID0gbm9kZQ==</text>
+        <text>self._container = container
+            self._node = node</text>
       </register>
       <register name="&quot;" type="4">
-        <text encoding="base64">ICAgICAgICBlbHNlOg==</text>
+        <text>self._container = container
+            self._node = node</text>
       </register>
       <register name="2" type="4">
-        <text encoding="base64">CiAgICAgICAgbm9kZSA9IHNlbGYuX05vZGUoZSwgc2VsZi5faGVhZGVyLl9wcmV2LCBzZWxmLl9oZWFkZXIpCiAgICAgICAgc2VsZi5faGVhZGVyID0gbm9kZQogICAgICAgIA==</text>
+        <text encoding="base64">ICBkZWYgYXBwZW5kKHNlbGYsIHgpOgoKICAgICAgICBuZXdub2RlID0gc2VsZi5fTm9kZSh4LHNlbGYuX3RyYWlsZXIuX3ByZXYsIHNlbGYuX3RyYWlsZXIpCgogICAgICAgIHNlbGYuX3RyYWlsZXIuX3ByZXYgPSBuZXdub2Rl</text>
       </register>
       <register name="3" type="4">
-        <text encoding="base64">c3VwZXIoKS5fX2luaXRfXygpCiAgICAgICAgc2VsZi5fdHJhaWxlci5fbmV4dCA9IHNlbGYuX2hlYWRlcgogICAgICAgIA==</text>
+        <text encoding="base64">CiAgICAgICAgbm9kZSA9IHNlbGYuX05vZGUoZSwgc2VsZi5faGVhZGVyLl9wcmV2LCBzZWxmLl9oZWFkZXIpCiAgICAgICAgc2VsZi5faGVhZGVyID0gbm9kZQ==</text>
       </register>
       <register name="4" type="4">
-        <text encoding="base64">ICIiIkEgYmFzZSBjbGFzcyBwcm92aWRpbmcgYSBkb3VibHkgbGlua2VkIGxpc3QgcmVwcmVzZW50YXRpb24uIiIiCgogICMtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLSBsaXN0IGNvbnN0cnVjdG9yIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCg==</text>
+        <text encoding="base64">CiAgICAgICAgbm9kZSA9IHNlbGYuX05vZGUoZSwgc2VsZi5faGVhZGVyLl9wcmV2LCBzZWxmLl9oZWFkZXIpCiAgICAgICAgc2VsZi5faGVhZGVyID0gbm9kZQogICAgICAgIA==</text>
       </register>
       <register name="5" type="4">
-        <text encoding="base64">Y2xhc3MgX05vZGU6CiAgICAgICAgIiIiTGlnaHR3ZWlnaHQsIG5vbnB1YmxpYyBjbGFzcyBmb3Igc3RvcmluZyBhIGRvdWJseSBsaW5rZWQgbm9kZS4iIiIKICAgICAgICBfX3Nsb3RzX18gPSAnX2VsZW1lbnQnLCAnX25leHQnLCAnX3ByZXYnICAgICAgICAgICAgICMgc3RyZWFtbGluZSBtZW1vcnkKCiAgICAgICAgZGVmIF9faW5pdF9fKHNlbGYsIGVsZW1lbnQsIG5leHQpOiAgICAgICAgICAgICMgaW5pdGlhbGl6ZSBub2RlJ3MgZmllbGRzCiAgICAgICAgICAgIHNlbGYuX2VsZW1lbnQgPSBlbGVtZW50ICAgICAgICAgICAgICAgICAgICAgICAgICAgIyB1c2VyJ3MgZWxlbWVudAogICAgICAgICAgICAjc2VsZi5fcHJldiA9IHByZXYgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAjIHByZXZpb3VzIG5vZGUgcmVmZXJlbmNlCiAgICAgICAgICAgIHNlbGYuX25leHQgPSBuZXh0ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIyBuZXh0IG5vZGUgcmVmZXJlbmNlCg==</text>
+        <text encoding="base64">c3VwZXIoKS5fX2luaXRfXygpCiAgICAgICAgc2VsZi5fdHJhaWxlci5fbmV4dCA9IHNlbGYuX2hlYWRlcgogICAgICAgIA==</text>
       </register>
       <register name="6" type="4">
-        <text encoding="base64">ICAjLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0gbmVzdGVkIF9Ob2RlIGNsYXNzIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCg==</text>
+        <text encoding="base64">ICIiIkEgYmFzZSBjbGFzcyBwcm92aWRpbmcgYSBkb3VibHkgbGlua2VkIGxpc3QgcmVwcmVzZW50YXRpb24uIiIiCgogICMtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLSBsaXN0IGNvbnN0cnVjdG9yIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCg==</text>
       </register>
       <register name="7" type="4">
-        <text encoding="base64">ICAgICIiIgogICAgIyBuZXN0ZWQgX05vZGUgY2xhc3MKICAgIGNsYXNzIF9Ob2RlOgogICAgICAgICIiIkxpZ2h0d2VpZ2h0LCBub25wdWJsaWMgY2xhc3MgZm9yIHN0b3JpbmcgYSBkb3VibHkgbGlua2VkIG5vZGUuIiIiCiAgICAgICAgX19zbG90c19fID0gJ19lbGVtZW50JywgJ19uZXh0JyMsICdfcHJldicgICAgICAgICAgICAjIHN0cmVhbWxpbmUgbWVtb3J5CgogICAgICAgIGRlZiBfX2luaXRfXyhzZWxmLCBlbGVtZW50LCBuZXh0KTogICAgICAgICAgICAjIGluaXRpYWxpemUgbm9kZSdzIGZpZWxkcwogICAgICAgICAgICBzZWxmLl9lbGVtZW50ID0gZWxlbWVudCAgICAgICAgICAgICAgICAgICAgICAgICAgICMgdXNlcidzIGVsZW1lbnQKICAgICAgICAgICAgI3NlbGYuX3ByZXYgPSBwcmV2ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIyBwcmV2aW91cyBub2RlIHJlZmVyZW5jZQogICAgICAgICAgICBzZWxmLl9uZXh0ID0gbmV4dCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICMgbmV4dCBub2RlIHJlZmVyZW5jZQoKICAjLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0gbGlzdCBjb25zdHJ1Y3RvciAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQoKICAgIGRlZiBfX2luaXRfXyhzZWxmKToKICAgICAgICAiIiJDcmVhdGUgYW4gZW1wdHkgbGlzdC4iIiIKICAgICAgICBzZWxmLl9oZWFkZXIgPSBzZWxmLl9Ob2RlKE5vbmUsIE5vbmUsIE5vbmUpCiAgICAgICAgc2VsZi5fdHJhaWxlciA9IHNlbGYuX05vZGUoTm9uZSwgTm9uZSwgTm9uZSkKICAgICAgICBzZWxmLl9oZWFkZXIuX25leHQgPSBzZWxmLl90cmFpbGVyICAgICAgICAgICAgICAgICAgIyB0cmFpbGVyIGlzIGFmdGVyIGhlYWRlcgogICAgICAgICNzZWxmLl90cmFpbGVyLl9wcmV2ID0gc2VsZi5faGVhZGVyICAgICAgICAgICAgICAgICAgIyBoZWFkZXIgaXMgYmVmb3JlIHRyYWlsZXIKICAgICAgICBzZWxmLl9zaXplID0gMCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIyBudW1iZXIgb2YgZWxlbWVudHMKICAgICIiIg==</text>
+        <text encoding="base64">Y2xhc3MgX05vZGU6CiAgICAgICAgIiIiTGlnaHR3ZWlnaHQsIG5vbnB1YmxpYyBjbGFzcyBmb3Igc3RvcmluZyBhIGRvdWJseSBsaW5rZWQgbm9kZS4iIiIKICAgICAgICBfX3Nsb3RzX18gPSAnX2VsZW1lbnQnLCAnX25leHQnLCAnX3ByZXYnICAgICAgICAgICAgICMgc3RyZWFtbGluZSBtZW1vcnkKCiAgICAgICAgZGVmIF9faW5pdF9fKHNlbGYsIGVsZW1lbnQsIG5leHQpOiAgICAgICAgICAgICMgaW5pdGlhbGl6ZSBub2RlJ3MgZmllbGRzCiAgICAgICAgICAgIHNlbGYuX2VsZW1lbnQgPSBlbGVtZW50ICAgICAgICAgICAgICAgICAgICAgICAgICAgIyB1c2VyJ3MgZWxlbWVudAogICAgICAgICAgICAjc2VsZi5fcHJldiA9IHByZXYgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAjIHByZXZpb3VzIG5vZGUgcmVmZXJlbmNlCiAgICAgICAgICAgIHNlbGYuX25leHQgPSBuZXh0ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIyBuZXh0IG5vZGUgcmVmZXJlbmNlCg==</text>
       </register>
       <register name="8" type="4">
-        <text>class TreeMap():
-    pass</text>
+        <text encoding="base64">ICAjLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0gbmVzdGVkIF9Ob2RlIGNsYXNzIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCg==</text>
       </register>
       <register name="9" type="4">
-        <text>def _insert_between(self, e, predecessor, successor):
-    &quot;&quot;&quot;Add element e between two existing nodes and return new node.&quot;&quot;&quot;
-    newest = self._Node(e, predecessor, successor)      # linked to neighbors
-    predecessor._next = newest
-    successor._prev = newest
-    self._size += 1
-    return newest</text>
+        <text encoding="base64">ICAgICIiIgogICAgIyBuZXN0ZWQgX05vZGUgY2xhc3MKICAgIGNsYXNzIF9Ob2RlOgogICAgICAgICIiIkxpZ2h0d2VpZ2h0LCBub25wdWJsaWMgY2xhc3MgZm9yIHN0b3JpbmcgYSBkb3VibHkgbGlua2VkIG5vZGUuIiIiCiAgICAgICAgX19zbG90c19fID0gJ19lbGVtZW50JywgJ19uZXh0JyMsICdfcHJldicgICAgICAgICAgICAjIHN0cmVhbWxpbmUgbWVtb3J5CgogICAgICAgIGRlZiBfX2luaXRfXyhzZWxmLCBlbGVtZW50LCBuZXh0KTogICAgICAgICAgICAjIGluaXRpYWxpemUgbm9kZSdzIGZpZWxkcwogICAgICAgICAgICBzZWxmLl9lbGVtZW50ID0gZWxlbWVudCAgICAgICAgICAgICAgICAgICAgICAgICAgICMgdXNlcidzIGVsZW1lbnQKICAgICAgICAgICAgI3NlbGYuX3ByZXYgPSBwcmV2ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIyBwcmV2aW91cyBub2RlIHJlZmVyZW5jZQogICAgICAgICAgICBzZWxmLl9uZXh0ID0gbmV4dCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICMgbmV4dCBub2RlIHJlZmVyZW5jZQoKICAjLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0gbGlzdCBjb25zdHJ1Y3RvciAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQoKICAgIGRlZiBfX2luaXRfXyhzZWxmKToKICAgICAgICAiIiJDcmVhdGUgYW4gZW1wdHkgbGlzdC4iIiIKICAgICAgICBzZWxmLl9oZWFkZXIgPSBzZWxmLl9Ob2RlKE5vbmUsIE5vbmUsIE5vbmUpCiAgICAgICAgc2VsZi5fdHJhaWxlciA9IHNlbGYuX05vZGUoTm9uZSwgTm9uZSwgTm9uZSkKICAgICAgICBzZWxmLl9oZWFkZXIuX25leHQgPSBzZWxmLl90cmFpbGVyICAgICAgICAgICAgICAgICAgIyB0cmFpbGVyIGlzIGFmdGVyIGhlYWRlcgogICAgICAgICNzZWxmLl90cmFpbGVyLl9wcmV2ID0gc2VsZi5faGVhZGVyICAgICAgICAgICAgICAgICAgIyBoZWFkZXIgaXMgYmVmb3JlIHRyYWlsZXIKICAgICAgICBzZWxmLl9zaXplID0gMCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIyBudW1iZXIgb2YgZWxlbWVudHMKICAgICIiIg==</text>
       </register>
       <register name="-" type="4">
         <text encoding="base64">ICAgICAgICBlbHNlOg==</text>
