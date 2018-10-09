@@ -6,9 +6,6 @@
       <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tecniche di Programmazione/TdP_collections/TdP_collections/tree/tree.py" timestamp="1538903064336">
         <mark key="[" line="115" column="0" />
       </file>
-      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/venv/CircularPositionalList.py" timestamp="1539070116626">
-        <mark key="[" line="1" column="12" />
-      </file>
       <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tecniche di Programmazione/TdP_collections/TdP_collections/tree/linked_binary_tree.py" timestamp="1539069579185">
         <mark key="[" line="160" column="27" />
         <mark key="]" line="110" column="30" />
@@ -18,27 +15,33 @@
       <file name="/Dummy.txt" timestamp="1539018895598">
         <mark key="[" line="0" column="0" />
       </file>
-      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/venv/tdp_test/ese_tree_binarySearchTree.py" timestamp="1539067289008">
+      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/venv/tdp_test/ese_tree_binarySearchTree.py" timestamp="1539071102893">
         <mark key="'" line="12" column="91" />
-        <mark key="[" line="139" column="22" />
-        <mark key="]" line="80" column="0" />
-        <mark key="." line="80" column="0" />
+        <mark key="[" line="184" column="0" />
+        <mark key="]" line="184" column="0" />
+        <mark key="." line="184" column="0" />
       </file>
-      <file name="/Python Console" timestamp="1539021542598">
+      <file name="/Python Console" timestamp="1539071265600">
         <mark key="[" line="0" column="0" />
       </file>
       <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tecniche di Programmazione/TdP_collections/TdP_collections/list/doubly_linked_base.py" timestamp="1539067963990" />
-      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tecniche di Programmazione/TdP_collections/TdP_collections/map/binary_search_tree.py" timestamp="1539069616582">
-        <mark key="[" line="337" column="4" />
+      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tecniche di Programmazione/TdP_collections/TdP_collections/map/map_base.py" timestamp="1539071427306">
+        <mark key="[" line="33" column="20" />
+      </file>
+      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tecniche di Programmazione/TdP_collections/TdP_collections/map/binary_search_tree.py" timestamp="1539071074438">
+        <mark key="[" line="23" column="0" />
       </file>
       <file name="/a.dummy" timestamp="1539070070327">
         <mark key="[" line="0" column="0" />
       </file>
-      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/venv/util.py" timestamp="1538997020032">
-        <mark key="[" line="0" column="0" />
-      </file>
       <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tecniche di Programmazione/TdP_collections/TdP_collections/tree/binary_tree.py" timestamp="1538985562353">
         <mark key="[" line="78" column="0" />
+      </file>
+      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/venv/CircularPositionalList.py" timestamp="1539070116626">
+        <mark key="[" line="1" column="12" />
+      </file>
+      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/venv/util.py" timestamp="1538997020032">
+        <mark key="[" line="0" column="0" />
       </file>
       <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/venv/MyList.py" timestamp="1539068725620">
         <mark key="[" line="40" column="0" />
@@ -49,15 +52,14 @@
     </jumps>
     <registers>
       <register name="1" type="4">
-        <text>def _insert_between(self, e, predecessor, successor):
-    &quot;&quot;&quot;Add element e between two existing nodes and return new node.&quot;&quot;&quot;
-    newest = self._Node(e, predecessor, successor)      # linked to neighbors
-    predecessor._next = newest
-    successor._prev = newest
-    self._size += 1
-    return newest</text>
+        <text>class TreeMap():
+    pass</text>
       </register>
       <register name="&quot;" type="4">
+        <text>class TreeMap():
+    pass</text>
+      </register>
+      <register name="2" type="4">
         <text>def _insert_between(self, e, predecessor, successor):
     &quot;&quot;&quot;Add element e between two existing nodes and return new node.&quot;&quot;&quot;
     newest = self._Node(e, predecessor, successor)      # linked to neighbors
@@ -66,19 +68,19 @@
     self._size += 1
     return newest</text>
       </register>
-      <register name="2" type="4">
+      <register name="3" type="4">
         <text encoding="base64">ICBzZWxmLl9oZWFkZXIgPSBzZWxmLl9Ob2RlKE5vbmUsIE5vbmUsIE5vbmUpCiAgICBzZWxmLl90cmFpbGVyID0gc2VsZi5fTm9kZShOb25lLCBOb25lLCBOb25lKQogICAgc2VsZi5faGVhZGVyLl9uZXh0ID0gc2VsZi5fdHJhaWxlciAgICAgICAgICAgICAgICAgICMgdHJhaWxlciBpcyBhZnRlciBoZWFkZXIKICAgIHNlbGYuX3RyYWlsZXIuX3ByZXYgPSBzZWxmLl9oZWFkZXIgICAgICAgICAgICAgICAgICAjIGhlYWRlciBpcyBiZWZvcmUgdHJhaWxlcgogICAgc2VsZi5fc2l6ZSA9IDAgIA==</text>
       </register>
-      <register name="3" type="4">
+      <register name="4" type="4">
         <text encoding="base64">IG5ld2VzdCA9IHNlbGYuX05vZGUoZSwgcHJlZGVjZXNzb3IsIHN1Y2Nlc3NvcikgICAgICAjIGxpbmtlZCB0byBuZWlnaGJvcnMKICAgIHByZWRlY2Vzc29yLl9uZXh0ID0gbmV3ZXN0CiAgICBzdWNjZXNzb3IuX3ByZXYgPSBuZXdlc3QKICAgIHNlbGYuX3NpemUgKz0gMQogICAgcmV0dXJuIG5ld2VzdA==</text>
       </register>
-      <register name="4" type="4">
+      <register name="5" type="4">
         <text encoding="base64">IHByZWRlY2Vzc29yID0gbm9kZS5fcHJldgogICAgc3VjY2Vzc29yID0gbm9kZS5fbmV4dAogICAgcHJlZGVjZXNzb3IuX25leHQgPSBzdWNjZXNzb3IKICAgIHN1Y2Nlc3Nvci5fcHJldiA9IHByZWRlY2Vzc29yCiAgICBzZWxmLl9zaXplIC09IDEKICAgIGVsZW1lbnQgPSBub2RlLl9lbGVtZW50ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAjIHJlY29yZCBkZWxldGVkIGVsZW1lbnQKICAgIG5vZGUuX3ByZXYgPSBub2RlLl9uZXh0ID0gbm9kZS5fZWxlbWVudCA9IE5vbmUgICAgICAjIGRlcHJlY2F0ZSBub2RlCiAgICByZXR1cm4gZWxlbWVudCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIyByZXR1cm4gZGVsZXRlZCBlbGVtZW50</text>
       </register>
-      <register name="5" type="4">
+      <register name="6" type="4">
         <text encoding="base64">CnB0eSBsaXN0IiIiCmVsZi5Ob2RlKE5vbmUsIE5vbmUsIE5vbmUpCnNlbGYuTm9kZShOb25lLCBOb25lLCBOb25lKQp0ID0gc2VsZi50cmFpbGVyICMgdHJhaWxlciBpcyBhZnRlciBoZWFkZXIKZXYgPSBzZWxmLmhlYWRlciAjIGhlYWRlciBpcyBiZWZvcmUgdHJhaWxlcgo=</text>
       </register>
-      <register name="6" type="4">
+      <register name="7" type="4">
         <text>class _DoublyLinkedBase:
     class _Node:
         def __init__(self):
@@ -89,44 +91,11 @@
             self.trailer.pr
             self.size = 0</text>
       </register>
-      <register name="7" type="4">
+      <register name="8" type="4">
         <text encoding="base64">CmZyb20gVGRQX2NvbGxlY3Rpb25zLnRyZWUubGlua2VkX2JpbmFyeV90cmVlIGltcG9ydCBsaW4=</text>
       </register>
-      <register name="8" type="4">
-        <text encoding="base64">aSA9IDAKICAgIGogPSAwCiAgICBhID0gVDEuaXNfbGVhZihsZWZ0MSkgaXMgVHJ1ZQogICAgYiA9IFQxLmlzX2xlYWYocmlnaHQxKSBpcyBUcnVlCiAgICBjID0gVDIuaXNfbGVhZihsZWZ0MikgaXMgVHJ1ZQogICAgZCA9IFQyLmlzX2xlYWYocmlnaHQyKSBpcyBUcnVlCgogICAgaWYgYSA9PSBUcnVlIG9yIGIgPT0gVHJ1ZSBvciBjID09IFRydWUgb3IgZCA9PSBUcnVlOgogICAgICAgIGlmIGEgPT0gVHJ1ZSA6CiAgICAgICAgICAgIGkgKz0gMQogICAgICAgIGlmIGIgPT0gVHJ1ZToKICAgICAgICAgICAgaSArPSAxCiAgICAgICAgaWYgYyA9PSBUcnVlOgogICAgICAgICAgICBqICs9IDEKICAgICAgICBpZiBkID09IFRydWU6CiAgICAgICAgICAgIGogKz0gMQogICAg</text>
-      </register>
       <register name="9" type="4">
-        <text>for k in T1.breadthfirst():
-            print(&quot;start&quot;, i, k.element())
-
-
-        left1 = T1.left(T1.root())
-        right1 = T1.right(T1.root())
-        left2 = T2.left(T1.root())
-        right2 = T2.right(T1.root())
-        a=[]
-        a.append(left1)
-        a.append(right1)
-        a2=[]
-        a2.append(left2)
-        a2.append(right2)
-        for k in T1.children(T1.root()):
-
-        var = False
-        for k in T1._subtree_inorder():
-            for k2 in T2._subtree_inorder(T2):
-            var = move_on(T1, T2,left1,left2,right1,right2)
-            if var == False:
-                break
-            a=[]
-            for k in T1.children(left1):
-                for k2 in T1.children(right1):
-                    for h in T2.children(left2):
-                        for h2 in T2.children(right2):
-                            
-
-
-        return var</text>
+        <text encoding="base64">aSA9IDAKICAgIGogPSAwCiAgICBhID0gVDEuaXNfbGVhZihsZWZ0MSkgaXMgVHJ1ZQogICAgYiA9IFQxLmlzX2xlYWYocmlnaHQxKSBpcyBUcnVlCiAgICBjID0gVDIuaXNfbGVhZihsZWZ0MikgaXMgVHJ1ZQogICAgZCA9IFQyLmlzX2xlYWYocmlnaHQyKSBpcyBUcnVlCgogICAgaWYgYSA9PSBUcnVlIG9yIGIgPT0gVHJ1ZSBvciBjID09IFRydWUgb3IgZCA9PSBUcnVlOgogICAgICAgIGlmIGEgPT0gVHJ1ZSA6CiAgICAgICAgICAgIGkgKz0gMQogICAgICAgIGlmIGIgPT0gVHJ1ZToKICAgICAgICAgICAgaSArPSAxCiAgICAgICAgaWYgYyA9PSBUcnVlOgogICAgICAgICAgICBqICs9IDEKICAgICAgICBpZiBkID09IFRydWU6CiAgICAgICAgICAgIGogKz0gMQogICAg</text>
       </register>
       <register name="-" type="4">
         <text encoding="base64">ICByZXR1cm4gc2VsZi5fc2l6ZQ==</text>
