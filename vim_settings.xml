@@ -34,10 +34,10 @@
       <file name="/a.dummy" timestamp="1539165751027">
         <mark key="[" line="0" column="0" />
       </file>
-      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/venv/circular_positional_list.py" timestamp="1539181174543">
-        <mark key="[" line="68" column="44" />
-        <mark key="]" line="68" column="44" />
-        <mark key="." line="68" column="44" />
+      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/venv/circular_positional_list.py" timestamp="1539190384842">
+        <mark key="[" line="148" column="8" />
+        <mark key="]" line="148" column="8" />
+        <mark key="." line="148" column="8" />
       </file>
       <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tecniche di Programmazione/TdP_collections/TdP_collections/tree/binary_tree.py" timestamp="1538985562353">
         <mark key="[" line="78" column="0" />
@@ -60,41 +60,66 @@
     </jumps>
     <registers>
       <register name="1" type="4">
-        <text encoding="base64">CiAgICAgICAgaWYgc2VsZi5pc19lbXB0eSgpOg==</text>
+        <text encoding="base64">CiAgICAgICAgcDIgPSBzZWxmLl9tYWtlX3Bvc2l0aW9uKG5vZGUpCiAgICAgICAgbmV3bm9kZSA9IHNlbGYuX2luc2VydF9iZXR3ZWVuKGUscDIuX25vZGUuX3ByZXYscDIp</text>
       </register>
       <register name="&quot;" type="4">
-        <text encoding="base64">CiAgICAgICAgaWYgc2VsZi5pc19lbXB0eSgpOg==</text>
+        <text encoding="base64">CiAgICAgICAgcDIgPSBzZWxmLl9tYWtlX3Bvc2l0aW9uKG5vZGUpCiAgICAgICAgbmV3bm9kZSA9IHNlbGYuX2luc2VydF9iZXR3ZWVuKGUscDIuX25vZGUuX3ByZXYscDIp</text>
       </register>
       <register name="2" type="4">
-        <text encoding="base64">IGRlZiBfaW5zZXJ0X2JldHdlZW4oc2VsZiwgZSwgcHJlZGVjZXNzb3IsIHN1Y2Nlc3Nvcik6CiAgICAgICAgICAgICIiIkFkZCBlbGVtZW50IGJldHdlZW4gZXhpc3Rpbmcgbm9kZXMgYW5kIHJldHVybiBuZXcgUG9zaXRpb24uIiIiCiAgICAgICAgICAgIA==</text>
+        <text>p2 = self._make_position(node)
+        newnode = self._insert_between(e,p2,p2._node._next)</text>
       </register>
       <register name="3" type="4">
-        <text encoding="base64">CiAgICAgICAgaWYgbm9kZSBpcyBzZWxmLl9oZWFkZXI6CiAgICAgICAgICAgIHJldHVybiBzZWxmLlBvc2l0aW9uKHNlbGYsc2VsZi5faGVhZGVyKSAjIGJvdW5kYXJ5IHZpb2xhdGlvbgogICAgICAgIGVsc2U6</text>
+        <text>def _update_header(self,predecessor=None,successor=None):
+        if predecessor is not None and successor is not None:
+            self._header._next = self._header
+            self._header._prev = self._header
+        elif predecessor is not None and successor is None:
+            self._header._prev = self._header
+        elif successor is not None and predecessor is None:
+            self._header._next = self._header</text>
       </register>
       <register name="4" type="4">
-        <text encoding="base64">ICAgICAgICBpZiBwLl9ub2RlLl9uZXh0IGlzIE5vbmU6ICAjIGNvbnZlbnRpb24gZm9yIGRlcHJlY2F0ZWQgbm9kZXMKICAgICAgICAgICAgcmFpc2UgVmFsdWVFcnJvcigncCBpcyBubyBsb25nZXIgdmFsaWQnKQ==</text>
+        <text>if self.is_empty():
+            return None
+        try:
+            node = self._validate(p)
+        except ValueError:
+            print(&quot;p is not valid&quot;)
+            return None
+        except TypeError:
+            print(&quot;p is not position&quot;)
+            return None</text>
       </register>
       <register name="5" type="4">
-        <text>if node is self._header:
-            return self._header  # boundary violation
-        else:</text>
+        <text>if self.is_empty():
+            return None
+        try:
+            node = self._validate(p)
+        except ValueError:
+            print(&quot;p is not valid&quot;)
+            return None
+        except TypeError:
+            print(&quot;p is not position&quot;)
+            return None</text>
       </register>
       <register name="6" type="4">
-        <text encoding="base64">CgoKICAgICAgICBpZiBzZWxmLmlzX2VtcHR5KCk6CiAgICAgICAgICAgIHNlbGYuX2hlYWRlciA9IHNlbGYuX05vZGUoZSwgc2VsZi5faGVhZGVyLCBzZWxmLl9oZWFkZXIpCiAgICAgICAgICAgIHNlbGYuX3NpemUgPSAxCiAgICAgICAgICAgIHJldHVybiBzZWxmLl9tYWtlX3Bvc2l0aW9uKHNlbGYuX2hlYWRlcikKICAgICAgICBub2RlID0gc2VsZi5fTm9kZShlLCBzZWxmLl9oZWFkZXIuX25leHQsIHNlbGYuX2hlYWRlcikKICAgICAgICBzZWxmLl9oZWFkZXIuX3ByZXYgPSBub2RlCiAgICAgICAgc2VsZi5fc2l6ZSArPSAxCiAgICAgICAgcmV0dXJuIHNlbGYuX21ha2VfcG9zaXRpb24obm9kZSkK</text>
+        <text>a = {} 
+        a[&quot;header&quot;] = first</text>
       </register>
       <register name="7" type="4">
-        <text encoding="base64">CiAgICAgICAgcG9zaXRpb24yPSBzZWxmLl9tYWtlX3Bvc2l0aW9uKHNlbGYuX2hlYWRlci5fbmV4dCkgI3Bvc2l0aW9uIG9mIG5vZGUgbmV4dCBoZWFkZXIKICAgICAgICAKICAgICAgICBwb3NpdGlvbjIuX25vZGUuX3ByZXYgPSBub2RlIyB1cGRhdGUgbm9kZSBhZnRlciBoZWFkZXI=</text>
+        <text>b = []
+        b.append(first)</text>
       </register>
       <register name="8" type="4">
-        <text encoding="base64">CiAgICAgICAgcHJpbnQoc2VsZi5fbWFrZV9wb3NpdGlvbihzZWxmLl9oZWFkZXIuX3ByZXYpLHNlbGYuX2hlYWRlci5fcHJldi5fZWxlbWVudCk=</text>
+        <text>self._header._next = self._header
+            self._header._prev = self._header</text>
       </register>
       <register name="9" type="4">
-        <text>if node is self._header or node is self._trailer:
-            return None  # boundary violation
-        else:</text>
+        <text encoding="base64">CiAgICAgICAgaWYgc2VsZi5pc19lbXB0eSgpOg==</text>
       </register>
       <register name="-" type="4">
-        <text>lista</text>
+        <text>print(first._element,w._element)</text>
       </register>
     </registers>
     <search>
