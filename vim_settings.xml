@@ -36,10 +36,9 @@
       <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tecniche di Programmazione/TdP_collections/TdP_collections/tree/binary_tree.py" timestamp="1538985562353">
         <mark key="[" line="78" column="0" />
       </file>
-      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/venv/CircularPositionalList.py" timestamp="1539145581221">
-        <mark key="[" line="40" column="8" />
-        <mark key="]" line="40" column="8" />
-        <mark key="." line="40" column="8" />
+      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/venv/CircularPositionalList.py" timestamp="1539161636324">
+        <mark key="]" line="118" column="0" />
+        <mark key="." line="118" column="0" />
       </file>
       <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/project1/ese_tree_binarySearchTree.py" timestamp="1539095263335">
         <mark key="[" line="184" column="10" />
@@ -59,42 +58,40 @@
     </jumps>
     <registers>
       <register name="1" type="4">
-        <text>if node is self._header or node is self._trailer:
-            return None  # boundary violation
-        else:</text>
+        <text encoding="base64">CgoKICAgICAgICBpZiBzZWxmLmlzX2VtcHR5KCk6CiAgICAgICAgICAgIHNlbGYuX2hlYWRlciA9IHNlbGYuX05vZGUoZSwgc2VsZi5faGVhZGVyLCBzZWxmLl9oZWFkZXIpCiAgICAgICAgICAgIHNlbGYuX3NpemUgPSAxCiAgICAgICAgICAgIHJldHVybiBzZWxmLl9tYWtlX3Bvc2l0aW9uKHNlbGYuX2hlYWRlcikKICAgICAgICBub2RlID0gc2VsZi5fTm9kZShlLCBzZWxmLl9oZWFkZXIuX25leHQsIHNlbGYuX2hlYWRlcikKICAgICAgICBzZWxmLl9oZWFkZXIuX3ByZXYgPSBub2RlCiAgICAgICAgc2VsZi5fc2l6ZSArPSAxCiAgICAgICAgcmV0dXJuIHNlbGYuX21ha2VfcG9zaXRpb24obm9kZSkK</text>
       </register>
       <register name="&quot;" type="4">
+        <text encoding="base64">CgoKICAgICAgICBpZiBzZWxmLmlzX2VtcHR5KCk6CiAgICAgICAgICAgIHNlbGYuX2hlYWRlciA9IHNlbGYuX05vZGUoZSwgc2VsZi5faGVhZGVyLCBzZWxmLl9oZWFkZXIpCiAgICAgICAgICAgIHNlbGYuX3NpemUgPSAxCiAgICAgICAgICAgIHJldHVybiBzZWxmLl9tYWtlX3Bvc2l0aW9uKHNlbGYuX2hlYWRlcikKICAgICAgICBub2RlID0gc2VsZi5fTm9kZShlLCBzZWxmLl9oZWFkZXIuX25leHQsIHNlbGYuX2hlYWRlcikKICAgICAgICBzZWxmLl9oZWFkZXIuX3ByZXYgPSBub2RlCiAgICAgICAgc2VsZi5fc2l6ZSArPSAxCiAgICAgICAgcmV0dXJuIHNlbGYuX21ha2VfcG9zaXRpb24obm9kZSkK</text>
+      </register>
+      <register name="2" type="4">
+        <text encoding="base64">CiAgICAgICAgcG9zaXRpb24yPSBzZWxmLl9tYWtlX3Bvc2l0aW9uKHNlbGYuX2hlYWRlci5fbmV4dCkgI3Bvc2l0aW9uIG9mIG5vZGUgbmV4dCBoZWFkZXIKICAgICAgICAKICAgICAgICBwb3NpdGlvbjIuX25vZGUuX3ByZXYgPSBub2RlIyB1cGRhdGUgbm9kZSBhZnRlciBoZWFkZXI=</text>
+      </register>
+      <register name="3" type="4">
+        <text encoding="base64">CiAgICAgICAgcHJpbnQoc2VsZi5fbWFrZV9wb3NpdGlvbihzZWxmLl9oZWFkZXIuX3ByZXYpLHNlbGYuX2hlYWRlci5fcHJldi5fZWxlbWVudCk=</text>
+      </register>
+      <register name="4" type="4">
         <text>if node is self._header or node is self._trailer:
             return None  # boundary violation
         else:</text>
       </register>
-      <register name="2" type="4">
+      <register name="5" type="4">
         <text>self._container = container
             self._node = node</text>
       </register>
-      <register name="3" type="4">
+      <register name="6" type="4">
         <text encoding="base64">ICBkZWYgYXBwZW5kKHNlbGYsIHgpOgoKICAgICAgICBuZXdub2RlID0gc2VsZi5fTm9kZSh4LHNlbGYuX3RyYWlsZXIuX3ByZXYsIHNlbGYuX3RyYWlsZXIpCgogICAgICAgIHNlbGYuX3RyYWlsZXIuX3ByZXYgPSBuZXdub2Rl</text>
       </register>
-      <register name="4" type="4">
+      <register name="7" type="4">
         <text encoding="base64">CiAgICAgICAgbm9kZSA9IHNlbGYuX05vZGUoZSwgc2VsZi5faGVhZGVyLl9wcmV2LCBzZWxmLl9oZWFkZXIpCiAgICAgICAgc2VsZi5faGVhZGVyID0gbm9kZQ==</text>
       </register>
-      <register name="5" type="4">
+      <register name="8" type="4">
         <text encoding="base64">CiAgICAgICAgbm9kZSA9IHNlbGYuX05vZGUoZSwgc2VsZi5faGVhZGVyLl9wcmV2LCBzZWxmLl9oZWFkZXIpCiAgICAgICAgc2VsZi5faGVhZGVyID0gbm9kZQogICAgICAgIA==</text>
       </register>
-      <register name="6" type="4">
+      <register name="9" type="4">
         <text encoding="base64">c3VwZXIoKS5fX2luaXRfXygpCiAgICAgICAgc2VsZi5fdHJhaWxlci5fbmV4dCA9IHNlbGYuX2hlYWRlcgogICAgICAgIA==</text>
       </register>
-      <register name="7" type="4">
-        <text encoding="base64">ICIiIkEgYmFzZSBjbGFzcyBwcm92aWRpbmcgYSBkb3VibHkgbGlua2VkIGxpc3QgcmVwcmVzZW50YXRpb24uIiIiCgogICMtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLSBsaXN0IGNvbnN0cnVjdG9yIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCg==</text>
-      </register>
-      <register name="8" type="4">
-        <text encoding="base64">Y2xhc3MgX05vZGU6CiAgICAgICAgIiIiTGlnaHR3ZWlnaHQsIG5vbnB1YmxpYyBjbGFzcyBmb3Igc3RvcmluZyBhIGRvdWJseSBsaW5rZWQgbm9kZS4iIiIKICAgICAgICBfX3Nsb3RzX18gPSAnX2VsZW1lbnQnLCAnX25leHQnLCAnX3ByZXYnICAgICAgICAgICAgICMgc3RyZWFtbGluZSBtZW1vcnkKCiAgICAgICAgZGVmIF9faW5pdF9fKHNlbGYsIGVsZW1lbnQsIG5leHQpOiAgICAgICAgICAgICMgaW5pdGlhbGl6ZSBub2RlJ3MgZmllbGRzCiAgICAgICAgICAgIHNlbGYuX2VsZW1lbnQgPSBlbGVtZW50ICAgICAgICAgICAgICAgICAgICAgICAgICAgIyB1c2VyJ3MgZWxlbWVudAogICAgICAgICAgICAjc2VsZi5fcHJldiA9IHByZXYgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAjIHByZXZpb3VzIG5vZGUgcmVmZXJlbmNlCiAgICAgICAgICAgIHNlbGYuX25leHQgPSBuZXh0ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIyBuZXh0IG5vZGUgcmVmZXJlbmNlCg==</text>
-      </register>
-      <register name="9" type="4">
-        <text encoding="base64">ICAjLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0gbmVzdGVkIF9Ob2RlIGNsYXNzIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCg==</text>
-      </register>
       <register name="-" type="4">
-        <text>list2.Position.element()</text>
+        <text>lista</text>
       </register>
     </registers>
     <search>
