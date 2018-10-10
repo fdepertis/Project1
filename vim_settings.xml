@@ -34,10 +34,10 @@
       <file name="/a.dummy" timestamp="1539165751027">
         <mark key="[" line="0" column="0" />
       </file>
-      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/venv/circular_positional_list.py" timestamp="1539206387970">
-        <mark key="[" line="200" column="12" />
-        <mark key="]" line="200" column="12" />
-        <mark key="." line="200" column="12" />
+      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/venv/circular_positional_list.py" timestamp="1539207233877">
+        <mark key="[" line="85" column="8" />
+        <mark key="]" line="85" column="8" />
+        <mark key="." line="85" column="8" />
       </file>
       <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tecniche di Programmazione/TdP_collections/TdP_collections/tree/binary_tree.py" timestamp="1538985562353">
         <mark key="[" line="78" column="0" />
@@ -60,24 +60,72 @@
     </jumps>
     <registers>
       <register name="1" type="4">
-        <text>if cursor.element() == e:
-                return cursor</text>
+        <text>&quot;&quot;&quot;
+        if self.is_empty():
+            self._header = self._Node(e, self._header, self._header)
+            # riaggiorno i puntatori di header siccome prima di istanziare la classe questi puntavano a none mentre io
+            # voglio che ora puntino al nodo aggiornato di header
+            self._update_header(self._header,self._header)
+            self._size = 1
+            return self._make_position(self._header)
+        else:
+            node = super()._insert_between(e, self._header._prev, self._header)
+            print(&quot;QQQQQQQQQQQQQQQQQQQQQQ&quot;,self._header._element)
+            self._update_header(node)
+            return self._make_position(node)
+        
+        self._header._next = self._header
+        if self.is_empty():
+            self._header = self._Node(e, self._header,self._header)
+            self._size = 1
+        else:
+            self._header = super()._insert_between(e,self._header._prev,self._header)
+            self._size += 1
+            self._header._prev = self._header
+            
+        return self._make_position(self._header)</text>
       </register>
       <register name="&quot;" type="4">
+        <text>&quot;&quot;&quot;
+        if self.is_empty():
+            self._header = self._Node(e, self._header, self._header)
+            # riaggiorno i puntatori di header siccome prima di istanziare la classe questi puntavano a none mentre io
+            # voglio che ora puntino al nodo aggiornato di header
+            self._update_header(self._header,self._header)
+            self._size = 1
+            return self._make_position(self._header)
+        else:
+            node = super()._insert_between(e, self._header._prev, self._header)
+            print(&quot;QQQQQQQQQQQQQQQQQQQQQQ&quot;,self._header._element)
+            self._update_header(node)
+            return self._make_position(node)
+        
+        self._header._next = self._header
+        if self.is_empty():
+            self._header = self._Node(e, self._header,self._header)
+            self._size = 1
+        else:
+            self._header = super()._insert_between(e,self._header._prev,self._header)
+            self._size += 1
+            self._header._prev = self._header
+            
+        return self._make_position(self._header)</text>
+      </register>
+      <register name="2" type="4">
         <text>if cursor.element() == e:
                 return cursor</text>
       </register>
-      <register name="2" type="4">
+      <register name="3" type="4">
         <text encoding="base64">CgogICAgZGVmIGFkZF9hZnRlcihzZWxmLCBwLCBlKToKICAgICAgICAiIiJJbnNlcmlzY2UgdW4gbnVvdm8oZWxlbWVudG8gZSkgZG9wbyBkZWwgbm9kbyBuZWxsYShQb3NpdGlvbiBwKSBlIHJlc3RpdHVpc2NlIGxhIHBvc2l0aW9uCiAgICAgICAgICAgICAgICBkZWwgbnVvdm8gZWxlbWVudG8gIiIi</text>
       </register>
-      <register name="3" type="4">
+      <register name="4" type="4">
         <text encoding="base64">CiAgICAgICAgcDIgPSBzZWxmLl9tYWtlX3Bvc2l0aW9uKG5vZGUpCiAgICAgICAgbmV3bm9kZSA9IHNlbGYuX2luc2VydF9iZXR3ZWVuKGUscDIuX25vZGUuX3ByZXYscDIp</text>
       </register>
-      <register name="4" type="4">
+      <register name="5" type="4">
         <text>p2 = self._make_position(node)
         newnode = self._insert_between(e,p2,p2._node._next)</text>
       </register>
-      <register name="5" type="4">
+      <register name="6" type="4">
         <text>def _update_header(self,predecessor=None,successor=None):
         if predecessor is not None and successor is not None:
             self._header._next = self._header
@@ -86,18 +134,6 @@
             self._header._prev = self._header
         elif successor is not None and predecessor is None:
             self._header._next = self._header</text>
-      </register>
-      <register name="6" type="4">
-        <text>if self.is_empty():
-            return None
-        try:
-            node = self._validate(p)
-        except ValueError:
-            print(&quot;p is not valid&quot;)
-            return None
-        except TypeError:
-            print(&quot;p is not position&quot;)
-            return None</text>
       </register>
       <register name="7" type="4">
         <text>if self.is_empty():
@@ -112,15 +148,23 @@
             return None</text>
       </register>
       <register name="8" type="4">
+        <text>if self.is_empty():
+            return None
+        try:
+            node = self._validate(p)
+        except ValueError:
+            print(&quot;p is not valid&quot;)
+            return None
+        except TypeError:
+            print(&quot;p is not position&quot;)
+            return None</text>
+      </register>
+      <register name="9" type="4">
         <text>a = {} 
         a[&quot;header&quot;] = first</text>
       </register>
-      <register name="9" type="4">
-        <text>b = []
-        b.append(first)</text>
-      </register>
       <register name="-" type="4">
-        <text>print(first._element,w._element)</text>
+        <text encoding="base64">ICAgICBzZWxmLl9oZWFkZXIuX3ByZXYgPSBuZXdfbm9kZQ==</text>
       </register>
     </registers>
     <search>
