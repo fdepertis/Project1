@@ -27,16 +27,17 @@
       <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tecniche di Programmazione/TdP_collections/TdP_collections/map/map_base.py" timestamp="1539071427306">
         <mark key="[" line="33" column="20" />
       </file>
+      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tecniche di Programmazione/TdP_collections/TdP_collections/list/doubly_linked_base.py" timestamp="1539180013333" />
       <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tecniche di Programmazione/TdP_collections/TdP_collections/map/binary_search_tree.py" timestamp="1539071074438">
         <mark key="[" line="23" column="0" />
       </file>
       <file name="/a.dummy" timestamp="1539165751027">
         <mark key="[" line="0" column="0" />
       </file>
-      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/venv/circular_positional_list.py" timestamp="1539179464063">
-        <mark key="[" line="27" column="0" />
-        <mark key="]" line="27" column="0" />
-        <mark key="." line="27" column="0" />
+      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/venv/circular_positional_list.py" timestamp="1539181174543">
+        <mark key="[" line="68" column="44" />
+        <mark key="]" line="68" column="44" />
+        <mark key="." line="68" column="44" />
       </file>
       <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tecniche di Programmazione/TdP_collections/TdP_collections/tree/binary_tree.py" timestamp="1538985562353">
         <mark key="[" line="78" column="0" />
@@ -44,7 +45,7 @@
       <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/project1/ese_tree_binarySearchTree.py" timestamp="1539095263335">
         <mark key="[" line="184" column="10" />
       </file>
-      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tecniche di Programmazione/TdP_collections/TdP_collections/list/positional_list.py" timestamp="1539177898955">
+      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tecniche di Programmazione/TdP_collections/TdP_collections/list/positional_list.py" timestamp="1539180270841">
         <mark key="[" line="83" column="42" />
       </file>
       <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/venv/util.py" timestamp="1538997020032">
@@ -59,39 +60,38 @@
     </jumps>
     <registers>
       <register name="1" type="4">
-        <text encoding="base64">ICAgICAgICBpZiBwLl9ub2RlLl9uZXh0IGlzIE5vbmU6ICAjIGNvbnZlbnRpb24gZm9yIGRlcHJlY2F0ZWQgbm9kZXMKICAgICAgICAgICAgcmFpc2UgVmFsdWVFcnJvcigncCBpcyBubyBsb25nZXIgdmFsaWQnKQ==</text>
+        <text encoding="base64">CiAgICAgICAgaWYgc2VsZi5pc19lbXB0eSgpOg==</text>
       </register>
       <register name="&quot;" type="4">
-        <text encoding="base64">ICAgICAgICBpZiBwLl9ub2RlLl9uZXh0IGlzIE5vbmU6ICAjIGNvbnZlbnRpb24gZm9yIGRlcHJlY2F0ZWQgbm9kZXMKICAgICAgICAgICAgcmFpc2UgVmFsdWVFcnJvcigncCBpcyBubyBsb25nZXIgdmFsaWQnKQ==</text>
+        <text encoding="base64">CiAgICAgICAgaWYgc2VsZi5pc19lbXB0eSgpOg==</text>
       </register>
       <register name="2" type="4">
+        <text encoding="base64">IGRlZiBfaW5zZXJ0X2JldHdlZW4oc2VsZiwgZSwgcHJlZGVjZXNzb3IsIHN1Y2Nlc3Nvcik6CiAgICAgICAgICAgICIiIkFkZCBlbGVtZW50IGJldHdlZW4gZXhpc3Rpbmcgbm9kZXMgYW5kIHJldHVybiBuZXcgUG9zaXRpb24uIiIiCiAgICAgICAgICAgIA==</text>
+      </register>
+      <register name="3" type="4">
+        <text encoding="base64">CiAgICAgICAgaWYgbm9kZSBpcyBzZWxmLl9oZWFkZXI6CiAgICAgICAgICAgIHJldHVybiBzZWxmLlBvc2l0aW9uKHNlbGYsc2VsZi5faGVhZGVyKSAjIGJvdW5kYXJ5IHZpb2xhdGlvbgogICAgICAgIGVsc2U6</text>
+      </register>
+      <register name="4" type="4">
+        <text encoding="base64">ICAgICAgICBpZiBwLl9ub2RlLl9uZXh0IGlzIE5vbmU6ICAjIGNvbnZlbnRpb24gZm9yIGRlcHJlY2F0ZWQgbm9kZXMKICAgICAgICAgICAgcmFpc2UgVmFsdWVFcnJvcigncCBpcyBubyBsb25nZXIgdmFsaWQnKQ==</text>
+      </register>
+      <register name="5" type="4">
         <text>if node is self._header:
             return self._header  # boundary violation
         else:</text>
       </register>
-      <register name="3" type="4">
+      <register name="6" type="4">
         <text encoding="base64">CgoKICAgICAgICBpZiBzZWxmLmlzX2VtcHR5KCk6CiAgICAgICAgICAgIHNlbGYuX2hlYWRlciA9IHNlbGYuX05vZGUoZSwgc2VsZi5faGVhZGVyLCBzZWxmLl9oZWFkZXIpCiAgICAgICAgICAgIHNlbGYuX3NpemUgPSAxCiAgICAgICAgICAgIHJldHVybiBzZWxmLl9tYWtlX3Bvc2l0aW9uKHNlbGYuX2hlYWRlcikKICAgICAgICBub2RlID0gc2VsZi5fTm9kZShlLCBzZWxmLl9oZWFkZXIuX25leHQsIHNlbGYuX2hlYWRlcikKICAgICAgICBzZWxmLl9oZWFkZXIuX3ByZXYgPSBub2RlCiAgICAgICAgc2VsZi5fc2l6ZSArPSAxCiAgICAgICAgcmV0dXJuIHNlbGYuX21ha2VfcG9zaXRpb24obm9kZSkK</text>
       </register>
-      <register name="4" type="4">
+      <register name="7" type="4">
         <text encoding="base64">CiAgICAgICAgcG9zaXRpb24yPSBzZWxmLl9tYWtlX3Bvc2l0aW9uKHNlbGYuX2hlYWRlci5fbmV4dCkgI3Bvc2l0aW9uIG9mIG5vZGUgbmV4dCBoZWFkZXIKICAgICAgICAKICAgICAgICBwb3NpdGlvbjIuX25vZGUuX3ByZXYgPSBub2RlIyB1cGRhdGUgbm9kZSBhZnRlciBoZWFkZXI=</text>
       </register>
-      <register name="5" type="4">
+      <register name="8" type="4">
         <text encoding="base64">CiAgICAgICAgcHJpbnQoc2VsZi5fbWFrZV9wb3NpdGlvbihzZWxmLl9oZWFkZXIuX3ByZXYpLHNlbGYuX2hlYWRlci5fcHJldi5fZWxlbWVudCk=</text>
       </register>
-      <register name="6" type="4">
+      <register name="9" type="4">
         <text>if node is self._header or node is self._trailer:
             return None  # boundary violation
         else:</text>
-      </register>
-      <register name="7" type="4">
-        <text>self._container = container
-            self._node = node</text>
-      </register>
-      <register name="8" type="4">
-        <text encoding="base64">ICBkZWYgYXBwZW5kKHNlbGYsIHgpOgoKICAgICAgICBuZXdub2RlID0gc2VsZi5fTm9kZSh4LHNlbGYuX3RyYWlsZXIuX3ByZXYsIHNlbGYuX3RyYWlsZXIpCgogICAgICAgIHNlbGYuX3RyYWlsZXIuX3ByZXYgPSBuZXdub2Rl</text>
-      </register>
-      <register name="9" type="4">
-        <text encoding="base64">CiAgICAgICAgbm9kZSA9IHNlbGYuX05vZGUoZSwgc2VsZi5faGVhZGVyLl9wcmV2LCBzZWxmLl9oZWFkZXIpCiAgICAgICAgc2VsZi5faGVhZGVyID0gbm9kZQ==</text>
       </register>
       <register name="-" type="4">
         <text>lista</text>
