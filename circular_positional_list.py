@@ -67,7 +67,7 @@ class CircularPositionalList(PositionalList):
             self._header._prev._next = new_node
             self._header._prev = new_node
             self._size += 1
-        return self._make_position(new_node)
+        return self._make_position(self._header._prev)
 
 
     def before(self,p):
@@ -86,16 +86,40 @@ class CircularPositionalList(PositionalList):
         node = self._validate(p)
         return self._make_position(node._next)
 
-    def __iter__(self):
-        walk = self._header
+    def copy(self):
+        new_list = CircularPositionalList()
+        for e in self.__iter__():
+            new_list.add_last(e)
+        return new_list
+
+    def __add__(self, other):
+        if type(other) is not CircularPositionalList:
+            raise TypeError("The second operand is not a cascaded CircularPositionList")
+        sum = CircularPositionalList()
+        for e in self.__iter__():
+            sum.add_last(e)
+        for e in other.__iter__():
+            sum.add_last(e)
+        return sum
+
+    def __contains__(self, item):
+        cursor = self.first()
         for i in range(self._size):
-            yield walk
-            walk = walk._next
+            if cursor == item:
+                return True
+            cursor = self.after(cursor)
+        return False
+
+    def __iter__(self):
+        cursor = self.first()
+        for i in range(self._size):
+            yield cursor.element()
+            cursor = self.after(cursor)
 
     def __str__(self):
         s = ""
-        for node in self.__iter__():
-            s += str(node._element) + ", "
+        for e in self.__iter__():
+            s += str(e) + ", "
         s += "\nSize: " + str(self._size) + "\nFirst: " + str(self.first()) + "\nLast:  " + str(self.last()) + "\n"
         return s
 
@@ -116,3 +140,14 @@ if __name__ == '__main__':
     print(str(cpl))
     cpl.add_last(7)
     print(str(cpl))
+    print("cpl contiente first? ", cpl.first() in cpl)
+    print("cpl contiente last? ", cpl.last() in cpl)
+    print("cpl contiene None?", None in cpl)
+    print("creo una nuova lista chiamata cpl2 con gli stessi elementi di cpl")
+    cpl2 = cpl.copy()
+    print(cpl2.first())
+    print(str(cpl2))
+    print("cpl2 è uguale a cpl?", cpl2 == cpl)
+    print("Sia cpl3 = cpl + cpl2")
+    cpl3 = cpl + cpl2
+    print(str(cpl3))
