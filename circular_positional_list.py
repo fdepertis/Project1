@@ -47,6 +47,18 @@ class CircularPositionalList(PositionalList):
         """Restituisce True se la lista è vuota e False altrimenti"""
         return self._size == 0
 
+    def is_sorted(self):
+        """Restituisce True se la lista è ordinata e False altrimenti.
+            Si definisce ordinata una lista ordinata i cui elementi sono tutti dello stesso tipo
+            e sono disposti in ordine crescente a partire dall'header"""
+        cursor = self.first()
+        for i in range(self._size - 1):
+            if type(cursor.element()) is not type(self.after(cursor).element()) or cursor.element() > self.after(cursor).element():
+                return False
+            else:
+                cursor = self.after(cursor)
+        return True
+
     def _set_header(self, e):
         """Metodo privato utilizzato da add_first e add_last per settare il primo elemento della lista"""
         self._header = self._Node(e, self._header, self._header)
@@ -173,9 +185,9 @@ class CircularPositionalList(PositionalList):
         node = self._validate(key)
         node._element = value
 
-    def __del__(self, item):
+    def __delete__(self, instance):
         """Rimuove l’elemento nella position p invalidando la position"""
-        self.delete(item)
+        self.delete(instance)
 
     def __iter__(self):
         """Generatore che restituisce gli elementi della lista a partire da quello che è
@@ -244,9 +256,8 @@ if __name__ == '__main__':
     print(str(cpl))
     print("Sostituisco 40 a 50")
     cpl[cpl.last()]=50
-<<<<<<< HEAD
     print(str(cpl))
-=======
-    print(str(cpl))
+    print("cpl è ordinata?", cpl.is_sorted())
+    cpl.add_last(5)
+    print("cpl è ordinata?", cpl.is_sorted())
     
->>>>>>> a4e18f3fc12b7c7c8e1f797786d0787892b65036
