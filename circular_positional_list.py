@@ -260,4 +260,3 @@ if __name__ == '__main__':
     print("cpl è ordinata?", cpl.is_sorted())
     cpl.add_last(5)
     print("cpl è ordinata?", cpl.is_sorted())
-    
