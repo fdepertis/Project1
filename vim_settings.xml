@@ -33,10 +33,10 @@
       <file name="/a.dummy" timestamp="1539165751027">
         <mark key="[" line="0" column="0" />
       </file>
-      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/venv/circular_positional_list.py" timestamp="1539267995526">
-        <mark key="[" line="73" column="0" />
-        <mark key="]" line="73" column="0" />
-        <mark key="." line="73" column="0" />
+      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/venv/circular_positional_list.py" timestamp="1539270129489">
+        <mark key="[" line="74" column="0" />
+        <mark key="]" line="74" column="0" />
+        <mark key="." line="74" column="0" />
       </file>
       <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tecniche di Programmazione/TdP_collections/TdP_collections/tree/binary_tree.py" timestamp="1538985562353">
         <mark key="[" line="78" column="0" />
@@ -47,7 +47,7 @@
       <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tecniche di Programmazione/TdP_collections/TdP_collections/list/positional_list.py" timestamp="1539256843309">
         <mark key="[" line="85" column="6" />
       </file>
-      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/venv/test_circular_positional_list.py" timestamp="1539267798158">
+      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/venv/test_circular_positional_list.py" timestamp="1539269274610">
         <mark key="[" line="37" column="49" />
         <mark key="]" line="40" column="4" />
         <mark key="." line="40" column="4" />
@@ -73,7 +73,7 @@
         <text encoding="base64">CgoKICAgICAgICByZXR1cm4gVHJ1ZQ==</text>
       </register>
       <register name="&quot;" type="4">
-        <text encoding="base64">CgoKICAgICAgICByZXR1cm4gVHJ1ZQ==</text>
+        <text encoding="base64">ICAgICAgICAgICAgcHJpdG4oZnJvbnQuZWxlbWVudCgpKQ==</text>
       </register>
       <register name="2" type="4">
         <text>if type(self.first().element()) is type(int):
@@ -121,7 +121,7 @@
     print(&quot;--------------------------------&quot;)</text>
       </register>
       <register name="-" type="4">
-        <text>self.first().element()</text>
+        <text encoding="base64">ICAgICAgICAgICAgcHJpdG4oZnJvbnQuZWxlbWVudCgpKQ==</text>
       </register>
     </registers>
     <search>
