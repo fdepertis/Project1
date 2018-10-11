@@ -244,4 +244,9 @@ if __name__ == '__main__':
     print(str(cpl))
     print("Sostituisco 40 a 50")
     cpl[cpl.last()]=50
+<<<<<<< HEAD
     print(str(cpl))
+=======
+    print(str(cpl))
+    
+>>>>>>> a4e18f3fc12b7c7c8e1f797786d0787892b65036
