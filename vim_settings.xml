@@ -33,10 +33,10 @@
       <file name="/a.dummy" timestamp="1539165751027">
         <mark key="[" line="0" column="0" />
       </file>
-      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/venv/circular_positional_list.py" timestamp="1539247477099">
-        <mark key="[" line="70" column="8" />
-        <mark key="]" line="70" column="8" />
-        <mark key="." line="70" column="8" />
+      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/venv/circular_positional_list.py" timestamp="1539248314577">
+        <mark key="[" line="98" column="0" />
+        <mark key="]" line="98" column="0" />
+        <mark key="." line="98" column="0" />
       </file>
       <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tecniche di Programmazione/TdP_collections/TdP_collections/tree/binary_tree.py" timestamp="1538985562353">
         <mark key="[" line="78" column="0" />
@@ -46,6 +46,9 @@
       </file>
       <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tecniche di Programmazione/TdP_collections/TdP_collections/list/positional_list.py" timestamp="1539244644681">
         <mark key="[" line="83" column="42" />
+      </file>
+      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/venv/test_circular_positional_list.py" timestamp="1539248142605">
+        <mark key="[" line="25" column="19" />
       </file>
       <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/venv/util.py" timestamp="1538997020032">
         <mark key="[" line="0" column="0" />
@@ -62,6 +65,12 @@
     </jumps>
     <registers>
       <register name="1" type="4">
+        <text encoding="base64">CiAgICAiIiIKICAgIGRlZiBfc2V0X25vZGUoc2VsZiwgY2hvaWNlLCBlPU5vbmUsbmV3X25vZGU9Tm9uZSk6CiAgICAgICAgaWYgY2hvaWNlID09IDA6CiAgICAgICAgICAgIHNlbGYuX2hlYWRlciA9IHNlbGYuX05vZGUoZSwgc2VsZi5faGVhZGVyLCBzZWxmLl9oZWFkZXIpCiAgICAgICAgICAgIHNlbGYuX2hlYWRlci5fbmV4dCA9IHNlbGYuX2hlYWRlcgogICAgICAgICAgICBzZWxmLl9oZWFkZXIuX3ByZXYgPSBzZWxmLl9oZWFkZXIKICAgICAgICAgICAgc2VsZi5fc2l6ZSA9IDEKICAgICAgICBlbHNlOgogICAgICAgICAgICBwcmludChzZWxmLl9oZWFkZXIuX3ByZXYpCiAgICAgICAgICAgIHNlbGYuX2hlYWRlci5fcHJldi5fbmV4dCA9IG5ld19ub2RlCiAgICAgICAgICAgIHNlbGYuX2hlYWRlci5fcHJldiA9IG5ld19ub2RlCiAgICAgICAgICAgIGlmIGNob2ljZSA9PSAzOgogICAgICAgICAgICAgICAgc2VsZi5fc2l6ZSArPSAxCiAgICAgICAgaWYgY2hvaWNlID09IDI6CiAgICAgICAgICAgIHNlbGYuX2hlYWRlciA9IG5ld19ub2RlCiAgICAgICAgICAgIHNlbGYuX3NpemUgKz0gMQoKCiAgICBkZWYgYWRkX2ZpcnN0KHNlbGYsIGUpOgogICAgCiAgICAgICAgaWYgc2VsZi5pc19lbXB0eSgpOgogICAgICAgICAgICBzZWxmLl9zZXRfbm9kZSgwLGUpCiAgICAgICAgZWxzZToKICAgICAgICAgICAgbmV3X25vZGUgPSBzZWxmLl9Ob2RlKGUsIHNlbGYuX2hlYWRlci5fcHJldiwgc2VsZi5faGVhZGVyKQogICAgICAgICAgICBzZWxmLl9zZXRfbm9kZSgyLE5vbmUsbmV3X25vZGUpCiAgICAgICAgcmV0dXJuIHNlbGYuX21ha2VfcG9zaXRpb24oc2VsZi5faGVhZGVyKQoKICAgIGRlZiBhZGRfbGFzdChzZWxmLCBlKToKICAgICAgICAKICAgICAgICBpZiBzZWxmLmlzX2VtcHR5KCk6CiAgICAgICAgICAgIHByaW50KCJkZGRkZGRkIixlKQogICAgICAgICAgICBzZWxmLl9zZXRfbm9kZSgwLGUpCiAgICAgICAgZWxzZToKICAgICAgICAgICAgbmV3X25vZGUgPSBzZWxmLl9Ob2RlKGUsIHNlbGYuX2hlYWRlciwgc2VsZi5faGVhZGVyLl9wcmV2KQogICAgICAgICAgICBzZWxmLl9zZXRfbm9kZSgzLCBOb25lLCBuZXdfbm9kZSkKICAgICAgICByZXR1cm4gc2VsZi5fbWFrZV9wb3NpdGlvbihzZWxmLl9oZWFkZXIuX3ByZXYpCiAgICAiIiIKCiAgICAiIiIKICAgIGRlZiBhZGRfZmlyc3Qoc2VsZixlKToKICAgICAgICAjSW5zZXJpc2NlIGwnZWxlbWVudG8gZSBpbiB0ZXN0YSBhbGxhIGxpc3RhIGUgcmVzdGl0dWlzY2UgbGEgUG9zaXRpb24gZGVsIG51b3ZvIGVsZW1lbnRvCiAgICAgICAgCiAgICAgICAgaWYgc2VsZi5pc19lbXB0eSgpOgogICAgICAgICAgICBzZWxmLl9oZWFkZXIgPSBzZWxmLl9Ob2RlKGUsc2VsZi5faGVhZGVyLHNlbGYuX2hlYWRlcikKICAgICAgICAgICAgc2VsZi5faGVhZGVyLl9uZXh0ID0gc2VsZi5faGVhZGVyI3JpYWdnaW9ybm8gaSBwdW50YXRvcmkgZGkgaGVhZGVyIHNpY2NvbWUgcHJpbWEgZGkgaXN0YW56aWFyZSBsYSBjbGFzc2UgcXVlc3RpIHB1bnRhdmFubyBhIG5vbmUgbWVudHJlIGlvIHZvZ2xpbyBjaGUgb3JhIHB1bnRpbm8gYWwgbm9kbyBhZ2dpb3JuYXRvIGRpIGhlYWRlcgogICAgICAgICAgICBzZWxmLl9oZWFkZXIuX3ByZXYgPSBzZWxmLl9oZWFkZXIKICAgICAgICAgICAgc2VsZi5fc2l6ZSA9IDEKICAgICAgICAgICAgI3ByaW50KCJRUVFRUVFRUVFRUVFRUVFRUVFRUVFRIiwgc2VsZi5faGVhZGVyLl9lbGVtZW50KQogICAgICAgICAgICByZXR1cm4gc2VsZi5fbWFrZV9wb3NpdGlvbihzZWxmLl9oZWFkZXIpCiAgICAgICAgaWYgc2VsZi5fX2xlbl9fKCkgPT0gMTojU2UgYydlJyB1biBzb2xvIGVsZW1lbnRvIGFnZ2l1bmdpIHVuIG5vZG8gYWxsYSB0ZXN0YSBkZWxsYSBsaXN0YSBlIGNyZWEgdW4gbnVvdm8gbm9kbyBjb24gZWxlbWVudCBoZWFkZXIgZSBjb2xsZWdhCiAgICAgICAgICAgIG5vZGUgPSBzZWxmLl9Ob2RlKHNlbGYuX2hlYWRlci5fZWxlbWVudCxzZWxmLl9oZWFkZXIsc2VsZi5faGVhZGVyKSAjIHVwZGF0ZSBoZWFkZXIgZWxlbWVudCBpbiBhIG5ldyBwb3NpdGlvbiBvZiBsaXN0CiAgICAgICAgICAgIHNlbGYuX2hlYWRlci5fcHJldiA9IG5vZGUKICAgICAgICBlbHNlOiNzZSBjJ8OoIHBpw7kgZGkgdW4gZWxlbWVudG8gYWdnaXVuZ2kgdW4gbm9kbyBhbGxhIHRlc3RhIGRlbGxhIGxpc3RhIGUgY3JlYSB1biBudW92byBub2RvIGNvbiBlbGVtZW50IGhlZGVhciBlIGNvbGxlZ2FsbyBzaWEgYWxsYSBudW92YSB0ZXN0YSBjaGUgYWwgbm9kbyBzdWNjZXNzaXZvIGEgY3VpIGVyYSBjb2xsZWdhdGF0YSBpbCB2ZWNjaGlvIG5vZG8gZGkgdGVzdGEKICAgICAgICAgICAgbm9kZSA9IHNlbGYuX05vZGUoc2VsZi5faGVhZGVyLl9lbGVtZW50LCBzZWxmLl9oZWFkZXIsIHNlbGYuX2hlYWRlci5fbmV4dCkKICAgICAgICAgICAgcG9zaXRpb24gPSBzZWxmLl9tYWtlX3Bvc2l0aW9uKHNlbGYuX2hlYWRlci5fbmV4dCkgICMgcG9zaXRpb24gb2Ygbm9kZSBuZXh0IGhlYWRlcgogICAgICAgICAgICBwb3NpdGlvbi5fbm9kZS5fcHJldiA9IG5vZGUgICMgdXBkYXRlIG5vZGUgYWZ0ZXIgaGVhZGVyCiAgICAgICAgc2VsZi5faGVhZGVyLl9lbGVtZW50ID0gZQogICAgICAgIHNlbGYuX2hlYWRlci5fbmV4dCA9IG5vZGUKICAgICAgICBzZWxmLl9zaXplICs9IDEKICAgICAgICAjcHJpbnQoIlFRUVFRUVFRUVFRUVFRUVFRUVFRUVEiLCBzZWxmLl9oZWFkZXIuX2VsZW1lbnQpCiAgICAgICAgcmV0dXJuIHNlbGYuX21ha2VfcG9zaXRpb24oc2VsZi5faGVhZGVyKQoKCgogICAgZGVmIGFkZF9sYXN0KHNlbGYsIGUpOgogICAgICAgICNJbnNlcmlzY2UgbCdlbGVtZW50byBlIGluIGNvZGEgYWxsYSBsaXN0YSBlIHJlc3RpdHVpc2NlIGxhIFBvc2l0aW9uIGRlbCBudW92byBlbGVtZW50bwoKICAgICAgICBpZiBzZWxmLmlzX2VtcHR5KCk6CiAgICAgICAgICAgIHNlbGYuX2hlYWRlciA9IHNlbGYuX05vZGUoZSwgc2VsZi5faGVhZGVyLCBzZWxmLl9oZWFkZXIpCiAgICAgICAgICAgIHNlbGYuX2hlYWRlci5fbmV4dCA9IHNlbGYuX2hlYWRlcgogICAgICAgICAgICBzZWxmLl9oZWFkZXIuX3ByZXYgPSBzZWxmLl9oZWFkZXIKICAgICAgICAgICAgc2VsZi5fc2l6ZSA9IDEKICAgICAgICAgICAgcmV0dXJuIHNlbGYuX21ha2VfcG9zaXRpb24oc2VsZi5faGVhZGVyKQogICAgICAgIGlmIHNlbGYuX19sZW5fXygpID09IDE6CiAgICAgICAgICAgICNTZSBjJ2UnIHVuIHNvbG8gZWxlbWVudG8gYWdnaXVuZ2kgdW4gbm9kbyBhbGxhIGNvZGEgZGVsbGEgbGlzdGEgZSBjb2xsZWdhbG8gYWxsJ2hlYWRlciBlIGNvbGxlZ2EKICAgICAgICAgICAgbm9kZSA9IHNlbGYuX05vZGUoZSwgc2VsZi5faGVhZGVyLCBzZWxmLl9oZWFkZXIpICAjIHVwZGF0ZSBoZWFkZXIgZWxlbWVudCBpbiBhIG5ldyBwb3NpdGlvbiBvZiBsaXN0CiAgICAgICAgICAgIHNlbGYuX2hlYWRlci5fbmV4dCA9IG5vZGUKICAgICAgICBlbHNlOgogICAgICAgICAgICAjc2UgYyfDqCBwacO5IGRpIHVuIGVsZW1lbnRvIGFnZ2l1bmdpIHVuIG5vZG8gYWxsYSBjb2RhIGRlbGxhIGxpc3RhIGUgY3JlYSB1biBudW92byBub2RvIGNvbiBlbGVtZW50IGxhIHZlY2NoaWEKICAgICAgICAgICAgI2NvZGEgZGVsbGEgbGlzdGEgZSBjb2xsZWdhbG8gc2lhIGFsbGEgbnVvdmEgY29kYSBkZWxsYSBsaXN0YSBjaGUgYWwgbm9kbyBwcmVjZWRlbnRlICBhIGN1aSBlcmEgY29sbGVnYXRhdG8KICAgICAgICAgICAgI2lsIHZlY2NoaW8gbm9kbyBkaSBjb2RhCiAgICAgICAgICAgIG5vZGUgPSBzZWxmLl9Ob2RlKGUsIHNlbGYuX2hlYWRlci5fcHJldiwgc2VsZi5faGVhZGVyKQogICAgICAgICAgICBwb3NpdGlvbiA9IHNlbGYuX21ha2VfcG9zaXRpb24oc2VsZi5faGVhZGVyLl9wcmV2KSAgIyBwb3NpdGlvbiBvZiBub2RlIG5leHQgaGVhZGVyCiAgICAgICAgICAgIHBvc2l0aW9uLl9ub2RlLl9uZXh0ID0gbm9kZSAgIyB1cGRhdGUgbm9kZSBhZnRlciBoZWFkZXIKICAgICAgICAjc2VsZi5faGVhZGVyLl9lbGVtZW50ID0gZQogICAgICAgIHNlbGYuX2hlYWRlci5fcHJldiA9IG5vZGUKICAgICAgICBzZWxmLl9zaXplICs9IDEKICAgICAgICByZXR1cm4gc2VsZi5fbWFrZV9wb3NpdGlvbihzZWxmLl9oZWFkZXIpCiAgICAgICAgIiIi</text>
+      </register>
+      <register name="&quot;" type="4">
+        <text encoding="base64">CiAgICAiIiIKICAgIGRlZiBfc2V0X25vZGUoc2VsZiwgY2hvaWNlLCBlPU5vbmUsbmV3X25vZGU9Tm9uZSk6CiAgICAgICAgaWYgY2hvaWNlID09IDA6CiAgICAgICAgICAgIHNlbGYuX2hlYWRlciA9IHNlbGYuX05vZGUoZSwgc2VsZi5faGVhZGVyLCBzZWxmLl9oZWFkZXIpCiAgICAgICAgICAgIHNlbGYuX2hlYWRlci5fbmV4dCA9IHNlbGYuX2hlYWRlcgogICAgICAgICAgICBzZWxmLl9oZWFkZXIuX3ByZXYgPSBzZWxmLl9oZWFkZXIKICAgICAgICAgICAgc2VsZi5fc2l6ZSA9IDEKICAgICAgICBlbHNlOgogICAgICAgICAgICBwcmludChzZWxmLl9oZWFkZXIuX3ByZXYpCiAgICAgICAgICAgIHNlbGYuX2hlYWRlci5fcHJldi5fbmV4dCA9IG5ld19ub2RlCiAgICAgICAgICAgIHNlbGYuX2hlYWRlci5fcHJldiA9IG5ld19ub2RlCiAgICAgICAgICAgIGlmIGNob2ljZSA9PSAzOgogICAgICAgICAgICAgICAgc2VsZi5fc2l6ZSArPSAxCiAgICAgICAgaWYgY2hvaWNlID09IDI6CiAgICAgICAgICAgIHNlbGYuX2hlYWRlciA9IG5ld19ub2RlCiAgICAgICAgICAgIHNlbGYuX3NpemUgKz0gMQoKCiAgICBkZWYgYWRkX2ZpcnN0KHNlbGYsIGUpOgogICAgCiAgICAgICAgaWYgc2VsZi5pc19lbXB0eSgpOgogICAgICAgICAgICBzZWxmLl9zZXRfbm9kZSgwLGUpCiAgICAgICAgZWxzZToKICAgICAgICAgICAgbmV3X25vZGUgPSBzZWxmLl9Ob2RlKGUsIHNlbGYuX2hlYWRlci5fcHJldiwgc2VsZi5faGVhZGVyKQogICAgICAgICAgICBzZWxmLl9zZXRfbm9kZSgyLE5vbmUsbmV3X25vZGUpCiAgICAgICAgcmV0dXJuIHNlbGYuX21ha2VfcG9zaXRpb24oc2VsZi5faGVhZGVyKQoKICAgIGRlZiBhZGRfbGFzdChzZWxmLCBlKToKICAgICAgICAKICAgICAgICBpZiBzZWxmLmlzX2VtcHR5KCk6CiAgICAgICAgICAgIHByaW50KCJkZGRkZGRkIixlKQogICAgICAgICAgICBzZWxmLl9zZXRfbm9kZSgwLGUpCiAgICAgICAgZWxzZToKICAgICAgICAgICAgbmV3X25vZGUgPSBzZWxmLl9Ob2RlKGUsIHNlbGYuX2hlYWRlciwgc2VsZi5faGVhZGVyLl9wcmV2KQogICAgICAgICAgICBzZWxmLl9zZXRfbm9kZSgzLCBOb25lLCBuZXdfbm9kZSkKICAgICAgICByZXR1cm4gc2VsZi5fbWFrZV9wb3NpdGlvbihzZWxmLl9oZWFkZXIuX3ByZXYpCiAgICAiIiIKCiAgICAiIiIKICAgIGRlZiBhZGRfZmlyc3Qoc2VsZixlKToKICAgICAgICAjSW5zZXJpc2NlIGwnZWxlbWVudG8gZSBpbiB0ZXN0YSBhbGxhIGxpc3RhIGUgcmVzdGl0dWlzY2UgbGEgUG9zaXRpb24gZGVsIG51b3ZvIGVsZW1lbnRvCiAgICAgICAgCiAgICAgICAgaWYgc2VsZi5pc19lbXB0eSgpOgogICAgICAgICAgICBzZWxmLl9oZWFkZXIgPSBzZWxmLl9Ob2RlKGUsc2VsZi5faGVhZGVyLHNlbGYuX2hlYWRlcikKICAgICAgICAgICAgc2VsZi5faGVhZGVyLl9uZXh0ID0gc2VsZi5faGVhZGVyI3JpYWdnaW9ybm8gaSBwdW50YXRvcmkgZGkgaGVhZGVyIHNpY2NvbWUgcHJpbWEgZGkgaXN0YW56aWFyZSBsYSBjbGFzc2UgcXVlc3RpIHB1bnRhdmFubyBhIG5vbmUgbWVudHJlIGlvIHZvZ2xpbyBjaGUgb3JhIHB1bnRpbm8gYWwgbm9kbyBhZ2dpb3JuYXRvIGRpIGhlYWRlcgogICAgICAgICAgICBzZWxmLl9oZWFkZXIuX3ByZXYgPSBzZWxmLl9oZWFkZXIKICAgICAgICAgICAgc2VsZi5fc2l6ZSA9IDEKICAgICAgICAgICAgI3ByaW50KCJRUVFRUVFRUVFRUVFRUVFRUVFRUVFRIiwgc2VsZi5faGVhZGVyLl9lbGVtZW50KQogICAgICAgICAgICByZXR1cm4gc2VsZi5fbWFrZV9wb3NpdGlvbihzZWxmLl9oZWFkZXIpCiAgICAgICAgaWYgc2VsZi5fX2xlbl9fKCkgPT0gMTojU2UgYydlJyB1biBzb2xvIGVsZW1lbnRvIGFnZ2l1bmdpIHVuIG5vZG8gYWxsYSB0ZXN0YSBkZWxsYSBsaXN0YSBlIGNyZWEgdW4gbnVvdm8gbm9kbyBjb24gZWxlbWVudCBoZWFkZXIgZSBjb2xsZWdhCiAgICAgICAgICAgIG5vZGUgPSBzZWxmLl9Ob2RlKHNlbGYuX2hlYWRlci5fZWxlbWVudCxzZWxmLl9oZWFkZXIsc2VsZi5faGVhZGVyKSAjIHVwZGF0ZSBoZWFkZXIgZWxlbWVudCBpbiBhIG5ldyBwb3NpdGlvbiBvZiBsaXN0CiAgICAgICAgICAgIHNlbGYuX2hlYWRlci5fcHJldiA9IG5vZGUKICAgICAgICBlbHNlOiNzZSBjJ8OoIHBpw7kgZGkgdW4gZWxlbWVudG8gYWdnaXVuZ2kgdW4gbm9kbyBhbGxhIHRlc3RhIGRlbGxhIGxpc3RhIGUgY3JlYSB1biBudW92byBub2RvIGNvbiBlbGVtZW50IGhlZGVhciBlIGNvbGxlZ2FsbyBzaWEgYWxsYSBudW92YSB0ZXN0YSBjaGUgYWwgbm9kbyBzdWNjZXNzaXZvIGEgY3VpIGVyYSBjb2xsZWdhdGF0YSBpbCB2ZWNjaGlvIG5vZG8gZGkgdGVzdGEKICAgICAgICAgICAgbm9kZSA9IHNlbGYuX05vZGUoc2VsZi5faGVhZGVyLl9lbGVtZW50LCBzZWxmLl9oZWFkZXIsIHNlbGYuX2hlYWRlci5fbmV4dCkKICAgICAgICAgICAgcG9zaXRpb24gPSBzZWxmLl9tYWtlX3Bvc2l0aW9uKHNlbGYuX2hlYWRlci5fbmV4dCkgICMgcG9zaXRpb24gb2Ygbm9kZSBuZXh0IGhlYWRlcgogICAgICAgICAgICBwb3NpdGlvbi5fbm9kZS5fcHJldiA9IG5vZGUgICMgdXBkYXRlIG5vZGUgYWZ0ZXIgaGVhZGVyCiAgICAgICAgc2VsZi5faGVhZGVyLl9lbGVtZW50ID0gZQogICAgICAgIHNlbGYuX2hlYWRlci5fbmV4dCA9IG5vZGUKICAgICAgICBzZWxmLl9zaXplICs9IDEKICAgICAgICAjcHJpbnQoIlFRUVFRUVFRUVFRUVFRUVFRUVFRUVEiLCBzZWxmLl9oZWFkZXIuX2VsZW1lbnQpCiAgICAgICAgcmV0dXJuIHNlbGYuX21ha2VfcG9zaXRpb24oc2VsZi5faGVhZGVyKQoKCgogICAgZGVmIGFkZF9sYXN0KHNlbGYsIGUpOgogICAgICAgICNJbnNlcmlzY2UgbCdlbGVtZW50byBlIGluIGNvZGEgYWxsYSBsaXN0YSBlIHJlc3RpdHVpc2NlIGxhIFBvc2l0aW9uIGRlbCBudW92byBlbGVtZW50bwoKICAgICAgICBpZiBzZWxmLmlzX2VtcHR5KCk6CiAgICAgICAgICAgIHNlbGYuX2hlYWRlciA9IHNlbGYuX05vZGUoZSwgc2VsZi5faGVhZGVyLCBzZWxmLl9oZWFkZXIpCiAgICAgICAgICAgIHNlbGYuX2hlYWRlci5fbmV4dCA9IHNlbGYuX2hlYWRlcgogICAgICAgICAgICBzZWxmLl9oZWFkZXIuX3ByZXYgPSBzZWxmLl9oZWFkZXIKICAgICAgICAgICAgc2VsZi5fc2l6ZSA9IDEKICAgICAgICAgICAgcmV0dXJuIHNlbGYuX21ha2VfcG9zaXRpb24oc2VsZi5faGVhZGVyKQogICAgICAgIGlmIHNlbGYuX19sZW5fXygpID09IDE6CiAgICAgICAgICAgICNTZSBjJ2UnIHVuIHNvbG8gZWxlbWVudG8gYWdnaXVuZ2kgdW4gbm9kbyBhbGxhIGNvZGEgZGVsbGEgbGlzdGEgZSBjb2xsZWdhbG8gYWxsJ2hlYWRlciBlIGNvbGxlZ2EKICAgICAgICAgICAgbm9kZSA9IHNlbGYuX05vZGUoZSwgc2VsZi5faGVhZGVyLCBzZWxmLl9oZWFkZXIpICAjIHVwZGF0ZSBoZWFkZXIgZWxlbWVudCBpbiBhIG5ldyBwb3NpdGlvbiBvZiBsaXN0CiAgICAgICAgICAgIHNlbGYuX2hlYWRlci5fbmV4dCA9IG5vZGUKICAgICAgICBlbHNlOgogICAgICAgICAgICAjc2UgYyfDqCBwacO5IGRpIHVuIGVsZW1lbnRvIGFnZ2l1bmdpIHVuIG5vZG8gYWxsYSBjb2RhIGRlbGxhIGxpc3RhIGUgY3JlYSB1biBudW92byBub2RvIGNvbiBlbGVtZW50IGxhIHZlY2NoaWEKICAgICAgICAgICAgI2NvZGEgZGVsbGEgbGlzdGEgZSBjb2xsZWdhbG8gc2lhIGFsbGEgbnVvdmEgY29kYSBkZWxsYSBsaXN0YSBjaGUgYWwgbm9kbyBwcmVjZWRlbnRlICBhIGN1aSBlcmEgY29sbGVnYXRhdG8KICAgICAgICAgICAgI2lsIHZlY2NoaW8gbm9kbyBkaSBjb2RhCiAgICAgICAgICAgIG5vZGUgPSBzZWxmLl9Ob2RlKGUsIHNlbGYuX2hlYWRlci5fcHJldiwgc2VsZi5faGVhZGVyKQogICAgICAgICAgICBwb3NpdGlvbiA9IHNlbGYuX21ha2VfcG9zaXRpb24oc2VsZi5faGVhZGVyLl9wcmV2KSAgIyBwb3NpdGlvbiBvZiBub2RlIG5leHQgaGVhZGVyCiAgICAgICAgICAgIHBvc2l0aW9uLl9ub2RlLl9uZXh0ID0gbm9kZSAgIyB1cGRhdGUgbm9kZSBhZnRlciBoZWFkZXIKICAgICAgICAjc2VsZi5faGVhZGVyLl9lbGVtZW50ID0gZQogICAgICAgIHNlbGYuX2hlYWRlci5fcHJldiA9IG5vZGUKICAgICAgICBzZWxmLl9zaXplICs9IDEKICAgICAgICByZXR1cm4gc2VsZi5fbWFrZV9wb3NpdGlvbihzZWxmLl9oZWFkZXIpCiAgICAgICAgIiIi</text>
+      </register>
+      <register name="2" type="4">
         <text>class Position(PositionalList.Position):
         &quot;&quot;&quot;An abstraction representing the location of a single element.
   
@@ -88,23 +97,20 @@
             &quot;&quot;&quot;Return True if other does not represent the same location.&quot;&quot;&quot;
             return not (self == other)  # opposite of __eq__</text>
       </register>
-      <register name="&quot;" type="4">
-        <text>&quot;&quot;&quot;Inserisce l'elemento e in testa alla lista e restituisce la Position del nuovo elemento</text>
-      </register>
-      <register name="2" type="4">
+      <register name="3" type="4">
         <text>self._container = container
             self._node = node</text>
       </register>
-      <register name="3" type="4">
+      <register name="4" type="4">
         <text encoding="base64">CgoK</text>
       </register>
-      <register name="4" type="4">
+      <register name="5" type="4">
         <text>self._header._prev._next = new_node
             self._header._prev = new_node
             self._header._prev._next = new_node
             self._header._prev = new_node</text>
       </register>
-      <register name="5" type="4">
+      <register name="6" type="4">
         <text>&quot;&quot;&quot;
         if self.is_empty():
             self._header = self._Node(e, self._header, self._header)
@@ -130,22 +136,18 @@
             
         return self._make_position(self._header)</text>
       </register>
-      <register name="6" type="4">
+      <register name="7" type="4">
         <text>if cursor.element() == e:
                 return cursor</text>
       </register>
-      <register name="7" type="4">
+      <register name="8" type="4">
         <text encoding="base64">CgogICAgZGVmIGFkZF9hZnRlcihzZWxmLCBwLCBlKToKICAgICAgICAiIiJJbnNlcmlzY2UgdW4gbnVvdm8oZWxlbWVudG8gZSkgZG9wbyBkZWwgbm9kbyBuZWxsYShQb3NpdGlvbiBwKSBlIHJlc3RpdHVpc2NlIGxhIHBvc2l0aW9uCiAgICAgICAgICAgICAgICBkZWwgbnVvdm8gZWxlbWVudG8gIiIi</text>
       </register>
-      <register name="8" type="4">
+      <register name="9" type="4">
         <text encoding="base64">CiAgICAgICAgcDIgPSBzZWxmLl9tYWtlX3Bvc2l0aW9uKG5vZGUpCiAgICAgICAgbmV3bm9kZSA9IHNlbGYuX2luc2VydF9iZXR3ZWVuKGUscDIuX25vZGUuX3ByZXYscDIp</text>
       </register>
-      <register name="9" type="4">
-        <text>p2 = self._make_position(node)
-        newnode = self._insert_between(e,p2,p2._node._next)</text>
-      </register>
       <register name="-" type="4">
-        <text>&quot;&quot;&quot;Inserisce l'elemento e in testa alla lista e restituisce la Position del nuovo elemento</text>
+        <text>print(&quot;TTTTTTTTTTTTTTTTTTTTttt&quot;,e)</text>
       </register>
     </registers>
     <search>
