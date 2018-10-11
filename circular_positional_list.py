@@ -162,6 +162,13 @@ class CircularPositionalList(PositionalList):
             sum.add_last(e)
         return sum
 
+    def __iadd__(self, other):
+        if type(other) is not CircularPositionalList:
+            raise TypeError("The second operand is not a cascaded CircularPositionList")
+        for e in other.__iter__():
+            self.add_last(e)
+        return self
+
     def __contains__(self, item):
         """Restituisce True se p è presente nella lista e False altrimenti"""
         cursor = self.first()
@@ -185,9 +192,9 @@ class CircularPositionalList(PositionalList):
         node = self._validate(key)
         node._element = value
 
-    def __delete__(self, instance):
+    def __delitem__(self, key):
         """Rimuove l’elemento nella position p invalidando la position"""
-        self.delete(instance)
+        self.delete(key)
 
     def __iter__(self):
         """Generatore che restituisce gli elementi della lista a partire da quello che è
@@ -260,3 +267,4 @@ if __name__ == '__main__':
     print("cpl è ordinata?", cpl.is_sorted())
     cpl.add_last(5)
     print("cpl è ordinata?", cpl.is_sorted())
+
