@@ -1,4 +1,4 @@
-from .circular_positional_list import CircularPositionalList
+from circular_positional_list import CircularPositionalList
 
 cpl = CircularPositionalList()
 print(str(cpl))
@@ -16,6 +16,14 @@ cpl.add_last(6)
 print(str(cpl))
 cpl.add_last(7)
 print(str(cpl))
+print("----------------------------Test-Bubble-Sort---------------------------")
+print("Lista",str(cpl))
+copy = cpl.bubble_sorted()
+print("Lista ordinata--->>",str(copy))
+print("Lista iniziale dopo l'ordinamento --->>",str(cpl))
+print("LISTA INIZIALE NON ORDINATA")
+print("Iteratore Bubblesort--->",str(copy.generator_bubble_sort()))
+print("-----------------------------------------------------------------------")
 print("cpl contiente first? ", cpl.first() in cpl)
 print("cpl contiente last? ", cpl.last() in cpl)
 print("cpl contiene None?", None in cpl)
