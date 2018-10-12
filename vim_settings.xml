@@ -38,7 +38,7 @@
         <mark key="]" line="151" column="3" />
         <mark key="." line="151" column="3" />
       </file>
-      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/project1/verifica.py" timestamp="1539353377971">
+      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/project1/verifica.py" timestamp="1539360201817">
         <mark key="[" line="5" column="15" />
       </file>
       <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tecniche di Programmazione/TdP_collections/TdP_collections/tree/binary_tree.py" timestamp="1538985562353">
@@ -53,10 +53,10 @@
       <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tecniche di Programmazione/TdP_collections/TdP_collections/list/positional_list.py" timestamp="1539256843309">
         <mark key="[" line="85" column="6" />
       </file>
-      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/project1/circular_positional_list.py" timestamp="1539358771946">
-        <mark key="[" line="267" column="0" />
-        <mark key="]" line="255" column="8" />
-        <mark key="." line="255" column="8" />
+      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/project1/circular_positional_list.py" timestamp="1539360318582">
+        <mark key="[" line="218" column="6" />
+        <mark key="]" line="218" column="6" />
+        <mark key="." line="218" column="6" />
       </file>
       <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/venv/test_circular_positional_list.py" timestamp="1539282243770">
         <mark key="[" line="19" column="40" />
@@ -84,7 +84,7 @@
         <text encoding="base64">ICAgIHByaW50KCItLS0tLS0tLS0tLS0tLS0iKQogICAgICAgIHByaW50KCItLS0tLS0tLS0tLS0tLS0tLS0tLS0tIikKICAgICAgICBwcmludCgiTGlzdGEgT3JkaW5hdGEtPj4+IixzZWxmX2NvcHkp</text>
       </register>
       <register name="&quot;" type="4">
-        <text encoding="base64">ICAgIHByaW50KCItLS0tLS0tLS0tLS0tLS0iKQogICAgICAgIHByaW50KCItLS0tLS0tLS0tLS0tLS0tLS0tLS0tIikKICAgICAgICBwcmludCgiTGlzdGEgT3JkaW5hdGEtPj4+IixzZWxmX2NvcHkp</text>
+        <text encoding="base64">ICAiIiIiIiI=</text>
       </register>
       <register name="2" type="4">
         <text encoding="base64">cHJpbnQoIi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tTW9kaWZpZWQtLS0+Iixtb2RpZmllZCkKICAgICAgICAgICAg</text>
@@ -112,7 +112,7 @@
         <text encoding="base64">CiAgICAiIiIKICAgIGRlZiB0b19zdHJpbmcoc2VsZik6CiAgICAgICAgdz1zZWxmLl9oZWFkZXIKICAgICAgICBmaXJzdCA9IHNlbGYuX2hlYWRlci5fbmV4dAogICAgICAgIHByaW50KCJMSVNUQSAtIFNpemUtLT4iK3N0cihzZWxmLl9zaXplKSsiOlxuRWxlbWVudG9IZWFkZXI6IitzdHIoc2VsZi5faGVhZGVyKSsiIFByZWNlZGVudGU6IitzdHIoc2VsZi5faGVhZGVyLl9wcmV2KSsiIFN1Y2Nlc3NvcmU6IitzdHIoc2VsZi5faGVhZGVyLl9uZXh0KSkKICAgICAgICBpID0gMQogICAgICAgIHByaW50KCJFbGVtZW50byIgKyBzdHIoaSkgKyAiOiIgKyBzdHIoZmlyc3QpICsgIiBQcmVjZWRlbnRlOiIgKyBzdHIoZmlyc3QuX3ByZXYpICsgIiBTdWNjZXNzb3JlOiIgKyBzdHIoZmlyc3QuX25leHQpKQogICAgICAgIHdoaWxlIGZpcnN0Ll9uZXh0Ll9lbGVtZW50ICE9IHcuX2VsZW1lbnQ6CiAgICAgICAgICAgIGZpcnN0ID0gc2VsZi5fbWFrZV9wb3NpdGlvbihmaXJzdCkKICAgICAgICAgICAgYWZ0ZXIgPSBzZWxmLmFmdGVyKGZpcnN0KQogICAgICAgICAgICBpICs9IDEKICAgICAgICAgICAgcHJpbnQoIkVsZW1lbnRvIitzdHIoaSkrIjoiICsgc3RyKGFmdGVyLmVsZW1lbnQoKSkgKyAiIFByZWNlZGVudGU6IiArIHN0cihhZnRlci5fbm9kZS5fcHJldi5fZWxlbWVudCkgKyAiIFN1Y2Nlc3NvcmU6IiArIHN0cihhZnRlci5fbm9kZS5fbmV4dC5fZWxlbWVudCkpCiAgICAgICAgICAgIGZpcnN0PXNlbGYuX3ZhbGlkYXRlKGFmdGVyKQogICAgIiIi</text>
       </register>
       <register name="-" type="4">
-        <text>8 7 2 3 &quot;t&quot;</text>
+        <text encoding="base64">ICAiIiIiIiI=</text>
       </register>
     </registers>
     <search>
