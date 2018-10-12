@@ -38,8 +38,8 @@
         <mark key="]" line="151" column="3" />
         <mark key="." line="151" column="3" />
       </file>
-      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/project1/verifica.py" timestamp="1539360201817">
-        <mark key="[" line="5" column="15" />
+      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/project1/verifica.py" timestamp="1539372766236">
+        <mark key="[" line="42" column="14" />
       </file>
       <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tecniche di Programmazione/TdP_collections/TdP_collections/tree/binary_tree.py" timestamp="1538985562353">
         <mark key="[" line="78" column="0" />
@@ -53,10 +53,10 @@
       <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tecniche di Programmazione/TdP_collections/TdP_collections/list/positional_list.py" timestamp="1539256843309">
         <mark key="[" line="85" column="6" />
       </file>
-      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/project1/circular_positional_list.py" timestamp="1539372129436">
-        <mark key="[" line="282" column="12" />
-        <mark key="]" line="218" column="6" />
-        <mark key="." line="218" column="6" />
+      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/project1/circular_positional_list.py" timestamp="1539373811299">
+        <mark key="[" line="320" column="21" />
+        <mark key="]" line="320" column="21" />
+        <mark key="." line="320" column="21" />
       </file>
       <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/venv/test_circular_positional_list.py" timestamp="1539282243770">
         <mark key="[" line="19" column="40" />
@@ -81,38 +81,40 @@
     </jumps>
     <registers>
       <register name="1" type="4">
-        <text encoding="base64">ICAgIHByaW50KCItLS0tLS0tLS0tLS0tLS0iKQogICAgICAgIHByaW50KCItLS0tLS0tLS0tLS0tLS0tLS0tLS0tIikKICAgICAgICBwcmludCgiTGlzdGEgT3JkaW5hdGEtPj4+IixzZWxmX2NvcHkp</text>
+        <text>#1, 2, 3, 4, 5, 6, 7, 12,
+        #8, 9, 10, 11, 12, 13, 14</text>
       </register>
       <register name="&quot;" type="4">
-        <text encoding="base64">ICAiIiIiIiI=</text>
+        <text>eturn_list.add_last(self_cursor.element())</text>
       </register>
       <register name="2" type="4">
-        <text encoding="base64">cHJpbnQoIi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tTW9kaWZpZWQtLS0+Iixtb2RpZmllZCkKICAgICAgICAgICAg</text>
+        <text>if self_cursor == self.last() and list_cursor == list.last():
+                    break</text>
       </register>
       <register name="3" type="4">
-        <text encoding="base64">I3ByaW50KCJJTkRJQ0kgU0VDT05ETyBGT1ItLS0+IixpICwgc2VsZl9jb3B5Ll9zaXplLWstMSkKICAgICAgICAgICAgICAgIA==</text>
+        <text encoding="base64">ICAgIHByaW50KCItLS0tLS0tLS0tLS0tLS0iKQogICAgICAgIHByaW50KCItLS0tLS0tLS0tLS0tLS0tLS0tLS0tIikKICAgICAgICBwcmludCgiTGlzdGEgT3JkaW5hdGEtPj4+IixzZWxmX2NvcHkp</text>
       </register>
       <register name="4" type="4">
-        <text encoding="base64">I3ByaW50KCJJTkRJQ0kgU0VDT05ETyBGT1ItLS0+IixpICwgc2VsZl9jb3B5Ll9zaXplLWstMSkKICAgICAgICAgICAgICAgIGk=</text>
+        <text encoding="base64">cHJpbnQoIi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tTW9kaWZpZWQtLS0+Iixtb2RpZmllZCkKICAgICAgICAgICAg</text>
       </register>
       <register name="5" type="4">
-        <text encoding="base64">I3ByaW50KCJET1BPIFNXQVAtLS0tPiIsY3Vyc29yMi5fbm9kZS5fZWxlbWVudCwgY3Vyc29yMi5fbm9kZS5fbmV4dC5fZWxlbWVudCkKICAgICAgICAgICAgICAgICAgICAjcHJpbnQoc3RyKHNlbGZfY29weSkpCiAgICAgICAgICAgICAgICAgICAg</text>
+        <text encoding="base64">I3ByaW50KCJJTkRJQ0kgU0VDT05ETyBGT1ItLS0+IixpICwgc2VsZl9jb3B5Ll9zaXplLWstMSkKICAgICAgICAgICAgICAgIA==</text>
       </register>
       <register name="6" type="4">
-        <text encoding="base64">ICNwcmludCgiUFVOVEFUT1JJIC0tLS0+IixpLl9uZXh0Ll9lbGVtZW50LGouX25leHQuX2VsZW1lbnQpCiAgICAgICAgI2kuX25leHQ9ai5fbmV4dAogICAgICAgICNwcmludChpLl9lbGVtZW50KQogICAgICAgICNqLl9uZXh0ID0gaQogICAgICAgICNwcmludCgiUFVOVEFUT1JJIDIgLS0tLT4iLGkuX25leHQuX2VsZW1lbnQsai5fbmV4dC5fZWxlbWVudCkKCiAgICAgICAgI3ByaW50KCJQVU5UQVRPUiAzIC0tLS0+IixqLl9wcmV2Ll9lbGVtZW50LGkuX3ByZXYuX2VsZW1lbnQpCiAgICAgICAgI2ouX3ByZXY9aS5fcHJldgogICAgICAgICNwcmludChqLl9lbGVtZW50KQogICAgICAgICNpLl9wcmV2ID0gagogICAgICAgICNwcmludCgiUFVOVEFUT1IgNCAtLS0tPiIsai5fcHJldi5fZWxlbWVudCxpLl9wcmV2Ll9lbGVtZW50KQogICAgICAgICNwcmludCgiLS0tLS0tLS0tLS0tIixpLl9wcmV2LixqLl9uZXh0Ll9lbGVtZW50KQogICAgICAgICNpLl9wcmV2Ll9uZXh0PWoKICAgICAgICAjai5fbmV4dC5fcHJldj1pCiAgICAgICAgI3NlbGYuYmVmb3JlKHNlbGYuX21ha2VfcG9zaXRpb24oaSkpLl9ub2RlLl9uZXh0PWoKICAgICAgICAjc2VsZi5hZnRlcihzZWxmLl9tYWtlX3Bvc2l0aW9uKGopKS5fbm9kZS5fcHJldj1pCg==</text>
+        <text encoding="base64">I3ByaW50KCJJTkRJQ0kgU0VDT05ETyBGT1ItLS0+IixpICwgc2VsZl9jb3B5Ll9zaXplLWstMSkKICAgICAgICAgICAgICAgIGk=</text>
       </register>
       <register name="7" type="4">
+        <text encoding="base64">I3ByaW50KCJET1BPIFNXQVAtLS0tPiIsY3Vyc29yMi5fbm9kZS5fZWxlbWVudCwgY3Vyc29yMi5fbm9kZS5fbmV4dC5fZWxlbWVudCkKICAgICAgICAgICAgICAgICAgICAjcHJpbnQoc3RyKHNlbGZfY29weSkpCiAgICAgICAgICAgICAgICAgICAg</text>
+      </register>
+      <register name="8" type="4">
+        <text encoding="base64">ICNwcmludCgiUFVOVEFUT1JJIC0tLS0+IixpLl9uZXh0Ll9lbGVtZW50LGouX25leHQuX2VsZW1lbnQpCiAgICAgICAgI2kuX25leHQ9ai5fbmV4dAogICAgICAgICNwcmludChpLl9lbGVtZW50KQogICAgICAgICNqLl9uZXh0ID0gaQogICAgICAgICNwcmludCgiUFVOVEFUT1JJIDIgLS0tLT4iLGkuX25leHQuX2VsZW1lbnQsai5fbmV4dC5fZWxlbWVudCkKCiAgICAgICAgI3ByaW50KCJQVU5UQVRPUiAzIC0tLS0+IixqLl9wcmV2Ll9lbGVtZW50LGkuX3ByZXYuX2VsZW1lbnQpCiAgICAgICAgI2ouX3ByZXY9aS5fcHJldgogICAgICAgICNwcmludChqLl9lbGVtZW50KQogICAgICAgICNpLl9wcmV2ID0gagogICAgICAgICNwcmludCgiUFVOVEFUT1IgNCAtLS0tPiIsai5fcHJldi5fZWxlbWVudCxpLl9wcmV2Ll9lbGVtZW50KQogICAgICAgICNwcmludCgiLS0tLS0tLS0tLS0tIixpLl9wcmV2LixqLl9uZXh0Ll9lbGVtZW50KQogICAgICAgICNpLl9wcmV2Ll9uZXh0PWoKICAgICAgICAjai5fbmV4dC5fcHJldj1pCiAgICAgICAgI3NlbGYuYmVmb3JlKHNlbGYuX21ha2VfcG9zaXRpb24oaSkpLl9ub2RlLl9uZXh0PWoKICAgICAgICAjc2VsZi5hZnRlcihzZWxmLl9tYWtlX3Bvc2l0aW9uKGopKS5fbm9kZS5fcHJldj1pCg==</text>
+      </register>
+      <register name="9" type="4">
         <text>if cursor == item:
                 return True</text>
       </register>
-      <register name="8" type="4">
-        <text encoding="base64">IGRlZiBfX2xlbl9fKHNlbGYpOgogICAgICAgICIiIlJldHVybiB0aGUgbnVtYmVyIG9mIGVsZW1lbnRzIGluIHRoZSBsaXN0LiIiIgogICAgICAgIHJldHVybiBzZWxmLl9zaXplCg==</text>
-      </register>
-      <register name="9" type="4">
-        <text encoding="base64">CiAgICAiIiIKICAgIGRlZiB0b19zdHJpbmcoc2VsZik6CiAgICAgICAgdz1zZWxmLl9oZWFkZXIKICAgICAgICBmaXJzdCA9IHNlbGYuX2hlYWRlci5fbmV4dAogICAgICAgIHByaW50KCJMSVNUQSAtIFNpemUtLT4iK3N0cihzZWxmLl9zaXplKSsiOlxuRWxlbWVudG9IZWFkZXI6IitzdHIoc2VsZi5faGVhZGVyKSsiIFByZWNlZGVudGU6IitzdHIoc2VsZi5faGVhZGVyLl9wcmV2KSsiIFN1Y2Nlc3NvcmU6IitzdHIoc2VsZi5faGVhZGVyLl9uZXh0KSkKICAgICAgICBpID0gMQogICAgICAgIHByaW50KCJFbGVtZW50byIgKyBzdHIoaSkgKyAiOiIgKyBzdHIoZmlyc3QpICsgIiBQcmVjZWRlbnRlOiIgKyBzdHIoZmlyc3QuX3ByZXYpICsgIiBTdWNjZXNzb3JlOiIgKyBzdHIoZmlyc3QuX25leHQpKQogICAgICAgIHdoaWxlIGZpcnN0Ll9uZXh0Ll9lbGVtZW50ICE9IHcuX2VsZW1lbnQ6CiAgICAgICAgICAgIGZpcnN0ID0gc2VsZi5fbWFrZV9wb3NpdGlvbihmaXJzdCkKICAgICAgICAgICAgYWZ0ZXIgPSBzZWxmLmFmdGVyKGZpcnN0KQogICAgICAgICAgICBpICs9IDEKICAgICAgICAgICAgcHJpbnQoIkVsZW1lbnRvIitzdHIoaSkrIjoiICsgc3RyKGFmdGVyLmVsZW1lbnQoKSkgKyAiIFByZWNlZGVudGU6IiArIHN0cihhZnRlci5fbm9kZS5fcHJldi5fZWxlbWVudCkgKyAiIFN1Y2Nlc3NvcmU6IiArIHN0cihhZnRlci5fbm9kZS5fbmV4dC5fZWxlbWVudCkpCiAgICAgICAgICAgIGZpcnN0PXNlbGYuX3ZhbGlkYXRlKGFmdGVyKQogICAgIiIi</text>
-      </register>
       <register name="-" type="4">
-        <text encoding="base64">ICAiIiIiIiI=</text>
+        <text>eturn_list.add_last(self_cursor.element())</text>
       </register>
     </registers>
     <search>
