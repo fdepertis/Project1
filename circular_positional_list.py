@@ -215,69 +215,42 @@ class CircularPositionalList(PositionalList):
 
     def __str__(self):
         """Rappresenta il contenuto della lista come una sequenza di elementi,
-            separati da virgole, partendo da quello che è identificato come primo
-        :return:
-        """
+            separati da virgole, partendo da quello che è identificato come primo"""
         s = ""
         for e in self.__iter__():
             s += str(e) + ", "
         #s += "\nSize: " + str(self._size) + "\nFirst: " + str(self.first()) + "\nLast:  " + str(self.last()) + "\n"
-        return s
+        return s[0:-2]
 
-    def greater(self, i, j):
-        if i._element > j._element:
-            return True
-        else:
-            return False
+    def _check_sortability(self):
+       first_type = type(self.first().element())
+       cursor = self.after(self.first())
+       for i in range(self._size - 1):
+           if type(cursor.element()) is not first_type:
+               raise TypeError("List cannot be sorted because elements are not all of the same type.")
+           else:
+               cursor = self.after(cursor)
 
-    def swap(self, i, j):
-        """
-
-        :param i:
-        :param j:
-        :return:
-        """
-        tmp=i.element()
-        self.replace(i,j.element())
-        self.replace(j,tmp)
-
-    def bubble_sorted(self):
+    def bubblesorted(self):
         """Scrivere un generatore bubblesorted che ordina gli elementi della CircularPositionalList e
             li restituisce nell’ordine risultante. Il generatore non deve modificare l’ordine in cui sono
             memorizzati gli elementi nella lista.
         :return: sorted copy of list
         """
-        self_copy=self.copy() #T(n)
-        tmp = self_copy.first()
-        cursor_k = self_copy.first()
-        cursor_i = self_copy.first()
-        print("---------------")
-        for k in range(self_copy._size-1):
-            modified=False
-            for i in range(self_copy._size-k-1):
-                if self.greater(cursor_i._node,cursor_i._node._next):
-                    self_copy.swap(self_copy._make_position(cursor_i._node),self_copy._make_position(cursor_i._node._next))
-                    modified=True
-                cursor_i = self_copy.after(cursor_i)
-            cursor_i = tmp
-            cursor_k = self_copy.after(cursor_k)
-            if modified == False:
-                break
-        #bubble sort best_case = T(n) worst_case=T(n^2)
-        return self_copy
-
-    def generator_bubble_sort(self):
-        """
-
-        :return:
-        """
-        cursor = self.first()
-        for j in range(self._size):
-            yield cursor
-            cursor = self.after(cursor)
+        self._check_sortability()               #O(n)
+        array = list(self.__iter__())           #O(n)
+        for i in range(self._size-1):
+            for j in range(self._size-i-1):
+                if array[j] > array[j+1]:
+                    temp = array[j]             #O(n^2)
+                    array[j] = array[j+1]       #O(n^2)
+                    array[j+1] = temp           #O(n^2)
+        for i in range(self._size):
+            yield array[i]                      #O(n)
+        #bubble sort: best case = O(n), worst case = O(n^2)
         #T(n) per restituire l'iter
         # complessità non accettabile T(n) + (T(n) al più T(n^2)) + T(n) = caso migliore T(n) caso perggiore T(n)+T(n^2)
-        #versione rudimentale del bubble sort da migliorare in modo tale da ottenere la stessa complessità del bubble sort nel caso peggiore
+        #versione rudimentale del bubble sort da migliorare in modo tale da ottenere la stessa complessità del bubble sort nel caso peggiore"""
 
     def merge(self,list):
         """Scrivere una funzione merge che prende in input due CircularPositionalList ordinate e le
@@ -324,14 +297,3 @@ class CircularPositionalList(PositionalList):
                         list_cursor = list.after(list_cursor)
                 time.sleep(1)
         return return_list
-
-
-
-
-
-
-
-
-
-
-
