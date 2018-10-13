@@ -53,7 +53,11 @@
       <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tecniche di Programmazione/TdP_collections/TdP_collections/list/positional_list.py" timestamp="1539256843309">
         <mark key="[" line="85" column="6" />
       </file>
-      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/project1/circular_positional_list.py" timestamp="1539410538924" />
+      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/project1/circular_positional_list.py" timestamp="1539417895337">
+        <mark key="[" line="323" column="16" />
+        <mark key="]" line="323" column="16" />
+        <mark key="." line="323" column="16" />
+      </file>
       <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/venv/test_circular_positional_list.py" timestamp="1539282243770">
         <mark key="[" line="19" column="40" />
         <mark key="]" line="48" column="4" />
@@ -77,40 +81,63 @@
     </jumps>
     <registers>
       <register name="1" type="4">
-        <text>#1, 2, 3, 4, 5, 6, 7, 12,
-        #8, 9, 10, 11, 12, 13, 14</text>
+        <text encoding="base64">CiAgICAgICAgICAgICAgICBpZiBzZWxmX2N1cnNvciA9PSBzZWxmLmxhc3QoKSBhbmQgc2VsZl9jdXJzb3IgPT0gbGlzdF9jdXJzb3IgYW5kIGxpc3RfY3Vyc29yICE9IGxpc3QubGFzdCgpOgogICAgICAgICAgICAgICAgICAgIHJldHVybl9saXN0LmFkZF9sYXN0KHNlbGZfY3Vyc29yLmVsZW1lbnQoKSkKICAgICAgICAgICAgICAgICAgICB3aGlsZSBUcnVlOgogICAgICAgICAgICAgICAgICAgICAgICByZXR1cm5fbGlzdC5hZGRfbGFzdChsaXN0X2N1cnNvci5lbGVtZW50KCkpCiAgICAgICAgICAgICAgICAgICAgbGlzdF9jdXJzb3IgPSBsaXN0LmFmdGVyKGxpc3RfY3Vyc29yKQ==</text>
       </register>
       <register name="&quot;" type="4">
-        <text>eturn_list.add_last(self_cursor.element())</text>
+        <text encoding="base64">CiAgICAgICAgICAgICAgICBpZiBzZWxmX2N1cnNvciA9PSBzZWxmLmxhc3QoKSBhbmQgc2VsZl9jdXJzb3IgPT0gbGlzdF9jdXJzb3IgYW5kIGxpc3RfY3Vyc29yICE9IGxpc3QubGFzdCgpOgogICAgICAgICAgICAgICAgICAgIHJldHVybl9saXN0LmFkZF9sYXN0KHNlbGZfY3Vyc29yLmVsZW1lbnQoKSkKICAgICAgICAgICAgICAgICAgICB3aGlsZSBUcnVlOgogICAgICAgICAgICAgICAgICAgICAgICByZXR1cm5fbGlzdC5hZGRfbGFzdChsaXN0X2N1cnNvci5lbGVtZW50KCkpCiAgICAgICAgICAgICAgICAgICAgbGlzdF9jdXJzb3IgPSBsaXN0LmFmdGVyKGxpc3RfY3Vyc29yKQ==</text>
       </register>
       <register name="2" type="4">
-        <text>if self_cursor == self.last() and list_cursor == list.last():
-                    break</text>
+        <text>if self.after(self.last())==self_cursor:
+                print(&quot;tutto corretto&quot;)</text>
       </register>
       <register name="3" type="4">
-        <text encoding="base64">ICAgIHByaW50KCItLS0tLS0tLS0tLS0tLS0iKQogICAgICAgIHByaW50KCItLS0tLS0tLS0tLS0tLS0tLS0tLS0tIikKICAgICAgICBwcmludCgiTGlzdGEgT3JkaW5hdGEtPj4+IixzZWxmX2NvcHkp</text>
+        <text>print(return_list)
+                print(self_cursor.element(),list_cursor.element())</text>
       </register>
       <register name="4" type="4">
-        <text encoding="base64">cHJpbnQoIi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tTW9kaWZpZWQtLS0+Iixtb2RpZmllZCkKICAgICAgICAgICAg</text>
+        <text>&quot;&quot;&quot;
+                if self_cursor == self.last():
+                    #print(str(return_list))
+                    #print(self_cursor.element())
+                    #print(list_cursor.element())
+                    while True:
+                        return_list.add_last(list_cursor.element())
+                        if list_cursor==list.last():
+                            print(&quot;RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR&quot;)
+                            break
+                        list_cursor = list.after(list_cursor)
+                elif list_cursor == list.last():
+                    #print(str(return_list))
+                    #print(list_cursor.element())
+                    while True:
+                        return_list.add_last(self_cursor.element())
+                        if self_cursor == self.last():
+                            break
+                        self_cursor = self.after(self_cursor)
+                &quot;&quot;&quot;</text>
       </register>
       <register name="5" type="4">
-        <text encoding="base64">I3ByaW50KCJJTkRJQ0kgU0VDT05ETyBGT1ItLS0+IixpICwgc2VsZl9jb3B5Ll9zaXplLWstMSkKICAgICAgICAgICAgICAgIA==</text>
+        <text>else:
+                        return_list.add_last(list_cursor.element())</text>
       </register>
       <register name="6" type="4">
-        <text encoding="base64">I3ByaW50KCJJTkRJQ0kgU0VDT05ETyBGT1ItLS0+IixpICwgc2VsZl9jb3B5Ll9zaXplLWstMSkKICAgICAgICAgICAgICAgIGk=</text>
+        <text>if self_cursor == self.last():
+                        print(&quot;Sono arrivato alla coda di last&quot;)
+                    if self_cursor != self.last() :</text>
       </register>
       <register name="7" type="4">
-        <text encoding="base64">I3ByaW50KCJET1BPIFNXQVAtLS0tPiIsY3Vyc29yMi5fbm9kZS5fZWxlbWVudCwgY3Vyc29yMi5fbm9kZS5fbmV4dC5fZWxlbWVudCkKICAgICAgICAgICAgICAgICAgICAjcHJpbnQoc3RyKHNlbGZfY29weSkpCiAgICAgICAgICAgICAgICAgICAg</text>
+        <text encoding="base64">aWYgbGlzdF9jdXJzb3IgPT0gbGlzdC5sYXN0KCk6CiAgICAgICAgICAgICAgICAgICAgICAgIHByaW50KCJTb25vIGFycml2YXRvIGFsbGEgY29kYSBkaSBsaXN0IikKICAgICAgICAgICAgICAgICAgICA=</text>
       </register>
       <register name="8" type="4">
-        <text encoding="base64">ICNwcmludCgiUFVOVEFUT1JJIC0tLS0+IixpLl9uZXh0Ll9lbGVtZW50LGouX25leHQuX2VsZW1lbnQpCiAgICAgICAgI2kuX25leHQ9ai5fbmV4dAogICAgICAgICNwcmludChpLl9lbGVtZW50KQogICAgICAgICNqLl9uZXh0ID0gaQogICAgICAgICNwcmludCgiUFVOVEFUT1JJIDIgLS0tLT4iLGkuX25leHQuX2VsZW1lbnQsai5fbmV4dC5fZWxlbWVudCkKCiAgICAgICAgI3ByaW50KCJQVU5UQVRPUiAzIC0tLS0+IixqLl9wcmV2Ll9lbGVtZW50LGkuX3ByZXYuX2VsZW1lbnQpCiAgICAgICAgI2ouX3ByZXY9aS5fcHJldgogICAgICAgICNwcmludChqLl9lbGVtZW50KQogICAgICAgICNpLl9wcmV2ID0gagogICAgICAgICNwcmludCgiUFVOVEFUT1IgNCAtLS0tPiIsai5fcHJldi5fZWxlbWVudCxpLl9wcmV2Ll9lbGVtZW50KQogICAgICAgICNwcmludCgiLS0tLS0tLS0tLS0tIixpLl9wcmV2LixqLl9uZXh0Ll9lbGVtZW50KQogICAgICAgICNpLl9wcmV2Ll9uZXh0PWoKICAgICAgICAjai5fbmV4dC5fcHJldj1pCiAgICAgICAgI3NlbGYuYmVmb3JlKHNlbGYuX21ha2VfcG9zaXRpb24oaSkpLl9ub2RlLl9uZXh0PWoKICAgICAgICAjc2VsZi5hZnRlcihzZWxmLl9tYWtlX3Bvc2l0aW9uKGopKS5fbm9kZS5fcHJldj1pCg==</text>
+        <text>return_list.add_last(self_cursor.element())
+                    return_list.add_last(self_cursor.element())</text>
       </register>
       <register name="9" type="4">
-        <text>if cursor == item:
-                return True</text>
+        <text>if self_cursor != self.last() :
+                        self_cursor = self.after(self_cursor)</text>
       </register>
       <register name="-" type="4">
-        <text>eturn_list.add_last(self_cursor.element())</text>
+        <text encoding="base64">cHJpbnQoIkFERCBmcm9tIGxpc3QtLS0+IixsaXN0X2N1cnNvci5lbGVtZW50KCkp</text>
       </register>
     </registers>
     <search>
