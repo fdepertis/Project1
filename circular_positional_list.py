@@ -1,4 +1,5 @@
 from TdP_collections.list.positional_list import PositionalList
+import time
 
 class CircularPositionalList(PositionalList):
 
@@ -214,7 +215,9 @@ class CircularPositionalList(PositionalList):
 
     def __str__(self):
         """Rappresenta il contenuto della lista come una sequenza di elementi,
-            separati da virgole, partendo da quello che è identificato come primo"""
+            separati da virgole, partendo da quello che è identificato come primo
+        :return:
+        """
         s = ""
         for e in self.__iter__():
             s += str(e) + ", "
@@ -228,6 +231,12 @@ class CircularPositionalList(PositionalList):
             return False
 
     def swap(self, i, j):
+        """
+
+        :param i:
+        :param j:
+        :return:
+        """
         tmp=i.element()
         self.replace(i,j.element())
         self.replace(j,tmp)
@@ -258,6 +267,10 @@ class CircularPositionalList(PositionalList):
         return self_copy
 
     def generator_bubble_sort(self):
+        """
+
+        :return:
+        """
         cursor = self.first()
         for j in range(self._size):
             yield cursor
@@ -265,3 +278,60 @@ class CircularPositionalList(PositionalList):
         #T(n) per restituire l'iter
         # complessità non accettabile T(n) + (T(n) al più T(n^2)) + T(n) = caso migliore T(n) caso perggiore T(n)+T(n^2)
         #versione rudimentale del bubble sort da migliorare in modo tale da ottenere la stessa complessità del bubble sort nel caso peggiore
+
+    def merge(self,list):
+        """Scrivere una funzione merge che prende in input due CircularPositionalList ordinate e le
+            fonde in una nuova CircularPositionalList ordinata.
+        :param list:
+        :return:
+        """
+        if self.is_empty() and list.is_empty:
+            return CircularPositionalList()
+        elif self.is_empty():
+            return list
+        elif list.is_empty():
+            return self
+        elif self.last().element() < list.first().element():
+            return self+list
+        elif list.last().element() < self.first().element():
+            return  list+self
+        else:
+            self_cursor = self.first()
+            list_cursor = list.first()
+            return_list = CircularPositionalList()
+            while True:
+                if self_cursor == self.last() and list_cursor == list.last():
+                    if self_cursor.element() <= list_cursor.element():
+                        return_list.add_last(self_cursor.element())
+                        return_list.add_last(list_cursor.element())
+                    elif self_cursor.element() < list_cursor.element():
+                        return_list.add_last(list_cursor.element())
+                        return_list.add_last(self_cursor.element())
+                    break
+
+                if self_cursor.element() < list_cursor.element() and self_cursor != self.last():
+                    return_list.add_last(self_cursor.element())
+                    self_cursor = self.after(self_cursor)
+                elif self_cursor.element() > list_cursor.element() and list_cursor != list.last():
+                    return_list.add_last(list_cursor.element())
+                    list_cursor = list.after(list_cursor)
+                else:
+                    if self_cursor != self.last():
+                        return_list.add_last(self_cursor.element())
+                        self_cursor = self.after(self_cursor)
+                    if list_cursor != list.last():
+                        return_list.add_last(list_cursor.element())
+                        list_cursor = list.after(list_cursor)
+                time.sleep(1)
+        return return_list
+
+
+
+
+
+
+
+
+
+
+
