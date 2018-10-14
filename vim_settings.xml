@@ -53,10 +53,10 @@
       <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tecniche di Programmazione/TdP_collections/TdP_collections/list/positional_list.py" timestamp="1539256843309">
         <mark key="[" line="85" column="6" />
       </file>
-      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/project1/circular_positional_list.py" timestamp="1539444047704">
-        <mark key="[" line="323" column="60" />
-        <mark key="]" line="323" column="16" />
-        <mark key="." line="323" column="16" />
+      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/project1/circular_positional_list.py" timestamp="1539515685169">
+        <mark key="[" line="308" column="20" />
+        <mark key="]" line="308" column="21" />
+        <mark key="." line="308" column="21" />
       </file>
       <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/venv/test_circular_positional_list.py" timestamp="1539282243770">
         <mark key="[" line="19" column="40" />
@@ -84,7 +84,7 @@
         <text encoding="base64">CiAgICAgICAgICAgICAgICBpZiBzZWxmX2N1cnNvciA9PSBzZWxmLmxhc3QoKSBhbmQgc2VsZl9jdXJzb3IgPT0gbGlzdF9jdXJzb3IgYW5kIGxpc3RfY3Vyc29yICE9IGxpc3QubGFzdCgpOgogICAgICAgICAgICAgICAgICAgIHJldHVybl9saXN0LmFkZF9sYXN0KHNlbGZfY3Vyc29yLmVsZW1lbnQoKSkKICAgICAgICAgICAgICAgICAgICB3aGlsZSBUcnVlOgogICAgICAgICAgICAgICAgICAgICAgICByZXR1cm5fbGlzdC5hZGRfbGFzdChsaXN0X2N1cnNvci5lbGVtZW50KCkpCiAgICAgICAgICAgICAgICAgICAgbGlzdF9jdXJzb3IgPSBsaXN0LmFmdGVyKGxpc3RfY3Vyc29yKQ==</text>
       </register>
       <register name="&quot;" type="4">
-        <text encoding="base64">CiAgICAgICAgICAgICAgICBpZiBzZWxmX2N1cnNvciA9PSBzZWxmLmxhc3QoKSBhbmQgc2VsZl9jdXJzb3IgPT0gbGlzdF9jdXJzb3IgYW5kIGxpc3RfY3Vyc29yICE9IGxpc3QubGFzdCgpOgogICAgICAgICAgICAgICAgICAgIHJldHVybl9saXN0LmFkZF9sYXN0KHNlbGZfY3Vyc29yLmVsZW1lbnQoKSkKICAgICAgICAgICAgICAgICAgICB3aGlsZSBUcnVlOgogICAgICAgICAgICAgICAgICAgICAgICByZXR1cm5fbGlzdC5hZGRfbGFzdChsaXN0X2N1cnNvci5lbGVtZW50KCkpCiAgICAgICAgICAgICAgICAgICAgbGlzdF9jdXJzb3IgPSBsaXN0LmFmdGVyKGxpc3RfY3Vyc29yKQ==</text>
+        <text>e</text>
       </register>
       <register name="2" type="4">
         <text>if self.after(self.last())==self_cursor:
@@ -137,7 +137,7 @@
                         self_cursor = self.after(self_cursor)</text>
       </register>
       <register name="-" type="4">
-        <text encoding="base64">cHJpbnQoIkFERCBmcm9tIGxpc3QtLS0+IixsaXN0X2N1cnNvci5lbGVtZW50KCkp</text>
+        <text>e</text>
       </register>
     </registers>
     <search>
