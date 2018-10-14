@@ -53,10 +53,10 @@
       <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tecniche di Programmazione/TdP_collections/TdP_collections/list/positional_list.py" timestamp="1539256843309">
         <mark key="[" line="85" column="6" />
       </file>
-      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/project1/circular_positional_list.py" timestamp="1539528010605">
-        <mark key="[" line="304" column="12" />
-        <mark key="]" line="304" column="12" />
-        <mark key="." line="304" column="12" />
+      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/project1/circular_positional_list.py" timestamp="1539529918571">
+        <mark key="[" line="302" column="20" />
+        <mark key="]" line="302" column="20" />
+        <mark key="." line="302" column="20" />
       </file>
       <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/venv/test_circular_positional_list.py" timestamp="1539282243770">
         <mark key="[" line="19" column="40" />
@@ -81,28 +81,33 @@
     </jumps>
     <registers>
       <register name="1" type="4">
-        <text>02346
-12345678</text>
+        <text encoding="base64">aWYgc2VsZl9jdXJzb3IuZWxlbWVudCgpIDw9IGxpc3RfY3Vyc29yLmVsZW1lbnQoKToKICAgICAgICAgICAgICAgICAgICAgICAgcmV0dXJuX2xpc3QuYWRkX2xhc3Qoc2VsZl9jdXJzb3IuZWxlbWVudCgpKQogICAgICAgICAgICAgICAgICAgICAgICByZXR1cm5fbGlzdC5hZGRfbGFzdChsaXN0X2N1cnNvci5lbGVtZW50KCkpCiAgICAgICAgICAgICAgICAgICAgZWxpZiBzZWxmX2N1cnNvci5lbGVtZW50KCkgPCBsaXN0X2N1cnNvci5lbGVtZW50KCk6CiAgICAgICAgICAgICAgICAgICAgICAgIHJldHVybl9saXN0LmFkZF9sYXN0KGxpc3RfY3Vyc29yLmVsZW1lbnQoKSkKICAgICAgICAgICAgICAgICAgICAgICAgcmV0dXJuX2xpc3QuYWRkX2xhc3Qoc2VsZl9jdXJzb3IuZWxlbWVudCgpKQ==</text>
       </register>
       <register name="&quot;" type="4">
+        <text encoding="base64">aWYgc2VsZl9jdXJzb3IuZWxlbWVudCgpIDw9IGxpc3RfY3Vyc29yLmVsZW1lbnQoKToKICAgICAgICAgICAgICAgICAgICAgICAgcmV0dXJuX2xpc3QuYWRkX2xhc3Qoc2VsZl9jdXJzb3IuZWxlbWVudCgpKQogICAgICAgICAgICAgICAgICAgICAgICByZXR1cm5fbGlzdC5hZGRfbGFzdChsaXN0X2N1cnNvci5lbGVtZW50KCkpCiAgICAgICAgICAgICAgICAgICAgZWxpZiBzZWxmX2N1cnNvci5lbGVtZW50KCkgPCBsaXN0X2N1cnNvci5lbGVtZW50KCk6CiAgICAgICAgICAgICAgICAgICAgICAgIHJldHVybl9saXN0LmFkZF9sYXN0KGxpc3RfY3Vyc29yLmVsZW1lbnQoKSkKICAgICAgICAgICAgICAgICAgICAgICAgcmV0dXJuX2xpc3QuYWRkX2xhc3Qoc2VsZl9jdXJzb3IuZWxlbWVudCgpKQ==</text>
+      </register>
+      <register name="2" type="4">
+        <text encoding="base64">CiAgICAgICAgICAgIHN0YXR1cyA9IDAKICAgICAgICAgICAgc2VsZl9jdXJzb3IgPSBzZWxmLmZpcnN0KCkKICAgICAgICAgICAgbGlzdF9jdXJzb3IgPSBsaXN0LmZpcnN0KCkKICAgICAgICAgICAgcmV0dXJuX2xpc3QgPSBDaXJjdWxhclBvc2l0aW9uYWxMaXN0KCkKICAgICAgICAgICAgbGVuX21heD0wCiAgICAgICAgICAgIGxlbl9taW49MAoKCiAgICAgICAgICAgIGlmIHNlbGYuX3NpemUgPj0gbGlzdC5fc2l6ZToKICAgICAgICAgICAgICAgIGxlbl9tYXggPSBzZWxmLl9zaXplCiAgICAgICAgICAgICAgICBsZW5fbWluID0gbGlzdC5fc2l6ZQogICAgICAgICAgICBlbHNlOgogICAgICAgICAgICAgICAgbGVuX21heCA9IGxpc3QuX3NpemUKICAgICAgICAgICAgICAgIGxlbl9taW4gPSBzZWxmLl9zaXplCgogICAgICAgICAgICB3aGlsZSBUcnVlOgoKICAgICAgICAgICAgICAgIGlmIHNlbGZfY3Vyc29yLmVsZW1lbnQoKSA8IGxpc3RfY3Vyc29yLmVsZW1lbnQoKToKICAgICAgICAgICAgICAgICAgICByZXR1cm5fbGlzdC5hZGRfbGFzdChzZWxmX2N1cnNvci5lbGVtZW50KCkpCiAgICAgICAgICAgICAgICAgICAgaWYgc2VsZl9jdXJzb3IgIT0gc2VsZi5sYXN0KCk6CiAgICAgICAgICAgICAgICAgICAgICAgIHNlbGZfY3Vyc29yID0gc2VsZi5hZnRlcihzZWxmX2N1cnNvcikKICAgICAgICAgICAgICAgIGVsaWYgc2VsZl9jdXJzb3IuZWxlbWVudCgpID4gbGlzdF9jdXJzb3IuZWxlbWVudCgpOgogICAgICAgICAgICAgICAgICAgIHJldHVybl9saXN0LmFkZF9sYXN0KGxpc3RfY3Vyc29yLmVsZW1lbnQoKSkKICAgICAgICAgICAgICAgICAgICBpZiBsaXN0X2N1cnNvciA9PSBsaXN0Lmxhc3QoKToKICAgICAgICAgICAgICAgICAgICAgICAgbGlzdF9jdXJzb3IgPSBsaXN0LmFmdGVyKGxpc3RfY3Vyc29yKQogICAgICAgICAgICAgICAgZWxzZToKICAgICAgICAgICAgICAgICAgICByZXR1cm5fbGlzdC5hZGRfbGFzdChzZWxmX2N1cnNvci5lbGVtZW50KCkpCiAgICAgICAgICAgICAgICAgICAgcmV0dXJuX2xpc3QuYWRkX2xhc3QobGlzdF9jdXJzb3IuZWxlbWVudCgpKQogICAgICAgICAgICAgICAgICAgIGlmIGxpc3RfY3Vyc29yID09IGxpc3QubGFzdCgpOgogICAgICAgICAgICAgICAgICAgICAgICBsaXN0X2N1cnNvciA9IGxpc3QuYWZ0ZXIobGlzdF9jdXJzb3IpCiAgICAgICAgICAgICAgICAgICAgaWYgc2VsZl9jdXJzb3IgPT0gc2VsZi5sYXN0KCk6CiAgICAgICAgICAgICAgICAgICAgICAgIHNlbGZfY3Vyc29yID0gc2VsZi5hZnRlcihzZWxmX2N1cnNvcikKCiAgICAgICAgICAgICAgICBpZiBzZWxmX2N1cnNvciA9PSBzZWxmLmxhc3QoKSBhbmQgbGlzdF9jdXJzb3IgPT0gbGlzdC5sYXN0KCk6CiAgICAgICAgICAgICAgICAgICAgaWYgc2VsZl9jdXJzb3IuZWxlbWVudCgpIDw9IGxpc3RfY3Vyc29yLmVsZW1lbnQoKToKICAgICAgICAgICAgICAgICAgICAgICAgcmV0dXJuX2xpc3QuYWRkX2xhc3Qoc2VsZl9jdXJzb3IuZWxlbWVudCgpKQogICAgICAgICAgICAgICAgICAgICAgICByZXR1cm5fbGlzdC5hZGRfbGFzdChsaXN0X2N1cnNvci5lbGVtZW50KCkpCiAgICAgICAgICAgICAgICAgICAgZWxpZiBzZWxmX2N1cnNvci5lbGVtZW50KCkgPCBsaXN0X2N1cnNvci5lbGVtZW50KCk6CiAgICAgICAgICAgICAgICAgICAgICAgIHJldHVybl9saXN0LmFkZF9sYXN0KGxpc3RfY3Vyc29yLmVsZW1lbnQoKSkKICAgICAgICAgICAgICAgICAgICAgICAgcmV0dXJuX2xpc3QuYWRkX2xhc3Qoc2VsZl9jdXJzb3IuZWxlbWVudCgpKQogICAgICAgICAgICAgICAgICAgIGJyZWFrCg==</text>
+      </register>
+      <register name="3" type="4">
         <text>02346
 12345678</text>
       </register>
-      <register name="2" type="4">
+      <register name="4" type="4">
         <text encoding="base64">CiAgICAgICAgICAgICAgICBpZiBzdGF0dXMgPT0gMToKICAgICAgICAgICAgICAgICAgICBpZiBzZWxmX2N1cnNvciA9PSBzZWxmLmxhc3QoKToKICAgICAgICAgICAgICAgICAgICAgICAgc2VsZl9jdXJzb3IgPSBzZWxmLmFmdGVyKHNlbGZfY3Vyc29yKQogICAgICAgICAgICAgICAgZWxpZiBzdGF0dXMgPT0gMjoKICAgICAgICAgICAgICAgICAgICBpZiBsaXN0X2N1cnNvciA9PSBsaXN0Lmxhc3QoKToKICAgICAgICAgICAgICAgICAgICAgICAgbGlzdF9jdXJzb3IgPSBsaXN0LmFmdGVyKGxpc3RfY3Vyc29yKQogICAgICAgICAgICAgICAgZWxzZToKICAgICAgICAgICAgICAgICAgICBpZiBsaXN0X2N1cnNvciA9PSBsaXN0Lmxhc3QoKToKICAgICAgICAgICAgICAgICAgICAgICAgbGlzdF9jdXJzb3IgPSBsaXN0LmFmdGVyKGxpc3RfY3Vyc29yKQogICAgICAgICAgICAgICAgICAgIGlmIHNlbGZfY3Vyc29yID09IHNlbGYubGFzdCgpOgogICAgICAgICAgICAgICAgICAgICAgICBzZWxmX2N1cnNvciA9IHNlbGYuYWZ0ZXIoc2VsZl9jdXJzb3Ip</text>
       </register>
-      <register name="3" type="4">
+      <register name="5" type="4">
         <text encoding="base64">CiAgICAgICAgICAgICAgICBpZiBzZWxmX2N1cnNvciA9PSBzZWxmLmxhc3QoKSBhbmQgc2VsZl9jdXJzb3IgPT0gbGlzdF9jdXJzb3IgYW5kIGxpc3RfY3Vyc29yICE9IGxpc3QubGFzdCgpOgogICAgICAgICAgICAgICAgICAgIHJldHVybl9saXN0LmFkZF9sYXN0KHNlbGZfY3Vyc29yLmVsZW1lbnQoKSkKICAgICAgICAgICAgICAgICAgICB3aGlsZSBUcnVlOgogICAgICAgICAgICAgICAgICAgICAgICByZXR1cm5fbGlzdC5hZGRfbGFzdChsaXN0X2N1cnNvci5lbGVtZW50KCkpCiAgICAgICAgICAgICAgICAgICAgbGlzdF9jdXJzb3IgPSBsaXN0LmFmdGVyKGxpc3RfY3Vyc29yKQ==</text>
       </register>
-      <register name="4" type="4">
+      <register name="6" type="4">
         <text>if self.after(self.last())==self_cursor:
                 print(&quot;tutto corretto&quot;)</text>
       </register>
-      <register name="5" type="4">
+      <register name="7" type="4">
         <text>print(return_list)
                 print(self_cursor.element(),list_cursor.element())</text>
       </register>
-      <register name="6" type="4">
+      <register name="8" type="4">
         <text>&quot;&quot;&quot;
                 if self_cursor == self.last():
                     #print(str(return_list))
@@ -124,20 +129,12 @@
                         self_cursor = self.after(self_cursor)
                 &quot;&quot;&quot;</text>
       </register>
-      <register name="7" type="4">
+      <register name="9" type="4">
         <text>else:
                         return_list.add_last(list_cursor.element())</text>
       </register>
-      <register name="8" type="4">
-        <text>if self_cursor == self.last():
-                        print(&quot;Sono arrivato alla coda di last&quot;)
-                    if self_cursor != self.last() :</text>
-      </register>
-      <register name="9" type="4">
-        <text encoding="base64">aWYgbGlzdF9jdXJzb3IgPT0gbGlzdC5sYXN0KCk6CiAgICAgICAgICAgICAgICAgICAgICAgIHByaW50KCJTb25vIGFycml2YXRvIGFsbGEgY29kYSBkaSBsaXN0IikKICAgICAgICAgICAgICAgICAgICA=</text>
-      </register>
       <register name="-" type="4">
-        <text>e</text>
+        <text>return return_list</text>
       </register>
     </registers>
     <search>
