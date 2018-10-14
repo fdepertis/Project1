@@ -4,9 +4,7 @@ class CircularPositionalList(PositionalList):
 
     def __init__(self):
         """Create an empty list."""
-        self._header = self._Node(None, None, None)
-        self._header._prev = self._header
-        self._header._next = self._header
+        self._header = None
         self._size = 0
 
     #-------------------------- Private-methods---------------------------
@@ -23,17 +21,32 @@ class CircularPositionalList(PositionalList):
         self._size = 1
         return self._make_position(self._header)
 
+    def _check_sortability(self):
+        first_type = type(self.first().element())
+        cursor = self.after(self.first())
+        for i in range(self._size - 1):
+            if type(cursor.element()) is not first_type:
+                raise TypeError("List cannot be sorted because elements are not all of the same type.")
+            else:
+                cursor = self.after(cursor)
+
    #----------------------------Public-Methods----------------------------
 
     def first(self):
         """Restituisce la Position dell’elemento che è identificato
             come il primo oppure None se la lista è vuota"""
-        return self._make_position(self._header)
+        if self.is_empty():
+            return None
+        else:
+            return self._make_position(self._header)
 
     def last(self):
         """Restituisce la Position dell'elemento che è identificato
             come l'ultimo oppure None se la lista è vuota"""
-        return self._make_position(self._header._prev)
+        if self.is_empty():
+            return None
+        else:
+            return self._make_position(self._header._prev)
 
     def before(self,p):
         """Restituisce l'elemento nella Position precedente a p, None se p non ha un predecessore e
@@ -220,15 +233,6 @@ class CircularPositionalList(PositionalList):
         #s += "\nSize: " + str(self._size) + "\nFirst: " + str(self.first()) + "\nLast:  " + str(self.last()) + "\n"
         return s[0:-2]
 
-    def _check_sortability(self):
-       first_type = type(self.first().element())
-       cursor = self.after(self.first())
-       for i in range(self._size - 1):
-           if type(cursor.element()) is not first_type:
-               raise TypeError("List cannot be sorted because elements are not all of the same type.")
-           else:
-               cursor = self.after(cursor)
-
     def bubblesorted(self):
         """Scrivere un generatore bubblesorted che ordina gli elementi della CircularPositionalList e
             li restituisce nell’ordine risultante. Il generatore non deve modificare l’ordine in cui sono
@@ -258,6 +262,10 @@ class CircularPositionalList(PositionalList):
             raise TypeError("The lists to merge are not of the same type.")
         elif not (self.is_sorted() and list2.is_sorted()):
             raise ValueError("The lists to merge are not already sorted.")
+        elif self.is_empty():
+            return list2
+        elif list2.is_empty():
+            return self
         else:
             self_cursor = self.first()          #cursore per le position di self
             list2_cursor = list2.first()        #cursore per le position di list2
