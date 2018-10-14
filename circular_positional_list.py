@@ -241,12 +241,11 @@ class CircularPositionalList(PositionalList):
         array = list(self.__iter__())           #O(n)
         for i in range(self._size-1):
             for j in range(self._size-i-1):
-                if array[j] > array[j+1]:
+                if array[j] < array[j+1]:
                     temp = array[j]             #O(n^2)
                     array[j] = array[j+1]       #O(n^2)
                     array[j+1] = temp           #O(n^2)
-        for i in range(self._size):
-            yield array[i]                      #O(n)
+            yield array[-i]                      # O(n)
         #bubble sort: best case = O(n), worst case = O(n^2)
         #T(n) per restituire l'iter
         # complessità non accettabile T(n) + (T(n) al più T(n^2)) + T(n) = caso migliore T(n) caso perggiore T(n)+T(n^2)
