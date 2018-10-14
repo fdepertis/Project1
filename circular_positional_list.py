@@ -1,11 +1,12 @@
 from TdP_collections.list.positional_list import PositionalList
-import time
 
 class CircularPositionalList(PositionalList):
 
     def __init__(self):
         """Create an empty list."""
         self._header = self._Node(None, None, None)
+        self._header._prev = self._header
+        self._header._next = self._header
         self._size = 0
 
     #-------------------------- Private-methods---------------------------
@@ -17,8 +18,8 @@ class CircularPositionalList(PositionalList):
     def _set_header(self, e):
         """Metodo privato utilizzato da add_first e add_last per settare il primo elemento della lista"""
         self._header = self._Node(e, self._header, self._header)
-        self._header._next = self._header
         self._header._prev = self._header
+        self._header._next = self._header
         self._size = 1
         return self._make_position(self._header)
 
@@ -27,15 +28,11 @@ class CircularPositionalList(PositionalList):
     def first(self):
         """Restituisce la Position dell’elemento che è identificato
             come il primo oppure None se la lista è vuota"""
-        if self.is_empty():
-            return None
         return self._make_position(self._header)
 
     def last(self):
         """Restituisce la Position dell'elemento che è identificato
             come l'ultimo oppure None se la lista è vuota"""
-        if self.is_empty():
-            return None
         return self._make_position(self._header._prev)
 
     def before(self,p):
@@ -63,8 +60,9 @@ class CircularPositionalList(PositionalList):
             Si definisce ordinata una lista ordinata i cui elementi sono tutti dello stesso tipo
             e sono disposti in ordine crescente a partire dall'header"""
         cursor = self.first()
+        first_type = type(cursor.element())
         for i in range(self._size - 1):
-            if type(cursor.element()) is not type(self.after(cursor).element()) or cursor.element() > self.after(cursor).element():
+            if type(self.after(cursor).element()) is not first_type or cursor.element() > self.after(cursor).element():
                 return False
             else:
                 cursor = self.after(cursor)
@@ -234,65 +232,48 @@ class CircularPositionalList(PositionalList):
     def bubblesorted(self):
         """Scrivere un generatore bubblesorted che ordina gli elementi della CircularPositionalList e
             li restituisce nell’ordine risultante. Il generatore non deve modificare l’ordine in cui sono
-            memorizzati gli elementi nella lista.
-        :return: sorted copy of list
-        """
+            memorizzati gli elementi nella lista."""
         self._check_sortability()               #O(n)
         array = list(self.__iter__())           #O(n)
-        for i in range(self._size-1):
+        modified = True                         #O(1)
+        for i in range(self._size-1) and modified:
+            modified = False                    #O(n)
             for j in range(self._size-i-1):
-                if array[j] < array[j+1]:
+                if array[j] > array[j+1]:
                     temp = array[j]             #O(n^2)
                     array[j] = array[j+1]       #O(n^2)
                     array[j+1] = temp           #O(n^2)
-            yield array[-i]                      # O(n)
+                    modified = True             #O(n^2)
+        for i in range(self._size):
+            yield array[i]                      # O(n)
         #bubble sort: best case = O(n), worst case = O(n^2)
         #T(n) per restituire l'iter
         # complessità non accettabile T(n) + (T(n) al più T(n^2)) + T(n) = caso migliore T(n) caso perggiore T(n)+T(n^2)
-        #versione rudimentale del bubble sort da migliorare in modo tale da ottenere la stessa complessità del bubble sort nel caso peggiore"""
+        # versione rudimentale del bubble sort da migliorare in modo tale da ottenere la stessa complessità del bubble sort nel caso peggiore"""
 
-    def merge(self,list):
-        """Scrivere una funzione merge che prende in input due CircularPositionalList ordinate e le
-            fonde in una nuova CircularPositionalList ordinata.
-        :param list:
-        :return:
-        """
-        if self.is_empty() and list.is_empty:
-            return CircularPositionalList()
-        elif self.is_empty():
-            return list
-        elif list.is_empty():
-            return self
-        elif self.last().element() < list.first().element():
-            return self+list
-        elif list.last().element() < self.first().element():
-            return  list+self
+    def merge(self, list2):
+        """Scrivere una funzione merge che prende in input due CircularPositionalList ordinate
+            e le fonde in una nuova CircularPositionalList ordinata."""
+        if type(self) is not type(list2):
+            raise TypeError("The lists to merge are not of the same type.")
+        elif not (self.is_sorted() and list2.is_sorted()):
+            raise ValueError("The lists to merge are not already sorted.")
         else:
-            self_cursor = self.first()
-            list_cursor = list.first()
-            return_list = CircularPositionalList()
-            while True:
-                if self_cursor == self.last() and list_cursor == list.last():
-                    if self_cursor.element() <= list_cursor.element():
-                        return_list.add_last(self_cursor.element())
-                        return_list.add_last(list_cursor.element())
-                    elif self_cursor.element() < list_cursor.element():
-                        return_list.add_last(list_cursor.element())
-                        return_list.add_last(self_cursor.element())
-                    break
-
-                if self_cursor.element() < list_cursor.element() and self_cursor != self.last():
-                    return_list.add_last(self_cursor.element())
+            self_cursor = self.first()          #cursore per le position di self
+            list2_cursor = list2.first()        #cursore per le position di list2
+            self_counter = 0                    #counter per le position di self
+            list2_counter = 0                   #counter per le position di list2
+            new_list = CircularPositionalList()
+            for i in range(self._size + list2._size):
+                if self_cursor.element() < list2_cursor.element() and self_counter < self._size or list2_counter == list2._size:
+                    """Aggiungi un elemento da self se è minore del primo elemento di list2 AND self non è finito
+                        OR list2 è finito"""
+                    new_list.add_last(self_cursor.element())
+                    self_counter += 1
                     self_cursor = self.after(self_cursor)
-                elif self_cursor.element() > list_cursor.element() and list_cursor != list.last():
-                    return_list.add_last(list_cursor.element())
-                    list_cursor = list.after(list_cursor)
                 else:
-                    if self_cursor != self.last():
-                        return_list.add_last(self_cursor.element())
-                        self_cursor = self.after(self_cursor)
-                    if list_cursor != list.last():
-                        return_list.add_last(list_cursor.element())
-                        list_cursor = list.after(list_cursor)
-                time.sleep(1)
-        return return_list
+                    """Altrimenti aggiungi un elemento da list2"""
+                    new_list.add_last(list2_cursor.element())
+                    list2_counter += 1
+                    list2_cursor = list2.after(list2_cursor)
+            return new_list
