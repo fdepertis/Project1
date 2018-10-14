@@ -100,7 +100,10 @@ class CircularPositionalList(PositionalList):
     def add_before(self, p, e):
         """Inserisce un nuovo (elemento e) prima del nodo nella (Position p) e restituisce la position
                 del nuovo elemento"""
-        return super().add_before(p,e)
+        new_position = super().add_before(p,e)
+        if p == self.first():
+            self._header = self._validate(new_position)
+        return new_position
 
     def add_after(self, p, e):
         """Inserisce un nuovo(elemento e) dopo del nodo nella(Position p) e restituisce la position
@@ -259,9 +262,9 @@ class CircularPositionalList(PositionalList):
         """Scrivere una funzione merge che prende in input due CircularPositionalList ordinate
             e le fonde in una nuova CircularPositionalList ordinata."""
         if type(self) is not type(list2):
-            raise TypeError("The lists to merge are not of the same type.")
+            raise TypeError("Lists to merge are not of the same type.")
         elif not (self.is_sorted() and list2.is_sorted()):
-            raise ValueError("The lists to merge are not already sorted.")
+            raise ValueError("Lists to merge are not already sorted.")
         elif self.is_empty():
             return list2
         elif list2.is_empty():
