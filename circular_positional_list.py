@@ -1,20 +1,27 @@
 from TdP_collections.list.positional_list import PositionalList
 
+
 class CircularPositionalList(PositionalList):
 
     def __init__(self):
-        """Create an empty list."""
+        """Crea una lista vuota."""
         self._header = None
         self._size = 0
 
     #-------------------------- Private-methods---------------------------
 
     def _make_position(self, node):
-        """Ritorna la Position del nodo dato"""
+        """
+        :param node: Rappresenta il nodo del quale è richiesta la Position.
+        :return: Restituisce la Position del nodo dato.
+        """
         return self.Position(self, node)
 
     def _set_header(self, e):
-        """Metodo privato utilizzato da add_first e add_last per settare il primo elemento della lista"""
+        """
+        :param e: Rappresenta l'elemento da inserire in cima alla lista.
+        :return: Ritorna la posizione del primo elemento della lista.
+        """
         self._header = self._Node(e, self._header, self._header)
         self._header._prev = self._header
         self._header._next = self._header
@@ -22,6 +29,9 @@ class CircularPositionalList(PositionalList):
         return self._make_position(self._header)
 
     def _check_sortability(self):
+        """
+        :return: Restituisce un TypeError nel caso in cui la lista contenga elementi non tutti dello stesso tipo.
+        """
         first_type = type(self.first().element())
         cursor = self.after(self.first())
         for i in range(self._size - 1):
@@ -33,39 +43,49 @@ class CircularPositionalList(PositionalList):
    #----------------------------Public-Methods----------------------------
 
     def first(self):
-        """Restituisce la Position dell’elemento che è identificato
-            come il primo oppure None se la lista è vuota"""
+        """
+        :return: Restituisce la Position dell’elemento che è identificato come il primo oppure None se la lista è vuota.
+        """
         if self.is_empty():
             return None
         else:
             return self._make_position(self._header)
 
     def last(self):
-        """Restituisce la Position dell'elemento che è identificato
-            come l'ultimo oppure None se la lista è vuota"""
+        """
+        :return: Restituisce la Position dell'elemento che è identificato come l'ultimo oppure None se la lista è vuota.
+        """
         if self.is_empty():
             return None
         else:
             return self._make_position(self._header._prev)
 
     def before(self,p):
-        """Restituisce l'elemento nella Position precedente a p, None se p non ha un predecessore e
-            ValueError se p non è una position della lista"""
+        """
+        :param p: Rappresenta la Position di riferimento.
+        :return: Restituisce l'elemento nella Position precedente a p, None se p non ha un predecessore e
+                ValueError se p non è una position della lista.
+        """
         if self.is_empty():
             return None
         node = self._validate(p)
         return self._make_position(node._prev)
 
     def after(self,p):
-        """Restituisce l'elemento nella Position p successiva a p, None se p non ha un successore e
-            ValueError se p non è una position della lista"""
+        """
+        :param p: Rappresenta la Position di riferimento.
+        :return: Restituisce l'elemento nella Position successiva a p, None se p non ha un successore e
+                ValueError se p non è una position della lista.
+        """
         if self.is_empty():
             return None
         node = self._validate(p)
         return self._make_position(node._next)
 
     def is_empty(self):
-        """Restituisce True se la lista è vuota altrimenti False"""
+        """
+        :return: Restituisce True se la lista è vuota altrimenti False.
+        """
         return self._size == 0
 
     def is_sorted(self):
@@ -100,10 +120,10 @@ class CircularPositionalList(PositionalList):
     def add_before(self, p, e):
         """Inserisce un nuovo (elemento e) prima del nodo nella (Position p) e restituisce la position
                 del nuovo elemento"""
-        new_position = super().add_before(p,e)
         if p == self.first():
-            self._header = self._validate(new_position)
-        return new_position
+            return self.add_first(e)
+        else:
+            return super().add_before(p, e)
 
     def add_after(self, p, e):
         """Inserisce un nuovo(elemento e) dopo del nodo nella(Position p) e restituisce la position
@@ -153,9 +173,9 @@ class CircularPositionalList(PositionalList):
         copy = self.copy()
         right_cursor = copy.last()
         for i in range(self._size):
-            left_cursor._node._element=right_cursor.element()
-            left_cursor=self.after(left_cursor)
-            right_cursor= copy.before(right_cursor)
+            left_cursor._node._element = right_cursor.element()
+            left_cursor = self.after(left_cursor)
+            right_cursor = copy.before(right_cursor)
 
     def copy(self):
         """Restituisce una nuova CircularPositionalList che contiene gli stessi elementi
@@ -243,7 +263,7 @@ class CircularPositionalList(PositionalList):
         self._check_sortability()               #O(n)
         array = list(self.__iter__())           #O(n)
         modified = True                         #O(1)
-        for i in range(self._size-1) and modified:
+        for i in range(self._size-1):
             modified = False                    #O(n)
             for j in range(self._size-i-1):
                 if array[j] > array[j+1]:
@@ -251,6 +271,8 @@ class CircularPositionalList(PositionalList):
                     array[j] = array[j+1]       #O(n^2)
                     array[j+1] = temp           #O(n^2)
                     modified = True             #O(n^2)
+            if modified:
+                break
         for i in range(self._size):
             yield array[i]                      # O(n)
         #bubble sort: best case = O(n), worst case = O(n^2)
