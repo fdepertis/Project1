@@ -21,13 +21,13 @@
         <mark key="]" line="184" column="0" />
         <mark key="." line="184" column="0" />
       </file>
-      <file name="/Python Console" timestamp="1539697516316">
+      <file name="/Python Console" timestamp="1539715428571">
         <mark key="[" line="0" column="0" />
       </file>
-      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/project1/score_board.py" timestamp="1539711663034">
-        <mark key="[" line="46" column="33" />
-        <mark key="]" line="46" column="8" />
-        <mark key="." line="46" column="8" />
+      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/project1/score_board.py" timestamp="1539717264955">
+        <mark key="[" line="59" column="33" />
+        <mark key="]" line="59" column="8" />
+        <mark key="." line="59" column="8" />
       </file>
       <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tecniche di Programmazione/TdP_collections/TdP_collections/map/map_base.py" timestamp="1539071427306">
         <mark key="[" line="33" column="20" />
@@ -46,10 +46,10 @@
         <mark key="]" line="151" column="3" />
         <mark key="." line="151" column="3" />
       </file>
-      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/project1/verifica.py" timestamp="1539714135158">
-        <mark key="[" line="18" column="15" />
-        <mark key="]" line="26" column="1" />
-        <mark key="." line="26" column="1" />
+      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/project1/verifica.py" timestamp="1539716371315">
+        <mark key="[" line="70" column="0" />
+        <mark key="]" line="70" column="0" />
+        <mark key="." line="70" column="0" />
       </file>
       <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tecniche di Programmazione/TdP_collections/TdP_collections/tree/binary_tree.py" timestamp="1538985562353">
         <mark key="[" line="78" column="0" />
@@ -89,20 +89,28 @@
     </jumps>
     <registers>
       <register name="1" type="4">
-        <text>rint(&quot;COPIA\n&quot;)
-print(str(sb_due))</text>
+        <text>if ScoreBoard.Score(&quot;Florence D. &quot;, 10.62, date(1988, 9, 24)) == ScoreBoard.Score(&quot;Florence D. &quot;, 10.62, date(1988, 9, 24)):
+    print(&quot;dfrffr&quot;)</text>
       </register>
       <register name="&quot;" type="4">
+        <text>if ScoreBoard.Score(&quot;Florence D. &quot;, 10.62, date(1988, 9, 24)) == ScoreBoard.Score(&quot;Florence D. &quot;, 10.62, date(1988, 9, 24)):
+    print(&quot;dfrffr&quot;)</text>
+      </register>
+      <register name="2" type="4">
+        <text>#sb_uno = sb_uno.merge(sb_uno)
+#print(str(sbm))</text>
+      </register>
+      <register name="3" type="4">
         <text>rint(&quot;COPIA\n&quot;)
 print(str(sb_due))</text>
       </register>
-      <register name="2" type="4">
+      <register name="4" type="4">
         <text encoding="base64">CiAgICBkZWYgX19kZWxpdGVtX18oc2VsZiwga2V5KToKICAgICAgICAiIiJSaW11b3ZlIGzigJllbGVtZW50byBuZWxsYSBwb3NpdGlvbiBwIGludmFsaWRhbmRvIGxhIHBvc2l0aW9uIiIiCiAgICAgICAgc2VsZi5kZWxldGUoa2V5KQ==</text>
       </register>
-      <register name="3" type="4">
+      <register name="5" type="4">
         <text encoding="base64">cHJpbnQoIkRlY2ltYWwgaGV4ICAgY2hyICAgezA6XjQwfSIuZm9ybWF0KCJub25lIikpCnByaW50KCItLS0tLS0tIC0tLS0tIC0tLS0tIHswOi08NDB9Ii5mb3JtYXQoIiIpKQ==</text>
       </register>
-      <register name="4" type="4">
+      <register name="6" type="4">
         <text>if __name__ == '__main__':
     sb0 = ScoreBoard()
     sb1 = ScoreBoard()
@@ -136,24 +144,17 @@ print(str(sb_due))</text>
     sbm = sb0.merge(sb1)
     print(str(sbm))</text>
       </register>
-      <register name="5" type="4">
+      <register name="7" type="4">
         <text encoding="base64">CnNiMC5pbnNlcnQoczAzKQpzYjAuaW5zZXJ0KHMwMikKc2IwLmluc2VydChzMDEpCnNiMC5pbnNlcnQoczA0KQpzYjAuaW5zZXJ0KHMwNikKc2IwLmluc2VydChzMDUpCnNiMS5pbnNlcnQoczEyKQpzYjEuaW5zZXJ0KHMxMSkKc2IxLmluc2VydChzMTMpCgpzYjEuaW5zZXJ0KHMxNCk=</text>
       </register>
-      <register name="6" type="4">
+      <register name="8" type="4">
         <text>s15 = ScoreBoard.Score(&quot;15&quot;, 1500, date.today())
 s16 = ScoreBoard.Score(&quot;16&quot;, 1600, date.today())</text>
       </register>
-      <register name="7" type="4">
+      <register name="9" type="4">
         <text>#------------------------Private-Methods----------------------------
     def __copy__(self):
         self.</text>
-      </register>
-      <register name="8" type="4">
-        <text encoding="base64">Y3BsID0gQ2lyY3VsYXJQb3NpdGlvbmFsTGlzdCgpCnByaW50KHN0cihjcGwpKQpjcGwuYWRkX2ZpcnN0KDEpCnByaW50KHN0cihjcGwpKQpjcGwuYWRkX2ZpcnN0KDIpCnByaW50KHN0cihjcGwpKQpjcGwuYWRkX2ZpcnN0KDMpCnByaW50KHN0cihjcGwpKQpjcGwuYWRkX2ZpcnN0KDQpCnByaW50KHN0cihjcGwpKQpjcGwuYWRkX2xhc3QoNSkKcHJpbnQoc3RyKGNwbCkpCmNwbC5hZGRfbGFzdCg2KQpwcmludChzdHIoY3BsKSkKY3BsLmFkZF9sYXN0KDcpCnByaW50KHN0cihjcGwpKQpwcmludCgiLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLVRlc3QtQnViYmxlLVNvcnQtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0iKQpwcmludCgiTGlzdGEiLHN0cihjcGwpKQpjb3B5ID0gY3BsLmJ1YmJsZV9zb3J0ZWQoKQpwcmludCgiTGlzdGEgb3JkaW5hdGEtLS0+PiIsc3RyKGNvcHkpKQpwcmludCgiTGlzdGEgaW5pemlhbGUgZG9wbyBsJ29yZGluYW1lbnRvIC0tLT4+IixzdHIoY3BsKSkKcHJpbnQoIkxJU1RBIElOSVpJQUxFIE5PTiBPUkRJTkFUQSEiKQpwcmludCgiSXRlcmF0b3JlIEJ1YmJsZXNvcnQtLS0+IixzdHIoY29weS5idWJibGVfc29ydGVkKCkpKQpwcmludCgiLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0iKQpwcmludCgiY3BsIGNvbnRpZW50ZSBmaXJzdD8gIiwgY3BsLmZpcnN0KCkgaW4gY3BsKQpwcmludCgiY3BsIGNvbnRpZW50ZSBsYXN0PyAiLCBjcGwubGFzdCgpIGluIGNwbCkKcHJpbnQoImNwbCBjb250aWVuZSBOb25lPyIsIE5vbmUgaW4gY3BsKQpwcmludCgiY3JlbyB1bmEgbnVvdmEgbGlzdGEgY2hpYW1hdGEgY3BsMiBjb24gZ2xpIHN0ZXNzaSBlbGVtZW50aSBkaSBjcGwiKQpjcGwyID0gY3BsLmNvcHkoKQpwcmludChjcGwyLmZpcnN0KCkpCnByaW50KHN0cihjcGwyKSkKcHJpbnQoImNwbDIgw6ggdWd1YWxlIGEgY3BsPyIsIGNwbDIgPT0gY3BsKQpwcmludCgiU2lhIGNwbDMgPSBjcGwgKyBjcGwyIikKY3BsMyA9IGNwbCArIGNwbDIKCnByaW50KCJRdWFudGkgMSBjaSBzb25vIGluIGNwbDM/ICIsIGNwbDMuY291bnQoMSkpCnByaW50KCJRdWFudGkgOSBjaSBzb25vIGluIGNwbDM/ICIsIGNwbDMuY291bnQoOSkpCnByaW50KCItLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tVEVTVC1NRVJHRS0tLS0tLS0tLS0tLS0tLS0tLS0tLSIpCmNwbF9zb3J0ZWQgPSBjcGwuYnViYmxlX3NvcnRlZCgpCmNwbF9zb3J0ZWQuZGVsZXRlKGNwbF9zb3J0ZWQuZmluZCg3KSkKY3BsM19zb3J0ZWQgPSBjcGwzLmJ1YmJsZV9zb3J0ZWQoKQpjcGwzX3NvcnRlZC5hZGRfbGFzdCgxMCkKcHJpbnQoIi0tLS0tPmxpc3RhMSIsc3RyKGNwbF9zb3J0ZWQpKQpwcmludCgibGlzdGEtLS0tLS0+IixzdHIoY3BsM19zb3J0ZWQpKQpwcmludCgiLS0tLS0+IG1lcmdlIixzdHIoY3BsX3NvcnRlZC5tZXJnZShjcGwzX3NvcnRlZCkpKQpwcmludCgiLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0iKQpwcmludChzdHIoY3BsKSkKY3BsLnJldmVyc2UoKQpwcmludChzdHIoY3BsKSkKY3BsLmRlbGV0ZShjcGwubGFzdCgpKQpwcmludChzdHIoY3BsKSkKY3BsLmRlbGV0ZShjcGwuZmlyc3QoKSkKcHJpbnQoc3RyKGNwbCkpCnByaW50KCJTdnVvdG8gY3BsOiIpCmNwbC5jbGVhcigpCnByaW50KHN0cihjcGwpKQpjcGwuYWRkX2xhc3QoMTApCmNwbC5hZGRfbGFzdCgyMCkKY3BsLmFkZF9sYXN0KDMwKQpjcGwuYWRkX2xhc3QoNDApCnByaW50KCJJbCBwcmltbyDDqDoiLCBjcGxbY3BsLmZpcnN0KCldKQpwcmludCgiTCd1bHRpbW8gw6g6IiwgY3BsW2NwbC5sYXN0KCldKQpwcmludChzdHIoY3BsKSkKcHJpbnQoIlNvc3RpdHVpc2NvIDQwIGEgNTAiKQpjcGxbY3BsLmxhc3QoKV09NTAKcHJpbnQoc3RyKGNwbCkpCnByaW50KCJjcGwgw6ggb3JkaW5hdGE/IiwgY3BsLmlzX3NvcnRlZCgpKQpjcGwuYWRkX2xhc3QoNSkKcHJpbnQoImNwbCDDqCBvcmRpbmF0YT8iLCBjcGwuaXNfc29ydGVkKCkp</text>
-      </register>
-      <register name="9" type="4">
-        <text>for p in copy.bubblesorted():
-    print(p)</text>
       </register>
       <register name="-" type="4">
         <text>sb_uno.insert(ScoreBoard.Score(&quot;Justin Gatlin&quot;, 9.74, date(2015, 5, 15)))</text>
