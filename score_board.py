@@ -1,8 +1,8 @@
 from circular_positional_list import CircularPositionalList
-from datetime import date
+import datetime
 
 
-class ScoreBoard(CircularPositionalList):
+class ScoreBoard():
     class Score:
         def __init__(self, player_name, value, score_date):
             """Crea uno Score.
@@ -10,8 +10,12 @@ class ScoreBoard(CircularPositionalList):
             :param value: rappresenta lo score conseguito
             :param score_date: rappresenta la data in cui lo score è stato conseguito
             """
-            if type(value) is not int:
+            if type(player_name) is not str:
+                raise TypeError("must be string.")
+            if type(value) is not int and type(value) is not float:
                 raise TypeError("Score value must be an integer.")
+            if type(score_date) is not datetime.date:
+                raise TypeError("Score date must be an datetime.date .")
             self._player_name = player_name
             self._value = value
             self._score_date = score_date
@@ -20,8 +24,19 @@ class ScoreBoard(CircularPositionalList):
             """
             :return: Restituisce una stringa che rappresenta gli attributi di un singolo Score.
             """
-            return self._player_name + "\t\t\t\t" + str(self._value) + "\t\t" + str(self._score_date)
+            return self._player_name + "\t\t" + str(self._value) + "\t\t" + str(self._score_date)
 
+        def __eq__(self, other):
+            """Operatore equal
+            :param other: score
+            :return: True if equal otherwise False
+            """
+            if self._player_name == other._player_name and self._value == other._value and self._score_date == other._score_date:
+                return True
+            else:
+                return False
+
+    #------------------------Public-Methods-----------------------------
     def __init__(self, x = 10):
         """Crea uno Scoreboard di dimensione x.
         :param x: rappresenta la dimensione massima dello Scoreboard
@@ -35,17 +50,30 @@ class ScoreBoard(CircularPositionalList):
         """
         return self._max
 
+
+
+
     def __str__(self):
         """
         :return: Restituisce una stringa che rappresenta una tabella contenente tutti gli Score presenti nella Scoreboard.
         """
         cursor = self._cpl.first()
-        s = "Player Name\t\tScore\t\tDate\n"
+        s = "------------------TOP-10-BEST-100m-----------------\n----\t-----------\t\t\t-----\t\t-----------\n||||\tPlayer Name\t\t\tScore\t\tDate\n----\t-----------\t\t\t-----\t\t-----------\n"
         for i in range(self.size()):
-            s += str(cursor.element()) + "\n"
+            i += 1
+            s += str(i) + "°  \t" + str(cursor.element()) + "\n"
             cursor = self._cpl._next(cursor)
         return s
-
+    #------------------------Private-Methods----------------------------
+    def _copy(self):
+        """
+        Restituisce una copia dello score board
+        :return: a copy of scoreboard"""
+        new_score = ScoreBoard(self._max)
+        for e in self._cpl:
+            new_score.insert(e)
+        return new_score
+    #------------------------Public-Methods-----------------------------
     def size(self):
         """
         :return: Restituisce il numero di Score presenti nello Scoreboard.
@@ -66,13 +94,18 @@ class ScoreBoard(CircularPositionalList):
         """
         if type(s) is not ScoreBoard.Score:
             raise TypeError("Parameter must be Score typed")
-        elif self.is_empty():
+        """for e in self._cpl:
+            if e == s:
+                return"""
+        if self.is_empty():
             self._cpl.add_last(s)
         else:
             cursor = self._cpl.first()
             added = False
             for i in range(self.size()):
-                if cursor.element()._value < s._value:
+                if cursor.element() == s:
+                    return
+                elif cursor.element()._value > s._value:
                     self._cpl.add_before(cursor, s)
                     added = True
                     break
@@ -99,8 +132,10 @@ class ScoreBoard(CircularPositionalList):
             new_cursor = new._cpl.first()       #cursore per le position di new
             self_counter = 0                    #counter per le position di self
             new_counter = 0                     #counter per le position di new
-            new_sc = ScoreBoard()
-            for i in range(min(self.size() + new.size(), 10)):
+            new_sc = ScoreBoard() #10
+            for i in range(self.size() + new.size()):
+                print(i)
+
                 if self_cursor.element()._value > new_cursor.element()._value and self_counter < self.size() or new_counter == new.size():
                     """Aggiungi un elemento da self se è minore del primo elemento di list2 AND self non è finito
                         OR new è finito"""
@@ -137,3 +172,4 @@ class ScoreBoard(CircularPositionalList):
             new_list.add_last(cursor.element())
             cursor = self._cpl._prev(cursor)
         return new_list
+
