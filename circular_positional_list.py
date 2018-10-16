@@ -36,8 +36,8 @@ class CircularPositionalList(PositionalList):
         """
         if self.is_empty():
             return None
-        node = self._validate(p)
-        return self._make_position(node._prev)
+        else:
+            return super().before(p)
 
     def _next(self, p):
         """
@@ -46,8 +46,8 @@ class CircularPositionalList(PositionalList):
                  ValueError se p non è una position della lista."""
         if self.is_empty():
             return None
-        node = self._validate(p)
-        return self._make_position(node._next)
+        else:
+            return super().after(p)
 
     def _check_sortability(self):
         """
@@ -323,7 +323,7 @@ class CircularPositionalList(PositionalList):
                     array[j] = array[j+1]       #O(n^2)
                     array[j+1] = temp           #O(n^2)
                     modified = True             #O(n^2)
-            if modified == False:
+            if not modified:
                 break
         for i in range(self._size):
             yield array[i]                      # O(n)
