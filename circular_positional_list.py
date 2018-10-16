@@ -54,12 +54,12 @@ class CircularPositionalList(PositionalList):
         :return: Restituisce un TypeError nel caso in cui la lista contenga elementi non tutti dello stesso tipo.
         """
         first_type = type(self.first().element())
-        cursor = self.after(self.first())
+        cursor = self._next(self.first())
         for i in range(self._size - 1):
             if type(cursor.element()) is not first_type:
                 raise TypeError("List cannot be sorted because elements are not all of the same type.")
             else:
-                cursor = self.after(cursor)
+                cursor = self._next(cursor)
 
    #----------------------------Public-Methods----------------------------
 
@@ -153,7 +153,8 @@ class CircularPositionalList(PositionalList):
                  del nuovo elemento.
         """
         new_position = super().add_before(p, e)
-        self._header = self._validate(new_position)
+        if p == self.first():
+            self._header = self._validate(new_position)
         return new_position
 
     def add_after(self, p, e):
@@ -184,7 +185,10 @@ class CircularPositionalList(PositionalList):
         """Rimuove e restituisce l'elemento in Position p dalla lista e invalida p"""
         if p == self.first() and self._size > 1:
             self._header = self._header._next
-        return super().delete(p)
+        del_node = super().delete(p)
+        p._node = None
+        p._container = None
+        return del_node
 
     def clear(self):
         """Rimuove tutti gli elementi della lista invalidando le corrispondeti position"""
@@ -267,12 +271,6 @@ class CircularPositionalList(PositionalList):
     def __delitem__(self, key):
         """Rimuove l’elemento nella position p invalidando la position"""
         self.delete(key)
-
-    def __delitem__(self, key):
-        """Rimuove l’elemento nella position p invalidando la position"""
-        self.delete(key)
-        key._node = None
-        key._container = None
 
     def __iter__(self):
         """Generatore che restituisce gli elementi della lista a partire da quello che è
