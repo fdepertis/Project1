@@ -43,7 +43,7 @@ class ScoreBoard(CircularPositionalList):
         s = "Player Name\t\tScore\t\tDate\n"
         for i in range(self.size()):
             s += str(cursor.element()) + "\n"
-            cursor = self._cpl.after(cursor)
+            cursor = self._cpl._next(cursor)
         return s
 
     def size(self):
@@ -77,7 +77,7 @@ class ScoreBoard(CircularPositionalList):
                     added = True
                     break
                 else:
-                    cursor = self._cpl.after(cursor)
+                    cursor = self._cpl._next(cursor)
             if not added and self.size() < len(self):
                 self._cpl.add_last(s)
             elif self.size() > len(self):
@@ -106,12 +106,12 @@ class ScoreBoard(CircularPositionalList):
                         OR new è finito"""
                     new_sc.insert(self_cursor.element())
                     self_counter += 1
-                    self_cursor = self._cpl.after(self_cursor)
+                    self_cursor = self._cpl._next(self_cursor)
                 else:
                     """Altrimenti aggiungi un elemento da new"""
                     new_sc.insert(new_cursor.element())
                     new_counter += 1
-                    new_cursor = new._cpl.after(new_cursor)
+                    new_cursor = new._cpl._next(new_cursor)
             return new_sc
 
     def top(self, i = 1):
@@ -120,9 +120,11 @@ class ScoreBoard(CircularPositionalList):
         :return: Restituisce i migliori i Score nello Scoreboard.
         """
         cursor = self._cpl.first()
+        new_list = CircularPositionalList()
         for j in range(min(self.size(), i)):
-            yield cursor.element()
-            cursor = self._cpl.after(cursor)
+            new_list.add_last(cursor.element())
+            cursor = self._cpl._next(cursor)
+        return new_list
 
     def last(self, i = 1):
         """
@@ -130,9 +132,11 @@ class ScoreBoard(CircularPositionalList):
         :return: Restituisce i peggiori i Score nello Scoreboard.
         """
         cursor = self._cpl.last()
+        new_list = CircularPositionalList()
         for j in range(min(self.size(), i)):
-            yield cursor.element()
-            cursor = self._cpl.before(cursor)
+            new_list.add_last(cursor.element())
+            cursor = self._cpl._prev(cursor)
+        return new_list
 
 if __name__ == '__main__':
     sb0 = ScoreBoard()
