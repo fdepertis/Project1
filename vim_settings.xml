@@ -24,8 +24,8 @@
       <file name="/Python Console" timestamp="1539697516316">
         <mark key="[" line="0" column="0" />
       </file>
-      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/project1/score_board.py" timestamp="1539704800339">
-        <mark key="[" line="46" column="8" />
+      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/project1/score_board.py" timestamp="1539711663034">
+        <mark key="[" line="46" column="33" />
         <mark key="]" line="46" column="8" />
         <mark key="." line="46" column="8" />
       </file>
@@ -46,10 +46,10 @@
         <mark key="]" line="151" column="3" />
         <mark key="." line="151" column="3" />
       </file>
-      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/project1/verifica.py" timestamp="1539705659319">
-        <mark key="[" line="16" column="1" />
-        <mark key="]" line="16" column="1" />
-        <mark key="." line="16" column="1" />
+      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/project1/verifica.py" timestamp="1539713068375">
+        <mark key="[" line="18" column="15" />
+        <mark key="]" line="26" column="1" />
+        <mark key="." line="26" column="1" />
       </file>
       <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tecniche di Programmazione/TdP_collections/TdP_collections/tree/binary_tree.py" timestamp="1538985562353">
         <mark key="[" line="78" column="0" />
@@ -63,7 +63,9 @@
       <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tecniche di Programmazione/TdP_collections/TdP_collections/list/positional_list.py" timestamp="1539256843309">
         <mark key="[" line="85" column="6" />
       </file>
-      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/project1/circular_positional_list.py" timestamp="1539703272708" />
+      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/project1/circular_positional_list.py" timestamp="1539711513319">
+        <mark key="[" line="273" column="15" />
+      </file>
       <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/venv/test_circular_positional_list.py" timestamp="1539282243770">
         <mark key="[" line="19" column="40" />
         <mark key="]" line="48" column="4" />
