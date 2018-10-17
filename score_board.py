@@ -31,7 +31,7 @@ class ScoreBoard:
             :param other: score
             :return: True if equal otherwise False
             """
-            if self._player_name == other._player_name and self._value == other._value and self._date == other._score_date:
+            if self._player_name == other._player_name and self._value == other._value and self._date == other._date:
                 return True
             else:
                 return False

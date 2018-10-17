@@ -34,7 +34,7 @@ class CircularPositionalList(PositionalList):
         :return: Restituisce la Position precedente a p, None se p non ha un predecessore e
                  ValueError se p non è una position della lista.
         """
-        if self.is_empty() or self._size == 1:
+        if self.is_empty():
             return None
         else:
             return super().before(p)
@@ -44,7 +44,7 @@ class CircularPositionalList(PositionalList):
         :param p: Rappresenta la Position di riferimento.
         :return: Restituisce la Position successiva a p, None se p non ha un successore e
                  ValueError se p non è una position della lista."""
-        if self.is_empty() or self._size == 1:
+        if self.is_empty():
             return None
         else:
             return super().after(p)
