@@ -24,10 +24,10 @@
       <file name="/Python Console" timestamp="1539715428571">
         <mark key="[" line="0" column="0" />
       </file>
-      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/project1/score_board.py" timestamp="1539793002728">
-        <mark key="[" line="1" column="15" />
-        <mark key="]" line="134" column="16" />
-        <mark key="." line="134" column="16" />
+      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/project1/score_board.py" timestamp="1539795211188">
+        <mark key="[" line="119" column="5" />
+        <mark key="]" line="119" column="5" />
+        <mark key="." line="119" column="5" />
       </file>
       <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tecniche di Programmazione/TdP_collections/TdP_collections/map/map_base.py" timestamp="1539071427306">
         <mark key="[" line="33" column="20" />
@@ -46,10 +46,8 @@
         <mark key="]" line="151" column="3" />
         <mark key="." line="151" column="3" />
       </file>
-      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/project1/verifica.py" timestamp="1539793106393">
+      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/project1/verifica.py" timestamp="1539795115646">
         <mark key="[" line="0" column="5" />
-        <mark key="]" line="137" column="0" />
-        <mark key="." line="137" column="0" />
       </file>
       <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tecniche di Programmazione/TdP_collections/TdP_collections/tree/binary_tree.py" timestamp="1538985562353">
         <mark key="[" line="78" column="0" />
@@ -64,7 +62,7 @@
         <mark key="[" line="60" column="14" />
       </file>
       <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/project1/circular_positional_list.py" timestamp="1539793138727">
-        <mark key="[" line="268" column="29" />
+        <mark key="[" line="272" column="29" />
       </file>
       <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/venv/test_circular_positional_list.py" timestamp="1539282243770">
         <mark key="[" line="19" column="40" />
@@ -89,16 +87,23 @@
     </jumps>
     <registers>
       <register name="1" type="4">
-        <text>&quot;&quot;&quot;print(str(self_cursor.element()), str(new_cursor.element()))
-                if self_cursor.element() == new_cursor.element():
-                    print(&quot;DDDDDDDDDDDDDDDDDDD&quot;)
-                    new_sc.insert(self_cursor.element())
-                    self_counter += 1
-                    new_counter += 1
-                    new_cursor = new._cpl._next(new_cursor)
-                    self_cursor = self._cpl._next(self_cursor)&quot;&quot;&quot;</text>
+        <text>self.insert(s)
+
+            return new_sc</text>
       </register>
       <register name="&quot;" type="4">
+        <text encoding="base64">ICAgOnJldHVybjog</text>
+      </register>
+      <register name="2" type="4">
+        <text encoding="base64">ICAgIAogICAgICAgICAgICAKICAgICAgICAgICAgCiAgICAgICAgICAgIHNlbGZfY291bnRlciA9IDAgICAgICAgICAgICAgICAgICAgICNjb3VudGVyIHBlciBsZSBwb3NpdGlvbiBkaSBzZWxmCiAgICAgICAgICAgIG5ld19jb3VudGVyID0gMCAgICAgICAgICAgICAgICAgICAgICNjb3VudGVyIHBlciBsZSBwb3NpdGlvbiBkaSBuZXcKICAgICAgICAgICAgbmV3X3NjID0gU2NvcmVCb2FyZCgpICMxMAogICAgICAgICAgICAKICAgICAgICAgICAgCiAgICAgICAgICAgIGZvciBpIGluIHJhbmdlKHNlbGYuc2l6ZSgpICsgbmV3LnNpemUoKSk6CiAgICAgICAgICAgICAgICBpZiBzZWxmX2N1cnNvci5lbGVtZW50KCkuX3ZhbHVlID4gbmV3X2N1cnNvci5lbGVtZW50KCkuX3ZhbHVlIGFuZCBzZWxmX2NvdW50ZXIgPCBzZWxmLnNpemUoKSBvciBuZXdfY291bnRlciA9PSBuZXcuc2l6ZSgpOgogICAgICAgICAgICAgICAgICAgICIiIkFnZ2l1bmdpIHVuIGVsZW1lbnRvIGRhIHNlbGYgc2Ugw6ggbWlub3JlIGRlbCBwcmltbyBlbGVtZW50byBkaSBsaXN0MiBBTkQgc2VsZiBub24gw6ggZmluaXRvCiAgICAgICAgICAgICAgICAgICAgICAgIE9SIG5ldyDDqCBmaW5pdG8iIiIKICAgICAgICAgICAgICAgICAgICBuZXdfc2MuaW5zZXJ0KHNlbGZfY3Vyc29yLmVsZW1lbnQoKSkKICAgICAgICAgICAgICAgICAgICBzZWxmX2NvdW50ZXIgKz0gMQogICAgICAgICAgICAgICAgICAgIHNlbGZfY3Vyc29yID0gc2VsZi5fY3BsLl9uZXh0KHNlbGZfY3Vyc29yKQogICAgICAgICAgICAgICAgZWxzZToKICAgICAgICAgICAgICAgICAgICAiIiJBbHRyaW1lbnRpIGFnZ2l1bmdpIHVuIGVsZW1lbnRvIGRhIG5ldyIiIgogICAgICAgICAgICAgICAgICAgIG5ld19zYy5pbnNlcnQobmV3X2N1cnNvci5lbGVtZW50KCkpCiAgICAgICAgICAgICAgICAgICAgbmV3X2NvdW50ZXIgKz0gMQogICAgICAgICAgICAgICAgICAgIG5ld19jdXJzb3IgPSBuZXcuX2NwbC5fbmV4dChuZXdfY3Vyc29yKQ==</text>
+      </register>
+      <register name="3" type="4">
+        <text encoding="base64">CiAgICAgICAgICAgIG5ld19jdXJzb3IgPSBuZXcuX2NwbC5maXJzdCgpICAgICAgICNjdXJzb3JlIHBlciBsZSBwb3NpdGlvbiBkaSBuZXcKICAgICAgICAgICAg</text>
+      </register>
+      <register name="4" type="4">
+        <text encoding="base64">CiAgICAgICAgICAgIHMgICAgI2N1cnNvcmUgcGVyIGxlIHBvc2l0aW9uIGRpIHNlbGY=</text>
+      </register>
+      <register name="5" type="4">
         <text>&quot;&quot;&quot;print(str(self_cursor.element()), str(new_cursor.element()))
                 if self_cursor.element() == new_cursor.element():
                     print(&quot;DDDDDDDDDDDDDDDDDDD&quot;)
@@ -108,67 +113,24 @@
                     new_cursor = new._cpl._next(new_cursor)
                     self_cursor = self._cpl._next(self_cursor)&quot;&quot;&quot;</text>
       </register>
-      <register name="2" type="4">
+      <register name="6" type="4">
         <text>if ScoreBoard.Score(&quot;Florence D. &quot;, 10.62, date(1988, 9, 24) == ScoreBoard.Score(&quot;Florence D. &quot;, 10.62, date(1988, 9, 24))):
     print(&quot;dfrffr&quot;)</text>
       </register>
-      <register name="3" type="4">
+      <register name="7" type="4">
         <text>if ScoreBoard.Score(&quot;Florence D. &quot;, 10.62, date(1988, 9, 24)) == ScoreBoard.Score(&quot;Florence D. &quot;, 10.62, date(1988, 9, 24)):
     print(&quot;dfrffr&quot;)</text>
       </register>
-      <register name="4" type="4">
+      <register name="8" type="4">
         <text>#sb_uno = sb_uno.merge(sb_uno)
 #print(str(sbm))</text>
       </register>
-      <register name="5" type="4">
+      <register name="9" type="4">
         <text>rint(&quot;COPIA\n&quot;)
 print(str(sb_due))</text>
       </register>
-      <register name="6" type="4">
-        <text encoding="base64">CiAgICBkZWYgX19kZWxpdGVtX18oc2VsZiwga2V5KToKICAgICAgICAiIiJSaW11b3ZlIGzigJllbGVtZW50byBuZWxsYSBwb3NpdGlvbiBwIGludmFsaWRhbmRvIGxhIHBvc2l0aW9uIiIiCiAgICAgICAgc2VsZi5kZWxldGUoa2V5KQ==</text>
-      </register>
-      <register name="7" type="4">
-        <text encoding="base64">cHJpbnQoIkRlY2ltYWwgaGV4ICAgY2hyICAgezA6XjQwfSIuZm9ybWF0KCJub25lIikpCnByaW50KCItLS0tLS0tIC0tLS0tIC0tLS0tIHswOi08NDB9Ii5mb3JtYXQoIiIpKQ==</text>
-      </register>
-      <register name="8" type="4">
-        <text>if __name__ == '__main__':
-    sb0 = ScoreBoard()
-    sb1 = ScoreBoard()
-    s01 = ScoreBoard.Score(&quot;01&quot;, 100, date.today())
-    s02 = ScoreBoard.Score(&quot;02&quot;, 200, date.today())
-    s03 = ScoreBoard.Score(&quot;03&quot;, 300, date.today())
-    s04 = ScoreBoard.Score(&quot;04&quot;, 400, date.today())
-    s05 = ScoreBoard.Score(&quot;05&quot;, 500, date.today())
-    s06 = ScoreBoard.Score(&quot;06&quot;, 600, date.today())
-    s11 = ScoreBoard.Score(&quot;11&quot;, 1100, date.today())
-    s12 = ScoreBoard.Score(&quot;12&quot;, 1200, date.today())
-    s13 = ScoreBoard.Score(&quot;13&quot;, 1300, date.today())
-    s14 = ScoreBoard.Score(&quot;14&quot;, 1400, date.today())
-    s15 = ScoreBoard.Score(&quot;15&quot;, 1500, date.today())
-    s16 = ScoreBoard.Score(&quot;16&quot;, 1600, date.today())
-    sb0.insert(s03)
-    sb0.insert(s02)
-    sb0.insert(s01)
-    sb0.insert(s04)
-    sb0.insert(s06)
-    sb0.insert(s05)
-    sb1.insert(s12)
-    sb1.insert(s11)
-    sb1.insert(s13)
-    sb1.insert(s16)
-    sb1.insert(s15)
-    sb1.insert(s14)
-    print(str(sb0))
-    print(str(sb1))
-
-    sbm = sb0.merge(sb1)
-    print(str(sbm))</text>
-      </register>
-      <register name="9" type="4">
-        <text encoding="base64">CnNiMC5pbnNlcnQoczAzKQpzYjAuaW5zZXJ0KHMwMikKc2IwLmluc2VydChzMDEpCnNiMC5pbnNlcnQoczA0KQpzYjAuaW5zZXJ0KHMwNikKc2IwLmluc2VydChzMDUpCnNiMS5pbnNlcnQoczEyKQpzYjEuaW5zZXJ0KHMxMSkKc2IxLmluc2VydChzMTMpCgpzYjEuaW5zZXJ0KHMxNCk=</text>
-      </register>
       <register name="-" type="4">
-        <text>sb_uno.insert(ScoreBoard.Score(&quot;Justin Gatlin&quot;, 9.74, date(2015, 5, 15)))</text>
+        <text encoding="base64">ICAgOnJldHVybjog</text>
       </register>
     </registers>
     <search>
