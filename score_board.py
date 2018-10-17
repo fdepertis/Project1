@@ -2,9 +2,9 @@ from circular_positional_list import CircularPositionalList
 import datetime
 
 
-class ScoreBoard():
+class ScoreBoard:
     class Score:
-        def __init__(self, player_name, value, score_date):
+        def __init__(self, player_name, value, date):
             """Crea uno Score.
             :param player_name: rappresenta il nome del player
             :param value: rappresenta lo score conseguito
@@ -14,24 +14,24 @@ class ScoreBoard():
                 raise TypeError("must be string.")
             if type(value) is not int and type(value) is not float:
                 raise TypeError("Score value must be an integer.")
-            if type(score_date) is not datetime.date:
+            if type(date) is not datetime.date:
                 raise TypeError("Score date must be an datetime.date .")
             self._player_name = player_name
             self._value = value
-            self._score_date = score_date
+            self._date = date
 
         def __str__(self):
             """
             :return: Restituisce una stringa che rappresenta gli attributi di un singolo Score.
             """
-            return self._player_name + "\t\t" + str(self._value) + "\t\t" + str(self._score_date)
+            return self._player_name + "\t\t" + str(self._value) + "\t\t" + str(self._date)
 
         def __eq__(self, other):
             """Operatore equal
             :param other: score
             :return: True if equal otherwise False
             """
-            if self._player_name == other._player_name and self._value == other._value and self._score_date == other._score_date:
+            if self._player_name == other._player_name and self._value == other._value and self._date == other._score_date:
                 return True
             else:
                 return False
@@ -131,8 +131,6 @@ class ScoreBoard():
             new_counter = 0                     #counter per le position di new
             new_sc = ScoreBoard() #10
             for i in range(self.size() + new.size()):
-                print(i)
-
                 if self_cursor.element()._value > new_cursor.element()._value and self_counter < self.size() or new_counter == new.size():
                     """Aggiungi un elemento da self se è minore del primo elemento di list2 AND self non è finito
                         OR new è finito"""

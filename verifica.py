@@ -21,6 +21,9 @@ print("Aggiungo un quarto elemento 19 prima dell'ultimo:\t", l_uno)
 l_uno.add_after(l_uno.last(), 23)
 print("Aggiungo un quinto elemento 23 dopo l'ultimo:\t\t", l_uno)
 print("Qual è la dimensione della lista?\t\t\t\t\t", len(l_uno))
+
+
+
 print("La lista è circolare?\t\t\t\t\t\t\t\t", l_uno.first().element() == l_uno.after(l_uno.last()) and l_uno.last().element() == l_uno.before(l_uno.first()))
 l_uno.delete(l_uno.find(13))
 print("Elimino 13 dalla lista:\t\t\t\t\t\t\t\t", l_uno)

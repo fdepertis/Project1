@@ -22,7 +22,7 @@ class CircularPositionalList(PositionalList):
         :param e: Rappresenta l'elemento da inserire in cima alla lista.
         :return: Ritorna la posizione del primo elemento della lista.
         """
-        self._header = self._Node(e, self._header, self._header)
+        self._header = self._Node(e, None, None)
         self._header._prev = self._header
         self._header._next = self._header
         self._size = 1
@@ -34,7 +34,7 @@ class CircularPositionalList(PositionalList):
         :return: Restituisce la Position precedente a p, None se p non ha un predecessore e
                  ValueError se p non è una position della lista.
         """
-        if self.is_empty():
+        if self.is_empty() or self._size == 1:
             return None
         else:
             return super().before(p)
@@ -44,7 +44,7 @@ class CircularPositionalList(PositionalList):
         :param p: Rappresenta la Position di riferimento.
         :return: Restituisce la Position successiva a p, None se p non ha un successore e
                  ValueError se p non è una position della lista."""
-        if self.is_empty():
+        if self.is_empty() or self._size == 1:
             return None
         else:
             return super().after(p)
@@ -87,7 +87,7 @@ class CircularPositionalList(PositionalList):
         :return: Restituisce l'elemento nella Position precedente a p, None se p non ha un predecessore e
                 ValueError se p non è una position della lista.
         """
-        if self.is_empty():
+        if self.is_empty() or self._size == 1:
             return None
         node = self._validate(p)
         return node._prev._element
@@ -98,7 +98,7 @@ class CircularPositionalList(PositionalList):
         :return: Restituisce l'elemento nella Position successiva a p, None se p non ha un successore e
                 ValueError se p non è una position della lista.
         """
-        if self.is_empty():
+        if self.is_empty() or self._size == 1:
             return None
         node = self._validate(p)
         return node._next._element
@@ -164,7 +164,7 @@ class CircularPositionalList(PositionalList):
         :return: Inserisce un nuovo elemento e dopo il nodo nella Position p e restituisce la Position
                  del nuovo elemento.
         """
-        return super().add_after(p,e)
+        return super().add_after(p, e)
 
     def find(self, e):
         """Restituisce una Position contenente la prima occorrenza dell'elemento e nella lista
