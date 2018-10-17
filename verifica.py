@@ -1,6 +1,5 @@
 from score_board import ScoreBoard
 from circular_positional_list import CircularPositionalList
-
 from datetime import date
 
 """Scrivere uno script verifica.py che testi tutte le funzionalità implementate.
@@ -52,7 +51,6 @@ l_uno.add_after(l_uno.last(), 43)
 l_due.add_after(l_due.last(), 43)
 print("Aggiungo 41 e 43 in entrambe:\t\t\t\t\t\t", l_uno)
 print("Sono ancora uguali?\t\t\t\t\t\t\t\t\t", l_uno == l_due)
-
 print("Le liste sono ordinate?\t\t\t\t\t\t\t\t", l_uno.is_sorted() and l_due.is_sorted())
 l_uno_ordinata = CircularPositionalList()
 for e in l_uno.bubblesorted():
@@ -69,6 +67,9 @@ l_uno_ordinata.clear()
 l_due_ordinata.clear()
 print("Svuoto le liste:", l_uno + l_due + l_uno_ordinata + l_due_ordinata)
 
+
+
+#Scoreboard Test
 print("\nIL TEST E' STATO EFFETTUATO SUL GIOCO DEI 100m QUINDI PER MIGLIORI RISULTATI DEL GIOCO INTENDIAMO IL MIGLIOR TEMPO TOTALIZZATO")
 sb_uno = ScoreBoard()
 if sb_uno.is_empty():
@@ -136,10 +137,8 @@ sb2_uno.insert(ScoreBoard.Score("Carmelita J.", 10.64, date(2009, 9, 20)))
 sb2_uno.insert(ScoreBoard.Score("Marion Jones", 10.65, date(1998, 9, 12)))
 sb2_uno.insert(ScoreBoard.Score("Marion Jones", 10.70, date(1999, 8, 22)))
 
-
 print(sb1_uno)
 print(sb2_uno)
 print("--------------Test-Merge------------------\n")
 print(str(sb1_uno.merge(sb2_uno)))
 print("Si noti che dei 12 score totali ne prende i migliori 10")
-

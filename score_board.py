@@ -50,9 +50,6 @@ class ScoreBoard():
         """
         return self._max
 
-
-
-
     def __str__(self):
         """
         :return: Restituisce una stringa che rappresenta una tabella contenente tutti gli Score presenti nella Scoreboard.
