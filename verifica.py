@@ -1,5 +1,6 @@
-from score_board import ScoreBoard
-from circular_positional_list import CircularPositionalList
+from project1.score_board import ScoreBoard
+from project1.circular_positional_list import CircularPositionalList, merge, bubblesorted
+
 from datetime import date
 
 """Scrivere uno script verifica.py che testi tutte le funzionalità implementate.
@@ -21,9 +22,6 @@ print("Aggiungo un quarto elemento 19 prima dell'ultimo:\t", l_uno)
 l_uno.add_after(l_uno.last(), 23)
 print("Aggiungo un quinto elemento 23 dopo l'ultimo:\t\t", l_uno)
 print("Qual è la dimensione della lista?\t\t\t\t\t", len(l_uno))
-
-
-
 print("La lista è circolare?\t\t\t\t\t\t\t\t", l_uno.first().element() == l_uno.after(l_uno.last()) and l_uno.last().element() == l_uno.before(l_uno.first()))
 l_uno.delete(l_uno.find(13))
 print("Elimino 13 dalla lista:\t\t\t\t\t\t\t\t", l_uno)
@@ -56,23 +54,19 @@ print("Aggiungo 41 e 43 in entrambe:\t\t\t\t\t\t", l_uno)
 print("Sono ancora uguali?\t\t\t\t\t\t\t\t\t", l_uno == l_due)
 print("Le liste sono ordinate?\t\t\t\t\t\t\t\t", l_uno.is_sorted() and l_due.is_sorted())
 l_uno_ordinata = CircularPositionalList()
-for e in l_uno.bubblesorted():
+for e in bubblesorted(l_uno):
     l_uno_ordinata.add_last(e)
 l_due_ordinata = CircularPositionalList()
-for e in l_due.bubblesorted():
+for e in bubblesorted(l_due):
     l_due_ordinata.add_last(e)
 print("Eseguo il bubblesort:\t\t\t\t\t\t\t\t", l_uno_ordinata)
 print("Le liste sono ordinate?\t\t\t\t\t\t\t\t", l_uno_ordinata.is_sorted() and l_due_ordinata.is_sorted())
-print("Allora eseguo il merge:\t\t\t\t\t\t\t\t", l_uno_ordinata.merge(l_due_ordinata))
+print("Allora eseguo il merge:\t\t\t\t\t\t\t\t", merge(l_uno_ordinata, l_due_ordinata))
 l_uno.clear()
 l_due.clear()
 l_uno_ordinata.clear()
 l_due_ordinata.clear()
 print("Svuoto le liste:", l_uno + l_due + l_uno_ordinata + l_due_ordinata)
-
-
-
-#Scoreboard Test
 print("\nIL TEST E' STATO EFFETTUATO SUL GIOCO DEI 100m QUINDI PER MIGLIORI RISULTATI DEL GIOCO INTENDIAMO IL MIGLIOR TEMPO TOTALIZZATO")
 sb_uno = ScoreBoard()
 if sb_uno.is_empty():
@@ -121,16 +115,13 @@ k = 1
 for n in sb_uno.last(3):
     print(str(k) + "°  \t" + str(n))
     k += 1
-
-print("Test")
+print("\nTest")
 sb1_uno = ScoreBoard(4)
 sb2_uno = ScoreBoard(9)
-
 sb1_uno.insert(ScoreBoard.Score("Florence D. ", 10.49, date(1988, 7, 16)))
 sb1_uno.insert(ScoreBoard.Score("Marion Jones", 10.65, date(1998, 9, 12)))
 sb1_uno.insert(ScoreBoard.Score("Carmelita J.", 10.67, date(2009, 9, 13)))
 sb1_uno.insert(ScoreBoard.Score("Elaine T.   ", 10.70, date(2016, 7, 1)))
-
 sb2_uno.insert(ScoreBoard.Score("Florence D. ", 10.61, date(1988, 7, 17)))
 sb2_uno.insert(ScoreBoard.Score("Florence D. ", 10.62, date(1988, 9, 24)))
 sb2_uno.insert(ScoreBoard.Score("Florence D. ", 10.70, date(1988, 7, 17)))
@@ -139,9 +130,10 @@ sb2_uno.insert(ScoreBoard.Score("Shelly-Ann  ", 10.70, date(2012, 6, 29)))
 sb2_uno.insert(ScoreBoard.Score("Carmelita J.", 10.64, date(2009, 9, 20)))
 sb2_uno.insert(ScoreBoard.Score("Marion Jones", 10.65, date(1998, 9, 12)))
 sb2_uno.insert(ScoreBoard.Score("Marion Jones", 10.70, date(1999, 8, 22)))
-
 print(sb1_uno)
 print(sb2_uno)
-print("--------------Test-Merge------------------\n")
-print(str(sb1_uno.merge(sb2_uno)))
+print("------------------Test-Merge-----------------------\n")
+sb1_uno.merge(sb2_uno)
+print(str(sb1_uno))
 print("Si noti che dei 12 score totali ne prende i migliori 10")
+

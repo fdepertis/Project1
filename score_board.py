@@ -1,10 +1,10 @@
-from circular_positional_list import CircularPositionalList
+from project1.circular_positional_list import CircularPositionalList
 import datetime
 
 
-class ScoreBoard:
+class ScoreBoard():
     class Score:
-        def __init__(self, player_name, value, date):
+        def __init__(self, player_name, value, score_date):
             """Crea uno Score.
             :param player_name: rappresenta il nome del player
             :param value: rappresenta lo score conseguito
@@ -14,29 +14,30 @@ class ScoreBoard:
                 raise TypeError("must be string.")
             if type(value) is not int and type(value) is not float:
                 raise TypeError("Score value must be an integer.")
-            if type(date) is not datetime.date:
+            if type(score_date) is not datetime.date:
                 raise TypeError("Score date must be an datetime.date .")
             self._player_name = player_name
             self._value = value
-            self._date = date
+            self._score_date = score_date
 
         def __str__(self):
             """
             :return: Restituisce una stringa che rappresenta gli attributi di un singolo Score.
             """
-            return self._player_name + "\t\t" + str(self._value) + "\t\t" + str(self._date)
+            return self._player_name + "\t\t" + str(self._value) + "s\t\t" + str(self._score_date)
 
         def __eq__(self, other):
             """Operatore equal
             :param other: score
             :return: True if equal otherwise False
             """
-            if self._player_name == other._player_name and self._value == other._value and self._date == other._date:
+            if self._player_name == other._player_name and self._value == other._value and self._score_date == other._score_date:
                 return True
             else:
                 return False
 
     #------------------------Public-Methods-----------------------------
+
     def __init__(self, x = 10):
         """Crea uno Scoreboard di dimensione x.
         :param x: rappresenta la dimensione massima dello Scoreboard
@@ -55,13 +56,15 @@ class ScoreBoard:
         :return: Restituisce una stringa che rappresenta una tabella contenente tutti gli Score presenti nella Scoreboard.
         """
         cursor = self._cpl.first()
-        s = "------------------TOP-10-BEST-100m-----------------\n----\t-----------\t\t\t-----\t\t-----------\n||||\tPlayer Name\t\t\tScore\t\tDate\n----\t-----------\t\t\t-----\t\t-----------\n"
+        s = "----\t-----------\t\t\t-----\t\t-----------\n||||\tPlayer Name\t\t\tScore\t\tDate\n----\t-----------\t\t\t-----\t\t-----------\n"
         for i in range(self.size()):
             i += 1
             s += str(i) + "°  \t" + str(cursor.element()) + "\n"
             cursor = self._cpl._next(cursor)
         return s
+
     #------------------------Private-Methods----------------------------
+
     def _copy(self):
         """
         Restituisce una copia dello score board
@@ -70,7 +73,9 @@ class ScoreBoard:
         for e in self._cpl:
             new_score.insert(e)
         return new_score
+
     #------------------------Public-Methods-----------------------------
+
     def size(self):
         """
         :return: Restituisce il numero di Score presenti nello Scoreboard.
@@ -91,9 +96,6 @@ class ScoreBoard:
         """
         if type(s) is not ScoreBoard.Score:
             raise TypeError("Parameter must be Score typed")
-        """for e in self._cpl:
-            if e == s:
-                return"""
         if self.is_empty():
             self._cpl.add_last(s)
         else:
@@ -114,35 +116,14 @@ class ScoreBoard:
                 self._cpl.delete(self._cpl.last())
 
     def merge(self, new):
-        """
+        """Fonde lo Scoreboard corrente con new selezionando gli x migliori risultati.
         :param new: Rappresenta la lista che verrà accoppiata con self.
-        :return: Fonde lo Scoreboard corrente con new selezionando i 10 migliori risultati.
         """
         if type(self) is not type(new):
             raise TypeError("The lists to merge are not ScoreBoard typed.")
-        elif self.is_empty():
-            return new
-        elif new.is_empty():
-            return self
         else:
-            self_cursor = self._cpl.first()     #cursore per le position di self
-            new_cursor = new._cpl.first()       #cursore per le position di new
-            self_counter = 0                    #counter per le position di self
-            new_counter = 0                     #counter per le position di new
-            new_sc = ScoreBoard() #10
-            for i in range(self.size() + new.size()):
-                if self_cursor.element()._value > new_cursor.element()._value and self_counter < self.size() or new_counter == new.size():
-                    """Aggiungi un elemento da self se è minore del primo elemento di list2 AND self non è finito
-                        OR new è finito"""
-                    new_sc.insert(self_cursor.element())
-                    self_counter += 1
-                    self_cursor = self._cpl._next(self_cursor)
-                else:
-                    """Altrimenti aggiungi un elemento da new"""
-                    new_sc.insert(new_cursor.element())
-                    new_counter += 1
-                    new_cursor = new._cpl._next(new_cursor)
-            return new_sc
+            for s in new._cpl:
+                self.insert(s)
 
     def top(self, i = 1):
         """
@@ -167,4 +148,3 @@ class ScoreBoard:
             new_list.add_last(cursor.element())
             cursor = self._cpl._prev(cursor)
         return new_list
-

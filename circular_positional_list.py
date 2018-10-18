@@ -22,7 +22,7 @@ class CircularPositionalList(PositionalList):
         :param e: Rappresenta l'elemento da inserire in cima alla lista.
         :return: Ritorna la posizione del primo elemento della lista.
         """
-        self._header = self._Node(e, None, None)
+        self._header = self._Node(e, self._header, self._header)
         self._header._prev = self._header
         self._header._next = self._header
         self._size = 1
@@ -31,7 +31,7 @@ class CircularPositionalList(PositionalList):
     def _prev(self, p):
         """
         :param p: Rappresenta la Position di riferimento.
-        :return: Restituisce la Position precedente a p, None se p non ha un predecessore e
+        :return: Restituisce la Position precedente a p, None se la lista e' vuota e
                  ValueError se p non è una position della lista.
         """
         if self.is_empty():
@@ -42,7 +42,7 @@ class CircularPositionalList(PositionalList):
     def _next(self, p):
         """
         :param p: Rappresenta la Position di riferimento.
-        :return: Restituisce la Position successiva a p, None se p non ha un successore e
+        :return: Restituisce la Position successiva a p, None se la lista e' vuota e
                  ValueError se p non è una position della lista."""
         if self.is_empty():
             return None
@@ -164,11 +164,14 @@ class CircularPositionalList(PositionalList):
         :return: Inserisce un nuovo elemento e dopo il nodo nella Position p e restituisce la Position
                  del nuovo elemento.
         """
-        return super().add_after(p, e)
+        return super().add_after(p,e)
 
     def find(self, e):
         """Restituisce una Position contenente la prima occorrenza dell'elemento e nella lista
-                o None se non e' presente"""
+                o None se non e' presente
+        :param e: Elemento e da trovare
+        :return: cursor: Ritorna la Position p in cui è contenuta la prima occorenza di e nella lista o None se non l'ha trovata
+        """
         cursor = self.first()
         for i in range(self._size):
             if cursor.element() == e:
@@ -178,11 +181,19 @@ class CircularPositionalList(PositionalList):
         return None
 
     def replace(self, p, e):
-        """Sostituisce l'elemento in Position p con l'elemento e e restituisce il vecchio elemento"""
+        """Sostituisce l'elemento in Position p con l'elemento e e restituisce il vecchio elemento
+
+        :param p: Rappresenta la Position in cui modificare l'elemento del nodo associato
+        :param e: Rappresenta l'elemento da inserire al posto dell'elemento corrente del nodo di p Position
+        :return: Ritorna l'elemento precedente di p
+        """
         return super().replace(p ,e)
 
     def delete(self, p):
-        """Rimuove e restituisce l'elemento in Position p dalla lista e invalida p"""
+        """Rimuove e restituisce l'elemento in Position p dalla lista e invalida p
+        :param p: Position p da eliminare e invalidare
+        :return: del_node: Restituisce l'elemento della Position p eliminata
+        """
         if p == self.first() and self._size > 1:
             self._header = self._header._next
         del_node = super().delete(p)
@@ -199,15 +210,31 @@ class CircularPositionalList(PositionalList):
             cursor = next_cursor
 
     def count(self, e):
-        """Restituisce il numero di occorrenze di e nella lista"""
+        """Calcola il numero di occorrenze dell'elemento e
+        :param e: elemento da contare
+        :return: counter: restituisce il numero di occorrenze dell'elemento e nella lista
+        """
         counter = 0
         for i in self.__iter__():
             if i == e:
                 counter += 1
         return counter
 
-    def reverse(self):
+    def reverse1(self):
         """Inverte l'ordine degli elementi nella lista"""
+        tmp = None
+        current = self._header
+        for i in range(self._size):
+            tmp = current._prev
+            current._prev = current._next
+            current._next = tmp
+            current = current._prev
+        self._header = tmp._prev
+
+    """    
+    old reverse
+    def reverse2(self):
+        Inverte l'ordine degli elementi nella lista
         left_cursor = self.first()
         copy = self.copy()
         right_cursor = copy.last()
@@ -215,10 +242,13 @@ class CircularPositionalList(PositionalList):
             left_cursor._node._element = right_cursor.element()
             left_cursor = self._next(left_cursor)
             right_cursor = copy._prev(right_cursor)
+    """
 
     def copy(self):
         """Restituisce una nuova CircularPositionalList che contiene gli stessi elementi
-            della lista corrente memorizzati nello stesso ordine"""
+            della lista corrente memorizzati nello stesso ordine
+        :return: new_list: ritorna una deep copy della lista
+        """
         new_list = CircularPositionalList()
         for e in self:
             new_list.add_last(e)
@@ -227,8 +257,11 @@ class CircularPositionalList(PositionalList):
     #--------------------------Operators---------------------------------
 
     def __add__(self, other):
-        """Crea una lista con tutti gli elementi di x e tutti gli elementi di y
-            inseriti dopo l’ultimo elemento di x"""
+        """Crea una lista con tutti gli elementi di self e tutti gli elementi di other
+            inseriti dopo l’ultimo elemento di self
+        :param other: lista da sommare alla lista corrente
+        :return: sum: Ritorna la somma
+        """
         if type(other) is not CircularPositionalList:
             raise TypeError("The second operand is not a cascaded CircularPositionList")
         sum = CircularPositionalList()
@@ -246,7 +279,10 @@ class CircularPositionalList(PositionalList):
         return self
 
     def __contains__(self, item):
-        """Restituisce True se p è presente nella lista e False altrimenti"""
+        """Restituisce True se item è presente nella lista e False altrimenti
+        :param item: Position item
+        :return: bool: True se item è presente nella lista altrimenti False
+        """
         cursor = self.first()
         for i in range(self._size):
             if cursor == item:
@@ -255,16 +291,24 @@ class CircularPositionalList(PositionalList):
         return False
 
     def __getitem__(self, item):
-        """Restituisce l’elemento contenuto nella position p"""
+        """Restituisce l’elemento contenuto nella position p
+        :param item: Position item
+        :return: ritorna l'elemento contenuto nella Postion P
+        """
         node = self._validate(item)
         return node._element
 
     def __len__(self):
-        """Restituisce il numero di elementi contenuti in x"""
+        """Restituisce il numero di elementi contenuti in x
+        :return: _size: Numero di elementi
+        """
         return self._size
 
     def __setitem__(self, key, value):
-        """Sostituisce l’elemento nella position p con e"""
+        """Sostituisce l’elemento nella position key con value
+        :param key: Position
+        :param value: Elemento
+        """
         node = self._validate(key)
         node._element = value
 
@@ -281,6 +325,7 @@ class CircularPositionalList(PositionalList):
             cursor = self._next(cursor)
 
     def __str__(self):
+
         """Rappresenta il contenuto della lista come una sequenza di elementi,
             separati da virgole, partendo da quello che è identificato come primo"""
         s = ""
@@ -307,56 +352,60 @@ class CircularPositionalList(PositionalList):
                     other_cursor = other._next(other_cursor)
             return True
 
-    def bubblesorted(self):
-        """Scrivere un generatore bubblesorted che ordina gli elementi della CircularPositionalList e
-            li restituisce nell’ordine risultante. Il generatore non deve modificare l’ordine in cui sono
-            memorizzati gli elementi nella lista."""
-        self._check_sortability()               #O(n)
-        array = list(self)                      #O(n)
-        for i in range(self._size-1):
-            modified = False                    #O(n)
-            for j in range(self._size-i-1):
-                if array[j] > array[j+1]:
-                    temp = array[j]             #O(n^2)
-                    array[j] = array[j+1]       #O(n^2)
-                    array[j+1] = temp           #O(n^2)
-                    modified = True             #O(n^2)
-            if not modified:
-                break
-        for i in range(self._size):
-            yield array[i]                      # O(n)
-        #bubble sort: best case = O(n), worst case = O(n^2)
-        #T(n) per restituire l'iter
-        # complessità non accettabile T(n) + (T(n) al più T(n^2)) + T(n) = caso migliore T(n) caso perggiore T(n)+T(n^2)
-        # versione rudimentale del bubble sort da migliorare in modo tale da ottenere la stessa complessità del bubble sort nel caso peggiore"""
+def bubblesorted(list1):
+    """Scrivere un generatore bubblesorted che ordina gli elementi della CircularPositionalList e
+        li restituisce nell’ordine risultante. Il generatore non deve modificare l’ordine in cui sono
+        memorizzati gli elementi nella lista."
+    :param list1: lista da ordinare
+    :return: restituisce iteratore della lista ordinata
+    """
+    list1._check_sortability()
+    array = list(list1)
+    for i in range(list1._size-1):
+        modified = False
+        for j in range(list1._size-i-1):
+            if array[j] > array[j+1]:
+                temp = array[j]
+                array[j] = array[j+1]
+                array[j+1] = temp
+                modified = True
+        if not modified:
+            break
+    for i in range(list1._size):
+        yield array[i]
 
-    def merge(self, list2):
-        """Scrivere una funzione merge che prende in input due CircularPositionalList ordinate
-            e le fonde in una nuova CircularPositionalList ordinata."""
-        if type(self) is not type(list2):
-            raise TypeError("Lists to merge are not of the same type.")
-        elif not (self.is_sorted() and list2.is_sorted()):
-            raise ValueError("Lists to merge are not already sorted.")
-        elif self.is_empty():
-            return list2
-        elif list2.is_empty():
-            return self
-        else:
-            self_cursor = self.first()          #cursore per le position di self
-            list2_cursor = list2.first()        #cursore per le position di list2
-            self_counter = 0                    #counter per le position di self
-            list2_counter = 0                   #counter per le position di list2
-            new_list = CircularPositionalList()
-            for i in range(self._size + list2._size):
-                if self_cursor.element() < list2_cursor.element() and self_counter < self._size or list2_counter == list2._size:
-                    """Aggiungi un elemento da self se è minore del primo elemento di list2 AND self non è finito
-                        OR list2 è finito"""
-                    new_list.add_last(self_cursor.element())
-                    self_counter += 1
-                    self_cursor = self._next(self_cursor)
-                else:
-                    """Altrimenti aggiungi un elemento da list2"""
-                    new_list.add_last(list2_cursor.element())
-                    list2_counter += 1
-                    list2_cursor = list2._next(list2_cursor)
-            return new_list
+def merge(list1, list2):
+    """Funzione merge che prende in input due CircularPositionalList ordinate
+        e le fonde in una nuova CircularPositionalList ordinata.
+
+    :param list1: Prima lista ordinata
+    :param list2: Seconda Lista ordinata
+    :return: new_list: Fusione ordinata delle due liste list1, list2
+    """
+    if type(list1) is not type(list2):
+        raise TypeError("Lists to merge are not of the same type.")
+    elif not (list1.is_sorted() and list2.is_sorted()):
+        raise ValueError("Lists to merge are not already sorted.")
+    elif list1.is_empty():
+        return list2
+    elif list2.is_empty():
+        return list1
+    else:
+        self_cursor = list1.first()          #cursore per le position di self
+        list2_cursor = list2.first()        #cursore per le position di list2
+        self_counter = 0                    #counter per le position di self
+        list2_counter = 0                   #counter per le position di list2
+        new_list = CircularPositionalList()
+        for i in range(list1._size + list2._size):
+            if self_cursor.element() < list2_cursor.element() and self_counter < list1._size or list2_counter == list2._size:
+                """Aggiungi un elemento da self se è minore del primo elemento di list2 AND self non è finito
+                    OR list2 è finito"""
+                new_list.add_last(self_cursor.element())
+                self_counter += 1
+                self_cursor = list1._next(self_cursor)
+            else:
+                """Altrimenti aggiungi un elemento da list2"""
+                new_list.add_last(list2_cursor.element())
+                list2_counter += 1
+                list2_cursor = list2._next(list2_cursor)
+        return new_list
