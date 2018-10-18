@@ -220,7 +220,7 @@ class CircularPositionalList(PositionalList):
                 counter += 1
         return counter
 
-    def reverse1(self):
+    def reverse(self):
         """Inverte l'ordine degli elementi nella lista"""
         tmp = None
         current = self._header
