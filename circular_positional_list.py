@@ -1,5 +1,7 @@
 from TdP_collections.list.positional_list import PositionalList
 
+class EmptyException(Exception):
+    pass
 
 class CircularPositionalList(PositionalList):
 
@@ -35,7 +37,11 @@ class CircularPositionalList(PositionalList):
                  ValueError se p non è una position della lista.
         """
         if self.is_empty():
-            return None
+            try:
+                raise EmptyException
+            except EmptyException:
+                print("EmptyException: La lista è vuota")
+                return None
         else:
             return super().before(p)
 
@@ -45,7 +51,11 @@ class CircularPositionalList(PositionalList):
         :return: Restituisce la Position successiva a p, None se la lista e' vuota e
                  ValueError se p non è una position della lista."""
         if self.is_empty():
-            return None
+            try:
+                raise EmptyException
+            except EmptyException:
+                print("EmptyException: La lista è vuota")
+                return None
         else:
             return super().after(p)
 
@@ -53,13 +63,19 @@ class CircularPositionalList(PositionalList):
         """
         :return: Restituisce un TypeError nel caso in cui la lista contenga elementi non tutti dello stesso tipo.
         """
-        first_type = type(self.first().element())
-        cursor = self._next(self.first())
-        for i in range(self._size - 1):
-            if type(cursor.element()) is not first_type:
-                raise TypeError("List cannot be sorted because elements are not all of the same type.")
-            else:
-                cursor = self._next(cursor)
+        if self.is_empty():
+            try:
+                raise EmptyException
+            except EmptyException:
+                print("EmptyException: La lista è vuota")
+        else:
+            first_type = type(self.first().element())
+            cursor = self._next(self.first())
+            for i in range(self._size - 1):
+                if type(cursor.element()) is not first_type:
+                    raise TypeError("List cannot be sorted because elements are not all of the same type.")
+                else:
+                    cursor = self._next(cursor)
 
    #----------------------------Public-Methods----------------------------
 
@@ -68,7 +84,11 @@ class CircularPositionalList(PositionalList):
         :return: Restituisce la Position dell’elemento che è identificato come il primo oppure None se la lista è vuota.
         """
         if self.is_empty():
-            return None
+            try:
+                raise EmptyException
+            except EmptyException:
+                print("EmptyException: La lista è vuota")
+                return None
         else:
             return self._make_position(self._header)
 
@@ -77,7 +97,11 @@ class CircularPositionalList(PositionalList):
         :return: Restituisce la Position dell'elemento che è identificato come l'ultimo oppure None se la lista è vuota.
         """
         if self.is_empty():
-            return None
+            try:
+                raise EmptyException
+            except EmptyException:
+                print("EmptyException: La lista è vuota")
+                return None
         else:
             return self._make_position(self._header._prev)
 
@@ -87,7 +111,13 @@ class CircularPositionalList(PositionalList):
         :return: Restituisce l'elemento nella Position precedente a p, None se p non ha un predecessore e
                 ValueError se p non è una position della lista.
         """
-        if self.is_empty() or self._size == 1:
+        if self.is_empty():
+            try:
+                raise EmptyException
+            except EmptyException:
+                print("EmptyException: La lista è vuota")
+                return None
+        if self._size == 1:
             return None
         node = self._validate(p)
         return node._prev._element
@@ -98,7 +128,13 @@ class CircularPositionalList(PositionalList):
         :return: Restituisce l'elemento nella Position successiva a p, None se p non ha un successore e
                 ValueError se p non è una position della lista.
         """
-        if self.is_empty() or self._size == 1:
+        if self.is_empty():
+            try:
+                raise EmptyException
+            except EmptyException:
+                print("EmptyException: La lista è vuota")
+                return None
+        if self._size == 1:
             return None
         node = self._validate(p)
         return node._next._element
@@ -114,14 +150,20 @@ class CircularPositionalList(PositionalList):
         :return: Restituisce True se la lista è ordinata e False altrimenti. Si definisce ordinata una lista ordinata
                  i cui elementi sono tutti dello stesso tipo e sono disposti in ordine crescente a partire dall'header.
         """
-        cursor = self.first()
-        first_type = type(cursor.element())
-        for i in range(self._size - 1):
-            if type(self._next(cursor).element()) is not first_type or cursor.element() > self._next(cursor).element():
-                return False
-            else:
-                cursor = self._next(cursor)
-        return True
+        if self.is_empty():
+            try:
+                raise EmptyException
+            except EmptyException:
+                print("EmptyException: La lista è vuota")
+        else:
+            cursor = self.first()
+            first_type = type(cursor.element())
+            for i in range(self._size - 1):
+                if type(self._next(cursor).element()) is not first_type or cursor.element() > self._next(cursor).element():
+                    return False
+                else:
+                    cursor = self._next(cursor)
+            return True
 
     def add_first(self, e):
         """
@@ -172,13 +214,20 @@ class CircularPositionalList(PositionalList):
         :param e: Elemento e da trovare
         :return: cursor: Ritorna la Position p in cui è contenuta la prima occorenza di e nella lista o None se non l'ha trovata
         """
-        cursor = self.first()
-        for i in range(self._size):
-            if cursor.element() == e:
-                return cursor
-            else:
-                cursor = self._next(cursor)
-        return None
+        if self.is_empty():
+            try:
+                raise EmptyException
+            except EmptyException:
+                print("EmptyException: La lista è vuota , non c'e' nessun elemeneto da poter trovare")
+                return None
+        else:
+            cursor = self.first()
+            for i in range(self._size):
+                if cursor.element() == e:
+                    return cursor
+                else:
+                    cursor = self._next(cursor)
+            return None
 
     def replace(self, p, e):
         """Sostituisce l'elemento in Position p con l'elemento e e restituisce il vecchio elemento
@@ -187,49 +236,79 @@ class CircularPositionalList(PositionalList):
         :param e: Rappresenta l'elemento da inserire al posto dell'elemento corrente del nodo di p Position
         :return: Ritorna l'elemento precedente di p
         """
-        return super().replace(p ,e)
+        if self.is_empty():
+            try:
+                raise EmptyException
+            except EmptyException:
+                print("EmptyException: La lista è vuota , non c'e' nessuna Position da aggiornare")
+        else:
+            return super().replace(p ,e)
 
     def delete(self, p):
         """Rimuove e restituisce l'elemento in Position p dalla lista e invalida p
         :param p: Position p da eliminare e invalidare
         :return: del_node: Restituisce l'elemento della Position p eliminata
         """
-        if p == self.first() and self._size > 1:
-            self._header = self._header._next
-        del_node = super().delete(p)
-        p._node = None
-        p._container = None
-        return del_node
+        if self.is_empty():
+            try:
+                raise EmptyException
+            except EmptyException:
+                print("EmptyException: La lista è vuota , non c'e' nessuna Postion da eliminare")
+        else:
+            if p == self.first() and self._size > 1:
+                self._header = self._header._next
+            del_node = super().delete(p)
+            p._node = None
+            p._container = None
+            return del_node
 
     def clear(self):
         """Rimuove tutti gli elementi della lista invalidando le corrispondeti position"""
-        cursor = self.last()
-        for i in range(self._size):
-            next_cursor = self._prev(cursor)
-            self.delete(cursor)
-            cursor = next_cursor
+        if self.is_empty():
+            try:
+                raise EmptyException
+            except EmptyException:
+                print("EmptyException: La lista è vuota , non c'e' nessun elemento da rimuovere")
+        else:
+            cursor = self.last()
+            for i in range(self._size):
+                next_cursor = self._prev(cursor)
+                self.delete(cursor)
+                cursor = next_cursor
 
     def count(self, e):
         """Calcola il numero di occorrenze dell'elemento e
         :param e: elemento da contare
         :return: counter: restituisce il numero di occorrenze dell'elemento e nella lista
         """
-        counter = 0
-        for i in self.__iter__():
-            if i == e:
-                counter += 1
-        return counter
+        if self.is_empty():
+            try:
+                raise EmptyException
+            except EmptyException:
+                print("EmptyException: La lista è vuota , non c'e' nessun elemento da contare")
+        else:
+            counter = 0
+            for i in self.__iter__():
+                if i == e:
+                    counter += 1
+            return counter
 
     def reverse(self):
         """Inverte l'ordine degli elementi nella lista"""
-        tmp = None
-        current = self._header
-        for i in range(self._size):
-            tmp = current._prev
-            current._prev = current._next
-            current._next = tmp
-            current = current._prev
-        self._header = tmp._prev
+        if self.is_empty():
+            try:
+                raise EmptyException
+            except EmptyException:
+                print("EmptyException: La lista è vuota , non c'e' nessun elemento da invertire")
+        else:
+            tmp = None
+            current = self._header
+            for i in range(self._size):
+                tmp = current._prev
+                current._prev = current._next
+                current._next = tmp
+                current = current._prev
+            self._header = tmp._prev
 
     """    
     old reverse
@@ -249,10 +328,16 @@ class CircularPositionalList(PositionalList):
             della lista corrente memorizzati nello stesso ordine
         :return: new_list: ritorna una deep copy della lista
         """
-        new_list = CircularPositionalList()
-        for e in self:
-            new_list.add_last(e)
-        return new_list
+        if self.is_empty():
+            try:
+                raise EmptyException
+            except EmptyException:
+                print("EmptyException: La lista è vuota , non posso produrti una copia")
+        else:
+            new_list = CircularPositionalList()
+            for e in self:
+                new_list.add_last(e)
+            return new_list
 
     #--------------------------Operators---------------------------------
 
@@ -283,20 +368,33 @@ class CircularPositionalList(PositionalList):
         :param item: Position item
         :return: bool: True se item è presente nella lista altrimenti False
         """
-        cursor = self.first()
-        for i in range(self._size):
-            if cursor == item:
-                return True
-            cursor = self._next(cursor)
-        return False
+        if self.is_empty():
+            try:
+                raise EmptyException
+            except EmptyException:
+                print("EmptyException: La lista è vuota " + str(item) + "non è contenuto ")
+                return False
+        else:
+            cursor = self.first()
+            for i in range(self._size):
+                if cursor == item:
+                    return True
+                cursor = self._next(cursor)
+            return False
 
     def __getitem__(self, item):
-        """Restituisce l’elemento contenuto nella position p
+        """Restituisce l’elemento contenuto nella position item
         :param item: Position item
-        :return: ritorna l'elemento contenuto nella Postion P
+        :return: ritorna l'elemento contenuto nella Postion item
         """
-        node = self._validate(item)
-        return node._element
+        if self.is_empty():
+            try:
+                raise EmptyException
+            except EmptyException:
+                print("EmptyException: La lista è vuota , la position passata non è presente")
+        else:
+            node = self._validate(item)
+            return node._element
 
     def __len__(self):
         """Restituisce il numero di elementi contenuti in x
@@ -309,8 +407,14 @@ class CircularPositionalList(PositionalList):
         :param key: Position
         :param value: Elemento
         """
-        node = self._validate(key)
-        node._element = value
+        if self.is_empty():
+            try:
+                raise EmptyException
+            except EmptyException:
+                print("EmptyException: La lista è vuota , non c'e' nessuna position in cui poter sostituire l'elemento passato")
+        else:
+            node = self._validate(key)
+            node._element = value
 
     def __delitem__(self, key):
         """Rimuove l’elemento nella position p invalidando la position"""
@@ -319,10 +423,16 @@ class CircularPositionalList(PositionalList):
     def __iter__(self):
         """Generatore che restituisce gli elementi della lista a partire da quello che è
             identificato come primo fino a quello che è identificato come ultimo"""
-        cursor = self.first()
-        for i in range(self._size):
-            yield cursor.element()
-            cursor = self._next(cursor)
+        if self.is_empty():
+            try:
+                raise EmptyException
+            except EmptyException:
+                print("EmptyException: La lista è vuota , non si può generare un iteratore")
+        else:
+            cursor = self.first()
+            for i in range(self._size):
+                yield cursor.element()
+                cursor = self._next(cursor)
 
     def __str__(self):
 
@@ -359,6 +469,7 @@ def bubblesorted(list1):
     :param list1: lista da ordinare
     :return: restituisce iteratore della lista ordinata
     """
+
     list1._check_sortability()
     array = list(list1)
     for i in range(list1._size-1):
