@@ -46,8 +46,8 @@
         <mark key="]" line="151" column="3" />
         <mark key="." line="151" column="3" />
       </file>
-      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/project1/verifica.py" timestamp="1539851281387">
-        <mark key="[" line="35" column="0" />
+      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/project1/verifica.py" timestamp="1539874378254">
+        <mark key="[" line="139" column="0" />
         <mark key="]" line="35" column="0" />
         <mark key="." line="35" column="0" />
       </file>
@@ -62,11 +62,6 @@
       </file>
       <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tecniche di Programmazione/TdP_collections/TdP_collections/list/positional_list.py" timestamp="1539767103996">
         <mark key="[" line="60" column="14" />
-      </file>
-      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/project1/circular_positional_list.py" timestamp="1539855301709">
-        <mark key="[" line="386" column="7" />
-        <mark key="]" line="386" column="7" />
-        <mark key="." line="386" column="7" />
       </file>
       <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/venv/test_circular_positional_list.py" timestamp="1539282243770">
         <mark key="[" line="19" column="40" />
@@ -91,49 +86,46 @@
     </jumps>
     <registers>
       <register name="1" type="4">
-        <text>&quot;&quot;&quot;for e in self._cpl:
-            if e == s:
-                return&quot;&quot;&quot;</text>
+        <text>if self.is_empty() or self._size == 1:
+            return None</text>
       </register>
       <register name="&quot;" type="4">
+        <text>if self.is_empty() or self._size == 1:
+            return None</text>
+      </register>
+      <register name="2" type="4">
+        <text>else:
+        if self.is_empty():
+            return None</text>
+      </register>
+      <register name="3" type="4">
         <text>&quot;&quot;&quot;for e in self._cpl:
             if e == s:
                 return&quot;&quot;&quot;</text>
       </register>
-      <register name="2" type="4">
+      <register name="4" type="4">
         <text encoding="base64">CiAgICAiIiIiIiI=</text>
       </register>
-      <register name="3" type="4">
+      <register name="5" type="4">
         <text encoding="base64">I2J1YmJsZSBzb3J0OiBiZXN0IGNhc2UgPSBPKG4pLCB3b3JzdCBjYXNlID0gTyhuXjIpCiAgICAjVChuKSBwZXIgcmVzdGl0dWlyZSBsJ2l0ZXIKICAgICMgY29tcGxlc3NpdMOgIG5vbiBhY2NldHRhYmlsZSBUKG4pICsgKFQobikgYWwgcGnDuSBUKG5eMikpICsgVChuKSA9IGNhc28gbWlnbGlvcmUgVChuKSBjYXNvIHBlcmdnaW9yZSBUKG4pK1Qobl4yKQogICAgIyB2ZXJzaW9uZSBydWRpbWVudGFsZSBkZWwgYnViYmxlIHNvcnQgZGEgbWlnbGlvcmFyZSBpbiBtb2RvIHRhbGUgZGEgb3R0ZW5lcmUgbGEgc3Rlc3NhIGNvbXBsZXNzaXTDoCBkZWwgYnViYmxlIHNvcnQgbmVsIGNhc28gcGVnZ2lvcmUiIiIK</text>
       </register>
-      <register name="4" type="4">
+      <register name="6" type="4">
         <text encoding="base64">CiAgICAgICAgICAgICNwcmludCgiY3VycmVudC0tLT4iLGN1cnJlbnQuX2VsZW1lbnQp</text>
       </register>
-      <register name="5" type="4">
+      <register name="7" type="4">
         <text encoding="base64">ICAgICAjcHJpbnQoImFmdGVyIGN1cnJlbnQgcHJldi0tLT4iLGN1cnJlbnQuX3ByZXYuX2VsZW1lbnQpCiAgICAgICAgICAgICNwcmludCgiYmVmb3JlIGN1cnJlbnQgbmV4dC0tLT4iLGN1cnJlbnQuX25leHQuX2VsZW1lbnQp</text>
       </register>
-      <register name="6" type="4">
+      <register name="8" type="4">
         <text>print(&quot;ssssssssssssssssssssssssssssssss&quot;)
 #l_uno.reverse()
 
 print(&quot;ddddddddddddddddddddddddddddddddddddddddd&quot;)</text>
       </register>
-      <register name="7" type="4">
+      <register name="9" type="4">
         <text encoding="base64">CiAgICAgICAgIyBTd2FwIG5leHQgYW5kIHByZXYgZm9yIGFsbCBub2RlcyBvZiAgCiAgICAgICAgIyBkb3VibHkgbGlua2VkIGxpc3Qg</text>
       </register>
-      <register name="8" type="4">
-        <text>cheader=copy.first()
-        ctrailer=copy.last()
-        cnext_header=copy._next(copy.first())
-        cprev_trailer=copy._prev(copy.last())</text>
-      </register>
-      <register name="9" type="4">
-        <text>self.insert(s)
-
-            return new_sc</text>
-      </register>
       <register name="-" type="4">
-        <text>&quot;&quot;&quot;Restituisce il numero di occorrenze di e nella lista&quot;&quot;&quot;</text>
+        <text encoding="base64">IHJldHVybiBOb25l</text>
       </register>
     </registers>
     <search>
