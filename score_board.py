@@ -1,4 +1,4 @@
-from project1.circular_positional_list import CircularPositionalList
+from circular_positional_list import CircularPositionalList
 import datetime
 
 

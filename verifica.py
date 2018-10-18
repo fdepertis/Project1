@@ -1,5 +1,5 @@
-from project1.score_board import ScoreBoard
-from project1.circular_positional_list import CircularPositionalList, merge, bubblesorted
+from score_board import ScoreBoard
+from circular_positional_list import CircularPositionalList, merge, bubblesorted
 
 from datetime import date
 
