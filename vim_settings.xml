@@ -21,13 +21,13 @@
         <mark key="]" line="184" column="0" />
         <mark key="." line="184" column="0" />
       </file>
-      <file name="/Python Console" timestamp="1539715428571">
+      <file name="/Python Console" timestamp="1539854363956">
         <mark key="[" line="0" column="0" />
       </file>
-      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/project1/score_board.py" timestamp="1539795211188">
-        <mark key="[" line="119" column="5" />
-        <mark key="]" line="119" column="5" />
-        <mark key="." line="119" column="5" />
+      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/project1/score_board.py" timestamp="1539854461625">
+        <mark key="[" line="97" column="8" />
+        <mark key="]" line="97" column="8" />
+        <mark key="." line="97" column="8" />
       </file>
       <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tecniche di Programmazione/TdP_collections/TdP_collections/map/map_base.py" timestamp="1539071427306">
         <mark key="[" line="33" column="20" />
@@ -63,10 +63,10 @@
       <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tecniche di Programmazione/TdP_collections/TdP_collections/list/positional_list.py" timestamp="1539767103996">
         <mark key="[" line="60" column="14" />
       </file>
-      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/project1/circular_positional_list.py" timestamp="1539853259976">
-        <mark key="[" line="198" column="8" />
-        <mark key="]" line="198" column="8" />
-        <mark key="." line="198" column="8" />
+      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/project1/circular_positional_list.py" timestamp="1539855301709">
+        <mark key="[" line="386" column="7" />
+        <mark key="]" line="386" column="7" />
+        <mark key="." line="386" column="7" />
       </file>
       <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/venv/test_circular_positional_list.py" timestamp="1539282243770">
         <mark key="[" line="19" column="40" />
@@ -91,45 +91,49 @@
     </jumps>
     <registers>
       <register name="1" type="4">
-        <text encoding="base64">CiAgICAgICAgICAgICNwcmludCgiY3VycmVudC0tLT4iLGN1cnJlbnQuX2VsZW1lbnQp</text>
+        <text>&quot;&quot;&quot;for e in self._cpl:
+            if e == s:
+                return&quot;&quot;&quot;</text>
       </register>
       <register name="&quot;" type="4">
-        <text>&quot;&quot;&quot;Rimuove tutti gli elementi della lista invalidando le corrispondeti position&quot;&quot;&quot;</text>
+        <text>&quot;&quot;&quot;for e in self._cpl:
+            if e == s:
+                return&quot;&quot;&quot;</text>
       </register>
       <register name="2" type="4">
-        <text encoding="base64">ICAgICAjcHJpbnQoImFmdGVyIGN1cnJlbnQgcHJldi0tLT4iLGN1cnJlbnQuX3ByZXYuX2VsZW1lbnQpCiAgICAgICAgICAgICNwcmludCgiYmVmb3JlIGN1cnJlbnQgbmV4dC0tLT4iLGN1cnJlbnQuX25leHQuX2VsZW1lbnQp</text>
+        <text encoding="base64">CiAgICAiIiIiIiI=</text>
       </register>
       <register name="3" type="4">
+        <text encoding="base64">I2J1YmJsZSBzb3J0OiBiZXN0IGNhc2UgPSBPKG4pLCB3b3JzdCBjYXNlID0gTyhuXjIpCiAgICAjVChuKSBwZXIgcmVzdGl0dWlyZSBsJ2l0ZXIKICAgICMgY29tcGxlc3NpdMOgIG5vbiBhY2NldHRhYmlsZSBUKG4pICsgKFQobikgYWwgcGnDuSBUKG5eMikpICsgVChuKSA9IGNhc28gbWlnbGlvcmUgVChuKSBjYXNvIHBlcmdnaW9yZSBUKG4pK1Qobl4yKQogICAgIyB2ZXJzaW9uZSBydWRpbWVudGFsZSBkZWwgYnViYmxlIHNvcnQgZGEgbWlnbGlvcmFyZSBpbiBtb2RvIHRhbGUgZGEgb3R0ZW5lcmUgbGEgc3Rlc3NhIGNvbXBsZXNzaXTDoCBkZWwgYnViYmxlIHNvcnQgbmVsIGNhc28gcGVnZ2lvcmUiIiIK</text>
+      </register>
+      <register name="4" type="4">
+        <text encoding="base64">CiAgICAgICAgICAgICNwcmludCgiY3VycmVudC0tLT4iLGN1cnJlbnQuX2VsZW1lbnQp</text>
+      </register>
+      <register name="5" type="4">
+        <text encoding="base64">ICAgICAjcHJpbnQoImFmdGVyIGN1cnJlbnQgcHJldi0tLT4iLGN1cnJlbnQuX3ByZXYuX2VsZW1lbnQpCiAgICAgICAgICAgICNwcmludCgiYmVmb3JlIGN1cnJlbnQgbmV4dC0tLT4iLGN1cnJlbnQuX25leHQuX2VsZW1lbnQp</text>
+      </register>
+      <register name="6" type="4">
         <text>print(&quot;ssssssssssssssssssssssssssssssss&quot;)
 #l_uno.reverse()
 
 print(&quot;ddddddddddddddddddddddddddddddddddddddddd&quot;)</text>
       </register>
-      <register name="4" type="4">
+      <register name="7" type="4">
         <text encoding="base64">CiAgICAgICAgIyBTd2FwIG5leHQgYW5kIHByZXYgZm9yIGFsbCBub2RlcyBvZiAgCiAgICAgICAgIyBkb3VibHkgbGlua2VkIGxpc3Qg</text>
       </register>
-      <register name="5" type="4">
+      <register name="8" type="4">
         <text>cheader=copy.first()
         ctrailer=copy.last()
         cnext_header=copy._next(copy.first())
         cprev_trailer=copy._prev(copy.last())</text>
       </register>
-      <register name="6" type="4">
+      <register name="9" type="4">
         <text>self.insert(s)
 
             return new_sc</text>
       </register>
-      <register name="7" type="4">
-        <text encoding="base64">ICAgIAogICAgICAgICAgICAKICAgICAgICAgICAgCiAgICAgICAgICAgIHNlbGZfY291bnRlciA9IDAgICAgICAgICAgICAgICAgICAgICNjb3VudGVyIHBlciBsZSBwb3NpdGlvbiBkaSBzZWxmCiAgICAgICAgICAgIG5ld19jb3VudGVyID0gMCAgICAgICAgICAgICAgICAgICAgICNjb3VudGVyIHBlciBsZSBwb3NpdGlvbiBkaSBuZXcKICAgICAgICAgICAgbmV3X3NjID0gU2NvcmVCb2FyZCgpICMxMAogICAgICAgICAgICAKICAgICAgICAgICAgCiAgICAgICAgICAgIGZvciBpIGluIHJhbmdlKHNlbGYuc2l6ZSgpICsgbmV3LnNpemUoKSk6CiAgICAgICAgICAgICAgICBpZiBzZWxmX2N1cnNvci5lbGVtZW50KCkuX3ZhbHVlID4gbmV3X2N1cnNvci5lbGVtZW50KCkuX3ZhbHVlIGFuZCBzZWxmX2NvdW50ZXIgPCBzZWxmLnNpemUoKSBvciBuZXdfY291bnRlciA9PSBuZXcuc2l6ZSgpOgogICAgICAgICAgICAgICAgICAgICIiIkFnZ2l1bmdpIHVuIGVsZW1lbnRvIGRhIHNlbGYgc2Ugw6ggbWlub3JlIGRlbCBwcmltbyBlbGVtZW50byBkaSBsaXN0MiBBTkQgc2VsZiBub24gw6ggZmluaXRvCiAgICAgICAgICAgICAgICAgICAgICAgIE9SIG5ldyDDqCBmaW5pdG8iIiIKICAgICAgICAgICAgICAgICAgICBuZXdfc2MuaW5zZXJ0KHNlbGZfY3Vyc29yLmVsZW1lbnQoKSkKICAgICAgICAgICAgICAgICAgICBzZWxmX2NvdW50ZXIgKz0gMQogICAgICAgICAgICAgICAgICAgIHNlbGZfY3Vyc29yID0gc2VsZi5fY3BsLl9uZXh0KHNlbGZfY3Vyc29yKQogICAgICAgICAgICAgICAgZWxzZToKICAgICAgICAgICAgICAgICAgICAiIiJBbHRyaW1lbnRpIGFnZ2l1bmdpIHVuIGVsZW1lbnRvIGRhIG5ldyIiIgogICAgICAgICAgICAgICAgICAgIG5ld19zYy5pbnNlcnQobmV3X2N1cnNvci5lbGVtZW50KCkpCiAgICAgICAgICAgICAgICAgICAgbmV3X2NvdW50ZXIgKz0gMQogICAgICAgICAgICAgICAgICAgIG5ld19jdXJzb3IgPSBuZXcuX2NwbC5fbmV4dChuZXdfY3Vyc29yKQ==</text>
-      </register>
-      <register name="8" type="4">
-        <text encoding="base64">CiAgICAgICAgICAgIG5ld19jdXJzb3IgPSBuZXcuX2NwbC5maXJzdCgpICAgICAgICNjdXJzb3JlIHBlciBsZSBwb3NpdGlvbiBkaSBuZXcKICAgICAgICAgICAg</text>
-      </register>
-      <register name="9" type="4">
-        <text encoding="base64">CiAgICAgICAgICAgIHMgICAgI2N1cnNvcmUgcGVyIGxlIHBvc2l0aW9uIGRpIHNlbGY=</text>
-      </register>
       <register name="-" type="4">
-        <text>&quot;&quot;&quot;Rimuove tutti gli elementi della lista invalidando le corrispondeti position&quot;&quot;&quot;</text>
+        <text>&quot;&quot;&quot;Restituisce il numero di occorrenze di e nella lista&quot;&quot;&quot;</text>
       </register>
     </registers>
     <search>
