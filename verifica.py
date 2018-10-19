@@ -1,6 +1,5 @@
 from score_board import ScoreBoard
 from circular_positional_list import CircularPositionalList, merge, bubblesorted
-
 from datetime import date
 
 """Scrivere uno script verifica.py che testi tutte le funzionalità implementate.
@@ -136,4 +135,3 @@ print("------------------Test-Merge-----------------------\n")
 sb1_uno.merge(sb2_uno)
 print(str(sb1_uno))
 print("Si noti che dei 12 score totali ne prende i migliori 10")
-
