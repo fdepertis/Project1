@@ -46,10 +46,10 @@
         <mark key="]" line="151" column="3" />
         <mark key="." line="151" column="3" />
       </file>
-      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/project1/verifica.py" timestamp="1539956861951">
-        <mark key="[" line="151" column="66" />
-        <mark key="]" line="151" column="66" />
-        <mark key="." line="151" column="66" />
+      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/project1/verifica.py" timestamp="1539958057928">
+        <mark key="[" line="163" column="74" />
+        <mark key="]" line="163" column="74" />
+        <mark key="." line="163" column="74" />
       </file>
       <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tecniche di Programmazione/TdP_collections/TdP_collections/tree/binary_tree.py" timestamp="1538985562353">
         <mark key="[" line="78" column="0" />
@@ -86,27 +86,30 @@
     </jumps>
     <registers>
       <register name="1" type="4">
-        <text encoding="base64">CiAgICBwcmludCgp</text>
+        <text encoding="base64">CiAgICAgICAgICAgIHByaW50KCItLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLSIp</text>
       </register>
       <register name="&quot;" type="4">
-        <text encoding="base64">CiAgICBwcmludCgp</text>
+        <text encoding="base64">CiAgICAgICAgICAgIHByaW50KCItLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLSIp</text>
       </register>
       <register name="2" type="4">
-        <text encoding="base64">CnN5cy5zdGRvdXQud3JpdGUoIkFub3RoZXIgd2F5IHRvIGRvIGl0IVxuIik=</text>
+        <text encoding="base64">CiAgICBwcmludCgp</text>
       </register>
       <register name="3" type="4">
+        <text encoding="base64">CnN5cy5zdGRvdXQud3JpdGUoIkFub3RoZXIgd2F5IHRvIGRvIGl0IVxuIik=</text>
+      </register>
+      <register name="4" type="4">
         <text>for i in (sys.stdin, sys.stdout, sys.stderr):
     print(i)</text>
       </register>
-      <register name="4" type="4">
+      <register name="5" type="4">
         <text>print(&quot;This is the name of the script: &quot;, sys.argv[0])
 print(&quot;Number of arguments: &quot;, len(sys.argv))
 print(&quot;The arguments are: &quot; , str(sys.argv))</text>
       </register>
-      <register name="5" type="4">
+      <register name="6" type="4">
         <text encoding="base64">CgpUa2ludGVyLm1haW5sb29wKCk=</text>
       </register>
-      <register name="6" type="4">
+      <register name="7" type="4">
         <text>import Tkinter as tk
 
 win = tk.Tk()
@@ -123,19 +126,14 @@ txt.grid()            # Posiziona il widget secondo il grid layout
 
 tk.mainloop()</text>
       </register>
-      <register name="7" type="4">
+      <register name="8" type="4">
         <text>if self.is_empty() or self._size == 1:
             return None</text>
       </register>
-      <register name="8" type="4">
+      <register name="9" type="4">
         <text>else:
         if self.is_empty():
             return None</text>
-      </register>
-      <register name="9" type="4">
-        <text>&quot;&quot;&quot;for e in self._cpl:
-            if e == s:
-                return&quot;&quot;&quot;</text>
       </register>
       <register name="-" type="4">
         <text encoding="base64">IHJldHVybiBOb25l</text>
