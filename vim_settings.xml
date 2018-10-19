@@ -46,10 +46,10 @@
         <mark key="]" line="151" column="3" />
         <mark key="." line="151" column="3" />
       </file>
-      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/project1/verifica.py" timestamp="1539973918757">
-        <mark key="[" line="240" column="32" />
-        <mark key="]" line="240" column="32" />
-        <mark key="." line="240" column="32" />
+      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/project1/verifica.py" timestamp="1539977571348">
+        <mark key="[" line="322" column="92" />
+        <mark key="]" line="322" column="92" />
+        <mark key="." line="322" column="92" />
       </file>
       <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tecniche di Programmazione/TdP_collections/TdP_collections/tree/binary_tree.py" timestamp="1538985562353">
         <mark key="[" line="78" column="0" />
@@ -89,7 +89,7 @@
         <text encoding="base64">CiAgICAgICAgICAgICAgICAgICAgcHJpbnQoIi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tIik=</text>
       </register>
       <register name="&quot;" type="4">
-        <text encoding="base64">CiAgICAgICAgICAgICAgICAgICAgcHJpbnQoIi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tIik=</text>
+        <text>str(l_1.find(int(search)))</text>
       </register>
       <register name="2" type="4">
         <text>while True:
@@ -239,7 +239,7 @@
         <text encoding="base64">CiAgICAgICAgICAgIHByaW50KCItLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLSIp</text>
       </register>
       <register name="-" type="4">
-        <text>ne&quot;)</text>
+        <text>str(l_1.find(int(search)))</text>
       </register>
     </registers>
     <search>
