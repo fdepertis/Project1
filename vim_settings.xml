@@ -46,10 +46,10 @@
         <mark key="]" line="151" column="3" />
         <mark key="." line="151" column="3" />
       </file>
-      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/project1/verifica.py" timestamp="1539958057928">
-        <mark key="[" line="163" column="74" />
-        <mark key="]" line="163" column="74" />
-        <mark key="." line="163" column="74" />
+      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/project1/verifica.py" timestamp="1539967479191">
+        <mark key="[" line="221" column="32" />
+        <mark key="]" line="221" column="32" />
+        <mark key="." line="221" column="32" />
       </file>
       <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tecniche di Programmazione/TdP_collections/TdP_collections/tree/binary_tree.py" timestamp="1538985562353">
         <mark key="[" line="78" column="0" />
@@ -86,57 +86,160 @@
     </jumps>
     <registers>
       <register name="1" type="4">
-        <text encoding="base64">CiAgICAgICAgICAgIHByaW50KCItLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLSIp</text>
+        <text encoding="base64">CiAgICAgICAgICAgICAgICAgICAgcHJpbnQoIi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tIik=</text>
       </register>
       <register name="&quot;" type="4">
-        <text encoding="base64">CiAgICAgICAgICAgIHByaW50KCItLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLSIp</text>
+        <text encoding="base64">CiAgICAgICAgICAgICAgICAgICAgcHJpbnQoIi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tIik=</text>
       </register>
       <register name="2" type="4">
-        <text encoding="base64">CiAgICBwcmludCgp</text>
+        <text>while True:
+                    risp=int(input(&quot;Desidera creare uno Scoreboard di una opportuna dimensione?(1-yes or 2-no):\n&quot;))
+                    if risp == 1:
+                        dim = input(&quot;Inserisca la dimensione che desidera impostare:\n&quot;)
+                        sc_1 = ScoreBoard(int(dim))
+                        break
+                    elif risp == 2:
+                        print(&quot;ScoreBoard creato di dimensione 10&quot;)
+                        break
+                    else:
+                        print(&quot;Scelta errata, ripeta&quot;)</text>
       </register>
       <register name="3" type="4">
-        <text encoding="base64">CnN5cy5zdGRvdXQud3JpdGUoIkFub3RoZXIgd2F5IHRvIGRvIGl0IVxuIik=</text>
+        <text>risp = 1
+                        while risp == 1:
+                            score = float(input(&quot;Inserisca lo score totalizzato:\n&quot;))
+                            name = input(&quot;Inserisca il nome del player che ha totalizzato lo score:\n&quot;)
+                            print(&quot;Inserisca la data in cui è stato totalizzato lo score&quot;)
+                            Y = int(input(&quot;Anno:\n&quot;))
+                            M = int(input(&quot;Mese:\n&quot;))
+                            D = int(input(&quot;Giorno:\n&quot;))
+                            sc_1.insert(ScoreBoard.Score(name, score, date(Y, M, D)))
+                            while True:
+                                risp = int(input(&quot;Vuole inserire un altro score?(1-yes or 2-no):\n&quot;))
+                                if risp == 2 or risp == 1:
+                                    break
+                                else:
+                                    print(&quot;Scelta errata, ripeta&quot;)</text>
       </register>
       <register name="4" type="4">
-        <text>for i in (sys.stdin, sys.stdout, sys.stderr):
-    print(i)</text>
+        <text>risp = 1
+                        while risp == 1:
+                            score = float(input(&quot;Inserisca lo score totalizzato:\n&quot;))
+                            name = input(&quot;Inserisca il nome del player che ha totalizzato lo score:\n&quot;)
+                            print(&quot;Inserisca la data in cui è stato totalizzato lo score&quot;)
+                            Y = int(input(&quot;Anno:\n&quot;))
+                            M = int(input(&quot;Mese:\n&quot;))
+                            D = int(input(&quot;Giorno:\n&quot;))
+                            sc_1.insert(ScoreBoard.Score(name, score, date(Y, M, D)))
+                            while True:
+                                risp = int(input(&quot;Vuole inserire un altro score?(1-yes or 2-no):\n&quot;))
+                                if risp == 2 or risp == 1:
+                                    break
+                                else:
+                                    print(&quot;Scelta errata, ripeta&quot;)</text>
       </register>
       <register name="5" type="4">
-        <text>print(&quot;This is the name of the script: &quot;, sys.argv[0])
-print(&quot;Number of arguments: &quot;, len(sys.argv))
-print(&quot;The arguments are: &quot; , str(sys.argv))</text>
+        <text>if risp == 1:
+                                    dim = input(&quot;Inserisca la dimensione che desidera impostare:\n&quot;)
+                                    sc_1 = ScoreBoard(int(dim))
+                                    break</text>
       </register>
       <register name="6" type="4">
-        <text encoding="base64">CgpUa2ludGVyLm1haW5sb29wKCk=</text>
+        <text>while exit == 0:
+                    print(&quot;-----------------------------------------------------&quot;)
+                    print(&quot;\nTest ScoreBoard(&quot; + str(dim) + &quot; elementi)\n&quot;)
+                    print(&quot;1-Ottieni la dimensione dello score\n&quot;)
+                    print(&quot;2-Ottieni il numero di elementi presenti\n&quot;)
+                    print(&quot;3-Verifica se la lista è vuota\n&quot;)
+                    print(&quot;4-Inserisci uno score nello ScoreBoard\n&quot;)
+                    print(&quot;5-Restituisci gli x migliori Score dello ScoreBoard\n&quot;)
+                    print(&quot;6-Restituisci gli x peggiori Score dello ScoreBoard\n&quot;)
+                    print(&quot;7-Ritorna al passo precedente\n&quot;)
+                    print(&quot;8-Termina test\n&quot;)
+                    print(&quot;-----------------------------------------------------&quot;)
+                    x = input(&quot;Scegli una delle opzioni:\n&quot;)
+                    print(&quot;-----------------------------------------------------&quot;)
+                    if int(x) == 1:
+                        print(&quot;La dimensione dello ScoreBoard è: &quot;,len(sc_1))
+                    elif int(x) == 2:
+                        print(&quot;Il numero di Score presenti nello ScoreBoard è: &quot;,sc_1.size())
+                    elif int(x) == 3:
+                        if sc_1.is_empty():
+                            print(&quot;Lo ScoreBoard è vuoto&quot;)
+                        else:
+                            print(&quot;Lo ScoreBoard non è vuoto&quot;)
+                    elif int(x) == 4:
+                        score = float(input(&quot;Inserisci lo score totalizzato:\n&quot;))
+                        name = input(&quot;Inserisci il nome del player che ha totalizzato lo score:\n&quot;)
+                        print(&quot;Inserisci la data in cui è stato totalizzato lo score&quot;)
+                        Y = int(input(&quot;Anno:\n&quot;))
+                        M = int(input(&quot;Mese:\n&quot;))
+                        D = int(input(&quot;Giorno:\n&quot;))
+                        sc_1.insert(ScoreBoard.Score(name, score, date(Y, M, D)))
+                    elif int(x) == 5:
+                        i = int(input(&quot;Dimmi quanti x migliori risultati vuoi visualizzare:\n&quot;))
+                        k = 1
+                        for i in sc_1.top(i):
+                            print(str(k) + &quot;°  \t&quot; + str(i))
+                            k += 1
+                    elif int(x) == 6:
+                        i = int(input(&quot;Dimmi quanti x peggiori risultati vuoi visualizzare:\n&quot;))
+                        k = 1
+                        for i in sc_1.last(i):
+                            print(str(k) + &quot;°  \t&quot; + str(i))
+                            k += 1
+                    elif int(x) == 7:
+                        break
+                    elif int(x) == 8:
+                        exit = 1
+                    else:
+                        print(&quot;Scelta errata, ripeti&quot;)</text>
       </register>
       <register name="7" type="4">
-        <text>import Tkinter as tk
-
-win = tk.Tk()
-
-txt = tk.Text(win)    # Crea un Text widget contenuto in win
-txt.grid()            # Posiziona il widget secondo il grid layout
-
-tk.mainloop()
-
-win = tk.Tk()
-
-txt = tk.Text(win)    # Crea un Text widget contenuto in win
-txt.grid()            # Posiziona il widget secondo il grid layout
-
-tk.mainloop()</text>
+        <text>while exit == 0:
+                    print(&quot;-----------------------------------------------------&quot;)
+                    print(&quot;\nTest ScoreBoard\n&quot;)
+                    print(&quot;1-TTTTTTTTTTTCrea uno ScoreBorad di 10 massimo elementi\n&quot;)
+                    print(&quot;2-Crea uno ScoreBoard del numero massimo degli elementi che desideri\n&quot;)
+                    print(&quot;3-Ritorna al passo precedente\n&quot;)
+                    print(&quot;4-Termina test\n&quot;)
+                    print(&quot;-----------------------------------------------------&quot;)
+                    x = input(&quot;Scegli 1 or 2 or 3 or 4:\n&quot;)
+                    print(&quot;-----------------------------------------------------&quot;)
+                    if int(x) == 1:
+                        print(&quot;ancora da fare&quot;)
+                    elif int(x) == 2:
+                        print(&quot;pene&quot;)
+                    elif int(x) == 3:
+                        break
+                    elif int(x) == 4:
+                        exit = 1
+                    else:
+                        print(&quot;Scelta errata, ripeti&quot;)
+            elif int(x) == 3:
+                break
+            elif int(x) == 4:
+                exit = 1
+            else:
+                print(&quot;Scelta errata, ripeti&quot;)
+    elif int(x) == 3:
+        test_default()
+    elif int(x) == 4:
+        exit = 1
+    else:
+        print(&quot;Scelta errata, ripeti&quot;)</text>
       </register>
       <register name="8" type="4">
-        <text>if self.is_empty() or self._size == 1:
-            return None</text>
+        <text>print(&quot;3-\n&quot;)
+            print(&quot;2-\n&quot;)
+            print(&quot;2-\n&quot;)
+            print(&quot;2-\n&quot;)</text>
       </register>
       <register name="9" type="4">
-        <text>else:
-        if self.is_empty():
-            return None</text>
+        <text encoding="base64">CiAgICAgICAgICAgIHByaW50KCItLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLSIp</text>
       </register>
       <register name="-" type="4">
-        <text encoding="base64">IHJldHVybiBOb25l</text>
+        <text>ne&quot;)</text>
       </register>
     </registers>
     <search>
