@@ -47,10 +47,10 @@
         <mark key="]" line="151" column="3" />
         <mark key="." line="151" column="3" />
       </file>
-      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/project1/verifica.py" timestamp="1540035195182">
-        <mark key="[" line="421" column="20" />
-        <mark key="]" line="421" column="20" />
-        <mark key="." line="421" column="20" />
+      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/project1/verifica.py" timestamp="1540038498509">
+        <mark key="[" line="396" column="37" />
+        <mark key="]" line="396" column="37" />
+        <mark key="." line="396" column="37" />
       </file>
       <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tecniche di Programmazione/TdP_collections/TdP_collections/tree/binary_tree.py" timestamp="1538985562353">
         <mark key="[" line="78" column="0" />
@@ -93,110 +93,19 @@
     </jumps>
     <registers>
       <register name="1" type="4">
-        <text>elif int(x) == 9:
-                        risp = 1
-                        while risp == 1:
-                            insert = input(&quot;Inserisci il valore da aggiungere in coda:\n&quot;)
-                            print(&quot;Lista prima dell'inserimento: &quot;, str(l_1))
-                            l_1.add_last(int(insert))
-                            print(&quot;Lista dopo l'inserimento: &quot;, str(l_1))
-                            while True:
-                                risp = int(input(&quot;Vuole inserire un altro elemento?(1-yes or 2-no):\n&quot;))
-                                if risp == 2 or risp == 1:
-                                    break
-                                else:
-                                    print(&quot;Scelta errata, ripeta&quot;)
-                    elif int(x) == 10:
-                        risp = 1
-                        while risp == 1:
-                            befor = input(&quot;Di chi prima vuole inserire un valore:\n&quot;)
-                            insert = input(&quot;Inserisci il valore da aggiungere prima di &quot; + befor + &quot;:\n&quot;)
-                            print(&quot;Lista prima dell'inserimento: &quot;, str(l_1))
-                            l_1.add_before(l_1.find(int(befor)), int(insert))
-                            print(&quot;Lista dopo l'inserimento: &quot;, str(l_1))
-                            while True:
-                                risp = int(input(&quot;Vuole inserire un altro elemento?(1-yes or 2-no):\n&quot;))
-                                if risp == 2 or risp == 1:
-                                    break
-                                else:
-                                    print(&quot;Scelta errata, ripeta&quot;)
-                    elif int(x) == 11:
-                        risp = 1
-                        while risp == 1:
-                            befor = input(&quot;Di chi dopo vuole inserire un valore:\n&quot;)
-                            insert = input(&quot;Inserisci il valore da aggiungere dopo &quot; + befor + &quot;:\n&quot;)
-                            print(&quot;Lista prima dell'inserimento: &quot;, str(l_1))
-                            l_1.add_after(l_1.find(int(befor)), int(insert))
-                            print(&quot;Lista dopo l'inserimento: &quot;, str(l_1))
-                            while True:
-                                risp = int(input(&quot;Vuole inserire un altro elemento?(1-yes or 2-no):\n&quot;))
-                                if risp == 2 or risp == 1:
-                                    break
-                                else:
-                                    print(&quot;Scelta errata, ripeta&quot;)
-                    elif int(x) == 12:
-                        risp = 1
-                        while risp == 1:
-                            search = input(&quot;Quale elemento vuole cercare:\n&quot;)
-                            print(&quot;L'elemento &quot; + str(l_1.find(int(search)).element()) + &quot;è presente e la sua position è: &quot; + str(l_1.find(int(search))) + &quot;\n&quot;)
-                            while True:
-                                risp = int(input(&quot;Vuole cercare un altro elemento?(1-yes or 2-no):\n&quot;))
-                                if risp == 2 or risp == 1:
-                                    break
-                                else:
-                                    print(&quot;Scelta errata, ripeta&quot;)
-                    elif int(x) == 13:
-                        risp = 1
-                        while risp == 1:
-                            p = input(&quot;Quale elemento vuole aggiornare:\n&quot;)
-                            e = input(&quot;Qual'e' l'elemento che vuole inserire:\n&quot;)
-                            print(&quot;Lista prima dell'aggiornamento: &quot;, str(l_1))
-                            print(&quot;\nL'elemento &quot;+ str(l_1.replace(l_1.find(int(p)), int(e))) + &quot;è stato aggiornato al nuovo valore\n&quot;)
-                            print(&quot;Lista dopo dell'aggiornamento: &quot;, str(l_1))
-                            while True:
-                                risp = int(input(&quot;Vuole aggiornare un altro elemento?(1-yes or 2-no):\n&quot;))
-                                if risp == 2 or risp == 1:
-                                    break
-                                else:
-                                    print(&quot;Scelta errata, ripeta&quot;)
-                    elif int(x) == 14:
-                        risp = 1
-                        while risp == 1:
-                            e = input(&quot;Quale elemento vuole eliminare:\n&quot;)
-                            print(&quot;Lista prima dell'eliminazione: &quot;, str(l_1))
-                            print(&quot;\nL'elemento &quot;+ str(l_1.delete(l_1.find(int(e)))) + &quot;è stato eliminato\n&quot;)
-                            print(&quot;Lista dopo dell'aggiornamento: &quot;, str(l_1))
-                            while True:
-                                risp = int(input(&quot;Vuole eliminare un altro elemento?(1-yes or 2-no):\n&quot;))
-                                if risp == 2 or risp == 1:
-                                    break
-                                else:
-                                    print(&quot;Scelta errata, ripeta&quot;)
-
-                    elif int(x) == 15:
-                        print(&quot;Lista prima della pulizia: &quot;, str(l_1))
-                        l_1.clear()
-                        print(&quot;Lista dopo la pulizia: &quot;, str(l_1))
-                    elif int(x) == 16:
-                        counter = input(&quot;Di quale elemento vuole trovare il numero di occorrenze nella lista:\n&quot;)
-                        print(&quot;L'elemento è presente &quot; + str(l_1.count(int(counter))) + &quot; volte nella lista&quot;)
-                    elif int(x) == 17:
-                        print(&quot;Lista prima dell'inversione: &quot;, str(l_1))
-                        l_1.reverse()
-                        print(&quot;Lista dopo l'inversione: &quot;, str(l_1))
-                    elif int(x) == 18:
-                        copy = l_1.copy()
-                        print(&quot;Lista: &quot;,str(l_1))
-                        print(&quot;Copia della lista: &quot;,str(copy))
-                        print(&quot;\nMINI TEST sulla correttezza della copia:&quot;)
-                        print(&quot;ELiminerò il primo elemento della copia della lista &quot;)
-                        print(&quot;per verificare che una semplice modifica sulla copia &quot;)
-                        print(&quot;della lista non apporta modifiche sulla lista di cui \n&quot;+&quot;si è effettuati la copia &quot;)
-                        copy.delete(copy.first())
-                        print(&quot;Lista di cui si è effettuata una copia: &quot;, str(l_1))
-                        print(&quot;Copia della lista dopo la modifica: &quot;, str(copy))</text>
+        <text encoding="base64">CiAgICAgICAgICAgICAgICAgICAgICAgIGlmIGxfMS5pc19lbXB0eSgpOgogICAgICAgICAgICAgICAgICAgICAgICAgICAgcHJpbnQoIkxhIGxpc3RhIMOoIHZ1b3RhIikKICAgICAgICAgICAgICAgICAgICAgICAgZWxzZToKICAgICAgICAgICAgICAgICAgICAgICAgICAgIHByaW50KCJMYSBsaXN0YSBub24gw6ggdnVvdGEiKQ==</text>
       </register>
       <register name="&quot;" type="4">
+        <text encoding="base64">CiAgICAgICAgICAgICAgICAgICAgICAgIGlmIGxfMS5pc19lbXB0eSgpOgogICAgICAgICAgICAgICAgICAgICAgICAgICAgcHJpbnQoIkxhIGxpc3RhIMOoIHZ1b3RhIikKICAgICAgICAgICAgICAgICAgICAgICAgZWxzZToKICAgICAgICAgICAgICAgICAgICAgICAgICAgIHByaW50KCJMYSBsaXN0YSBub24gw6ggdnVvdGEiKQ==</text>
+      </register>
+      <register name="2" type="4">
+        <text encoding="base64">CiAgICAgICAgICAgICAgICAgICAgICAgIHNlYXJjaCA9IGlucHV0KCJEaSBxdWFsZSBlbGVtZW50byB2dW9sZSBvdHRlbmVyZSBpbCBzdWNjZXNzb3JlOlxuIikKICAgICAgICAgICAgICAgICAgICAgICAgcHJpbnQoIklsIHN1Y2Nlc3NvcmUgZGkgIiArIHNlYXJjaCArICLDqDogIiArIHN0cihsXzEuYWZ0ZXIobF8xLmZpbmQoaW50KHNlYXJjaCkpKSkp</text>
+      </register>
+      <register name="3" type="4">
+        <text>search = input(&quot;Di quale elemento vuole ottenere il predecessore:\n&quot;)
+                        p</text>
+      </register>
+      <register name="4" type="4">
         <text>elif int(x) == 9:
                         risp = 1
                         while risp == 1:
@@ -300,21 +209,21 @@
                         print(&quot;Lista di cui si è effettuata una copia: &quot;, str(l_1))
                         print(&quot;Copia della lista dopo la modifica: &quot;, str(copy))</text>
       </register>
-      <register name="2" type="4">
+      <register name="5" type="4">
         <text encoding="base64">IHByaW50KCI5LUFnZ2l1bmdpIGluIGNvZGEgW2FkZF9sYXN0KGUpXVxuIikKICAgICAgICAgICAgICAgICAgICBwcmludCgiMTAtQWdnaXVuZ2kgcHJpbWEgZGkgdW4gZWxlbWVudG8gW2FkZF9iZWZvcmUocCwgZSldXG4iKQogICAgICAgICAgICAgICAgICAgIHByaW50KCIxMS1BZ2dpdW5naSBkb3BvIHVuIGVsZW1lbnRvIFthZGRfYWZ0ZXIocCwgZSldXG4iKQogICAgICAgICAgICAgICAgICAgIHByaW50KCIxMi1DZXJjYSB1biBlbGVtZW50byBuZWxsYSBsaXN0YSBbZmluZChlKV1cbiIpCiAgICAgICAgICAgICAgICAgICAgcHJpbnQoIjEzLVNvc3RpdHVpc2NpIHVuIGVsZW1lbnRvIHByZXNlbnRlIGNvbiB1bm8gbnVvdm8gW3JlcGxhY2UocCwgZSldXG4iKQogICAgICAgICAgICAgICAgICAgIHByaW50KCIxNC1FbGltaW5hIHVuIGVsZW1lbnRvIGRhbGxhIGxpc3RhIFtkZWxldGUoZSldXG4iKQogICAgICAgICAgICAgICAgICAgIHByaW50KCIxNS1FbGltaW5hIHR1dHRpIGdsaSBlbGVtZW50aSBkZWxsYSBsaXN0YSBbY2xlYXIoKV1cbiIpCiAgICAgICAgICAgICAgICAgICAgcHJpbnQoIjE2LUNvbnRhIHF1YW50ZSB2b2x0ZSDDqCBwcmVzZW50ZSBuZWxsYSBsaXN0YSB1biBkYXRvIGVsZW1lbnRvIFtjb3VudChlKV1cbiIpCiAgICAgICAgICAgICAgICAgICAgcHJpbnQoIjE3LUludmVydGkgbCdvcmRpbmUgZGVnbGkgZWxlbWVudGkgbmVsbGEgbGlzdGEgW3JldmVyc2UoKV1cbiIpCiAgICAgICAgICAgICAgICAgICAgcHJpbnQoIjE4LU90dGllbmkgdW5hIGNvcGlhIGRlbGxhIGxpc3RhIFtjb3B5KCldXG4iKQ==</text>
       </register>
-      <register name="3" type="4">
+      <register name="6" type="4">
         <text>search = input(&quot;Quale elemento vuole cercare:\n&quot;)
                         print(&quot;L'elemento &quot; + str(l_1.find(int(search)).element()) + &quot;è presente e la sua position è: &quot; + str(l_1.find(int(search))) + &quot;\n&quot;)
                     e</text>
       </register>
-      <register name="4" type="4">
+      <register name="7" type="4">
         <text encoding="base64">CiAgICAgICAgICAgICAgICAgICAgICAgIHAgPSBpbnB1dCgiUXVhbGUgZWxlbWVudG8gdnVvbGUgYWdnaW9ybmFyZTpcbiIpCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBlID0gaW5wdXQoIlF1YWwnZScgbCdlbGVtZW50byBjaGUgdnVvbGUgaW5zZXJpcmU6XG4iKQogICAgICAgICAgICAgICAgICAgICAgICAgICAgcHJpbnQoIkxpc3RhIHByaW1hIGRlbGwnYWdnaW9ybmFtZW50bzpcbiIpCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBwcmludChzdHIobF8xKSkKICAgICAgICAgICAgICAgICAgICAgICAgICAgIHByaW50KCJcbkwnZWxlbWVudG8gIisgc3RyKGxfMS5yZXBsYWNlKGxfMS5maW5kKGludChwKSksIGludChlKSkpICsgIsOoIHN0YXRvIGFnZ2lvcm5hdG8gYWwgbnVvdm8gdmFsb3JlXG4iKQogICAgICAgICAgICAgICAgICAgICAgICAgICAgcHJpbnQoIkxpc3RhIGRvcG8gZGVsbCdhZ2dpb3JuYW1lbnRvOlxuIikKICAgICAgICAgICAgICAgICAgICAgICAgICAgIHByaW50KHN0cihsXzEpKQogICAgICAgICAgICAgICAgICAgICAgICAgIA==</text>
       </register>
-      <register name="5" type="4">
+      <register name="8" type="4">
         <text encoding="base64">CiAgICAgICAgICAgICAgICAgICAgcHJpbnQoIi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tIik=</text>
       </register>
-      <register name="6" type="4">
+      <register name="9" type="4">
         <text>while True:
                     risp=int(input(&quot;Desidera creare uno Scoreboard di una opportuna dimensione?(1-yes or 2-no):\n&quot;))
                     if risp == 1:
@@ -327,48 +236,8 @@
                     else:
                         print(&quot;Scelta errata, ripeta&quot;)</text>
       </register>
-      <register name="7" type="4">
-        <text>risp = 1
-                        while risp == 1:
-                            score = float(input(&quot;Inserisca lo score totalizzato:\n&quot;))
-                            name = input(&quot;Inserisca il nome del player che ha totalizzato lo score:\n&quot;)
-                            print(&quot;Inserisca la data in cui è stato totalizzato lo score&quot;)
-                            Y = int(input(&quot;Anno:\n&quot;))
-                            M = int(input(&quot;Mese:\n&quot;))
-                            D = int(input(&quot;Giorno:\n&quot;))
-                            sc_1.insert(ScoreBoard.Score(name, score, date(Y, M, D)))
-                            while True:
-                                risp = int(input(&quot;Vuole inserire un altro score?(1-yes or 2-no):\n&quot;))
-                                if risp == 2 or risp == 1:
-                                    break
-                                else:
-                                    print(&quot;Scelta errata, ripeta&quot;)</text>
-      </register>
-      <register name="8" type="4">
-        <text>risp = 1
-                        while risp == 1:
-                            score = float(input(&quot;Inserisca lo score totalizzato:\n&quot;))
-                            name = input(&quot;Inserisca il nome del player che ha totalizzato lo score:\n&quot;)
-                            print(&quot;Inserisca la data in cui è stato totalizzato lo score&quot;)
-                            Y = int(input(&quot;Anno:\n&quot;))
-                            M = int(input(&quot;Mese:\n&quot;))
-                            D = int(input(&quot;Giorno:\n&quot;))
-                            sc_1.insert(ScoreBoard.Score(name, score, date(Y, M, D)))
-                            while True:
-                                risp = int(input(&quot;Vuole inserire un altro score?(1-yes or 2-no):\n&quot;))
-                                if risp == 2 or risp == 1:
-                                    break
-                                else:
-                                    print(&quot;Scelta errata, ripeta&quot;)</text>
-      </register>
-      <register name="9" type="4">
-        <text>if risp == 1:
-                                    dim = input(&quot;Inserisca la dimensione che desidera impostare:\n&quot;)
-                                    sc_1 = ScoreBoard(int(dim))
-                                    break</text>
-      </register>
       <register name="-" type="4">
-        <text>print(&quot;\nL'elemento &quot;+ str(l_1.delete(int(e))) + &quot;è stato eliminato\n&quot;)</text>
+        <text>print(&quot;Il primo elemento della lista è: &quot; + str(l_1.first().element()))</text>
       </register>
     </registers>
     <search>
