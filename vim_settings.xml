@@ -46,10 +46,10 @@
         <mark key="]" line="151" column="3" />
         <mark key="." line="151" column="3" />
       </file>
-      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/project1/verifica.py" timestamp="1540029439040">
-        <mark key="[" line="320" column="28" />
-        <mark key="]" line="320" column="28" />
-        <mark key="." line="320" column="28" />
+      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/project1/verifica.py" timestamp="1540030212298">
+        <mark key="[" line="350" column="24" />
+        <mark key="]" line="350" column="24" />
+        <mark key="." line="350" column="24" />
       </file>
       <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tecniche di Programmazione/TdP_collections/TdP_collections/tree/binary_tree.py" timestamp="1538985562353">
         <mark key="[" line="78" column="0" />
@@ -62,6 +62,9 @@
       </file>
       <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tecniche di Programmazione/TdP_collections/TdP_collections/list/positional_list.py" timestamp="1539767103996">
         <mark key="[" line="60" column="14" />
+      </file>
+      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/project1/circular_positional_list.py" timestamp="1540029838280">
+        <mark key="[" line="17" column="0" />
       </file>
       <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/venv/test_circular_positional_list.py" timestamp="1539282243770">
         <mark key="[" line="19" column="40" />
@@ -91,7 +94,7 @@
                     e</text>
       </register>
       <register name="&quot;" type="4">
-        <text>print(str(l_1))</text>
+        <text>print(&quot;\nL'elemento &quot;+ str(l_1.delete(int(e))) + &quot;è stato eliminato\n&quot;)</text>
       </register>
       <register name="2" type="4">
         <text encoding="base64">CiAgICAgICAgICAgICAgICAgICAgICAgIHAgPSBpbnB1dCgiUXVhbGUgZWxlbWVudG8gdnVvbGUgYWdnaW9ybmFyZTpcbiIpCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBlID0gaW5wdXQoIlF1YWwnZScgbCdlbGVtZW50byBjaGUgdnVvbGUgaW5zZXJpcmU6XG4iKQogICAgICAgICAgICAgICAgICAgICAgICAgICAgcHJpbnQoIkxpc3RhIHByaW1hIGRlbGwnYWdnaW9ybmFtZW50bzpcbiIpCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBwcmludChzdHIobF8xKSkKICAgICAgICAgICAgICAgICAgICAgICAgICAgIHByaW50KCJcbkwnZWxlbWVudG8gIisgc3RyKGxfMS5yZXBsYWNlKGxfMS5maW5kKGludChwKSksIGludChlKSkpICsgIsOoIHN0YXRvIGFnZ2lvcm5hdG8gYWwgbnVvdm8gdmFsb3JlXG4iKQogICAgICAgICAgICAgICAgICAgICAgICAgICAgcHJpbnQoIkxpc3RhIGRvcG8gZGVsbCdhZ2dpb3JuYW1lbnRvOlxuIikKICAgICAgICAgICAgICAgICAgICAgICAgICAgIHByaW50KHN0cihsXzEpKQogICAgICAgICAgICAgICAgICAgICAgICAgIA==</text>
@@ -238,7 +241,7 @@
         print(&quot;Scelta errata, ripeti&quot;)</text>
       </register>
       <register name="-" type="4">
-        <text>print(str(l_1))</text>
+        <text>print(&quot;\nL'elemento &quot;+ str(l_1.delete(int(e))) + &quot;è stato eliminato\n&quot;)</text>
       </register>
     </registers>
     <search>
