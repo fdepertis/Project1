@@ -46,10 +46,10 @@
         <mark key="]" line="151" column="3" />
         <mark key="." line="151" column="3" />
       </file>
-      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/project1/verifica.py" timestamp="1539977571348">
-        <mark key="[" line="322" column="92" />
-        <mark key="]" line="322" column="92" />
-        <mark key="." line="322" column="92" />
+      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/project1/verifica.py" timestamp="1540029439040">
+        <mark key="[" line="320" column="28" />
+        <mark key="]" line="320" column="28" />
+        <mark key="." line="320" column="28" />
       </file>
       <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tecniche di Programmazione/TdP_collections/TdP_collections/tree/binary_tree.py" timestamp="1538985562353">
         <mark key="[" line="78" column="0" />
@@ -86,12 +86,20 @@
     </jumps>
     <registers>
       <register name="1" type="4">
-        <text encoding="base64">CiAgICAgICAgICAgICAgICAgICAgcHJpbnQoIi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tIik=</text>
+        <text>search = input(&quot;Quale elemento vuole cercare:\n&quot;)
+                        print(&quot;L'elemento &quot; + str(l_1.find(int(search)).element()) + &quot;è presente e la sua position è: &quot; + str(l_1.find(int(search))) + &quot;\n&quot;)
+                    e</text>
       </register>
       <register name="&quot;" type="4">
-        <text>str(l_1.find(int(search)))</text>
+        <text>print(str(l_1))</text>
       </register>
       <register name="2" type="4">
+        <text encoding="base64">CiAgICAgICAgICAgICAgICAgICAgICAgIHAgPSBpbnB1dCgiUXVhbGUgZWxlbWVudG8gdnVvbGUgYWdnaW9ybmFyZTpcbiIpCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBlID0gaW5wdXQoIlF1YWwnZScgbCdlbGVtZW50byBjaGUgdnVvbGUgaW5zZXJpcmU6XG4iKQogICAgICAgICAgICAgICAgICAgICAgICAgICAgcHJpbnQoIkxpc3RhIHByaW1hIGRlbGwnYWdnaW9ybmFtZW50bzpcbiIpCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBwcmludChzdHIobF8xKSkKICAgICAgICAgICAgICAgICAgICAgICAgICAgIHByaW50KCJcbkwnZWxlbWVudG8gIisgc3RyKGxfMS5yZXBsYWNlKGxfMS5maW5kKGludChwKSksIGludChlKSkpICsgIsOoIHN0YXRvIGFnZ2lvcm5hdG8gYWwgbnVvdm8gdmFsb3JlXG4iKQogICAgICAgICAgICAgICAgICAgICAgICAgICAgcHJpbnQoIkxpc3RhIGRvcG8gZGVsbCdhZ2dpb3JuYW1lbnRvOlxuIikKICAgICAgICAgICAgICAgICAgICAgICAgICAgIHByaW50KHN0cihsXzEpKQogICAgICAgICAgICAgICAgICAgICAgICAgIA==</text>
+      </register>
+      <register name="3" type="4">
+        <text encoding="base64">CiAgICAgICAgICAgICAgICAgICAgcHJpbnQoIi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tIik=</text>
+      </register>
+      <register name="4" type="4">
         <text>while True:
                     risp=int(input(&quot;Desidera creare uno Scoreboard di una opportuna dimensione?(1-yes or 2-no):\n&quot;))
                     if risp == 1:
@@ -104,47 +112,47 @@
                     else:
                         print(&quot;Scelta errata, ripeta&quot;)</text>
       </register>
-      <register name="3" type="4">
-        <text>risp = 1
-                        while risp == 1:
-                            score = float(input(&quot;Inserisca lo score totalizzato:\n&quot;))
-                            name = input(&quot;Inserisca il nome del player che ha totalizzato lo score:\n&quot;)
-                            print(&quot;Inserisca la data in cui è stato totalizzato lo score&quot;)
-                            Y = int(input(&quot;Anno:\n&quot;))
-                            M = int(input(&quot;Mese:\n&quot;))
-                            D = int(input(&quot;Giorno:\n&quot;))
-                            sc_1.insert(ScoreBoard.Score(name, score, date(Y, M, D)))
-                            while True:
-                                risp = int(input(&quot;Vuole inserire un altro score?(1-yes or 2-no):\n&quot;))
-                                if risp == 2 or risp == 1:
-                                    break
-                                else:
-                                    print(&quot;Scelta errata, ripeta&quot;)</text>
-      </register>
-      <register name="4" type="4">
-        <text>risp = 1
-                        while risp == 1:
-                            score = float(input(&quot;Inserisca lo score totalizzato:\n&quot;))
-                            name = input(&quot;Inserisca il nome del player che ha totalizzato lo score:\n&quot;)
-                            print(&quot;Inserisca la data in cui è stato totalizzato lo score&quot;)
-                            Y = int(input(&quot;Anno:\n&quot;))
-                            M = int(input(&quot;Mese:\n&quot;))
-                            D = int(input(&quot;Giorno:\n&quot;))
-                            sc_1.insert(ScoreBoard.Score(name, score, date(Y, M, D)))
-                            while True:
-                                risp = int(input(&quot;Vuole inserire un altro score?(1-yes or 2-no):\n&quot;))
-                                if risp == 2 or risp == 1:
-                                    break
-                                else:
-                                    print(&quot;Scelta errata, ripeta&quot;)</text>
-      </register>
       <register name="5" type="4">
+        <text>risp = 1
+                        while risp == 1:
+                            score = float(input(&quot;Inserisca lo score totalizzato:\n&quot;))
+                            name = input(&quot;Inserisca il nome del player che ha totalizzato lo score:\n&quot;)
+                            print(&quot;Inserisca la data in cui è stato totalizzato lo score&quot;)
+                            Y = int(input(&quot;Anno:\n&quot;))
+                            M = int(input(&quot;Mese:\n&quot;))
+                            D = int(input(&quot;Giorno:\n&quot;))
+                            sc_1.insert(ScoreBoard.Score(name, score, date(Y, M, D)))
+                            while True:
+                                risp = int(input(&quot;Vuole inserire un altro score?(1-yes or 2-no):\n&quot;))
+                                if risp == 2 or risp == 1:
+                                    break
+                                else:
+                                    print(&quot;Scelta errata, ripeta&quot;)</text>
+      </register>
+      <register name="6" type="4">
+        <text>risp = 1
+                        while risp == 1:
+                            score = float(input(&quot;Inserisca lo score totalizzato:\n&quot;))
+                            name = input(&quot;Inserisca il nome del player che ha totalizzato lo score:\n&quot;)
+                            print(&quot;Inserisca la data in cui è stato totalizzato lo score&quot;)
+                            Y = int(input(&quot;Anno:\n&quot;))
+                            M = int(input(&quot;Mese:\n&quot;))
+                            D = int(input(&quot;Giorno:\n&quot;))
+                            sc_1.insert(ScoreBoard.Score(name, score, date(Y, M, D)))
+                            while True:
+                                risp = int(input(&quot;Vuole inserire un altro score?(1-yes or 2-no):\n&quot;))
+                                if risp == 2 or risp == 1:
+                                    break
+                                else:
+                                    print(&quot;Scelta errata, ripeta&quot;)</text>
+      </register>
+      <register name="7" type="4">
         <text>if risp == 1:
                                     dim = input(&quot;Inserisca la dimensione che desidera impostare:\n&quot;)
                                     sc_1 = ScoreBoard(int(dim))
                                     break</text>
       </register>
-      <register name="6" type="4">
+      <register name="8" type="4">
         <text>while exit == 0:
                     print(&quot;-----------------------------------------------------&quot;)
                     print(&quot;\nTest ScoreBoard(&quot; + str(dim) + &quot; elementi)\n&quot;)
@@ -195,7 +203,7 @@
                     else:
                         print(&quot;Scelta errata, ripeti&quot;)</text>
       </register>
-      <register name="7" type="4">
+      <register name="9" type="4">
         <text>while exit == 0:
                     print(&quot;-----------------------------------------------------&quot;)
                     print(&quot;\nTest ScoreBoard\n&quot;)
@@ -229,17 +237,8 @@
     else:
         print(&quot;Scelta errata, ripeti&quot;)</text>
       </register>
-      <register name="8" type="4">
-        <text>print(&quot;3-\n&quot;)
-            print(&quot;2-\n&quot;)
-            print(&quot;2-\n&quot;)
-            print(&quot;2-\n&quot;)</text>
-      </register>
-      <register name="9" type="4">
-        <text encoding="base64">CiAgICAgICAgICAgIHByaW50KCItLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLSIp</text>
-      </register>
       <register name="-" type="4">
-        <text>str(l_1.find(int(search)))</text>
+        <text>print(str(l_1))</text>
       </register>
     </registers>
     <search>
