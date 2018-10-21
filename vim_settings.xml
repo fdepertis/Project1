@@ -35,7 +35,6 @@
       <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tecniche di Programmazione/TdP_collections/TdP_collections/queue/array_queue.py" timestamp="1539674679896">
         <mark key="[" line="7" column="7" />
       </file>
-      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tecniche di Programmazione/TdP_collections/TdP_collections/list/doubly_linked_base.py" timestamp="1540033063756" />
       <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tecniche di Programmazione/TdP_collections/TdP_collections/map/binary_search_tree.py" timestamp="1539071074438">
         <mark key="[" line="23" column="0" />
       </file>
@@ -47,10 +46,10 @@
         <mark key="]" line="151" column="3" />
         <mark key="." line="151" column="3" />
       </file>
-      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/project1/verifica.py" timestamp="1540049469940">
-        <mark key="[" line="407" column="16" />
-        <mark key="]" line="407" column="16" />
-        <mark key="." line="407" column="16" />
+      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/project1/verifica.py" timestamp="1540131944349">
+        <mark key="[" line="453" column="15" />
+        <mark key="]" line="453" column="16" />
+        <mark key="." line="453" column="16" />
       </file>
       <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tecniche di Programmazione/TdP_collections/TdP_collections/tree/binary_tree.py" timestamp="1538985562353">
         <mark key="[" line="78" column="0" />
@@ -107,18 +106,7 @@
                             print(&quot;Scelta errata, ripeta&quot;)</text>
       </register>
       <register name="&quot;" type="4">
-        <text>risp = 1
-                while risp == 1:
-                    insert = input(&quot;Inserisci il valore :\n&quot;)
-                    print(&quot;Lista prima dell'inserimento: &quot;, str(l_1))
-                    l_1.add_first(int(insert))
-                    print(&quot;Lista dopo l'inserimento: &quot;, str(l_1))
-                    while True:
-                        risp = int(input(&quot;Vuole inserire un altro elemento?(1-yes or 2-no):\n&quot;))
-                        if risp == 2 or risp == 1:
-                            break
-                        else:
-                            print(&quot;Scelta errata, ripeta&quot;)</text>
+        <text>b</text>
       </register>
       <register name="2" type="4">
         <text>while exit == 0:
@@ -290,7 +278,7 @@
                         print(&quot;Copia della lista dopo la modifica: &quot;, str(copy))</text>
       </register>
       <register name="-" type="4">
-        <text>print(&quot;Il primo elemento della lista è: &quot; + str(l_1.first().element()))</text>
+        <text>b</text>
       </register>
     </registers>
     <search>
