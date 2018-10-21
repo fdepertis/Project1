@@ -189,227 +189,284 @@ while exit == 0:
         l_1 = CircularPositionalList()
         while exit == 0:
             print("-----------------------------------------------------")
-            print("\nTest Circular Positional List (Lista di default creata)\n")
-            print("1-Testa i metodi (first(), last(), before(p) ...)\n")
-            print("2-Testa gli operatori (x+y, p in x, x[p] ...)\n")
-            print("3-Ritorna al passo precedente\n")
-            print("4-Termina test\n")
+            print("\nTest Circular Positional List\n")
+            print("1-Visualizza gli elementi della lista [print(str(list))]\n")
+            print("2-Ottieni il primo elemento della lista [first()]\n")
+            print("3-Ottieni l'ultimo elemento della lista [last(p)]\n")
+            print("4-Ottieni il predecessore di un elemento[before(p)]\n")
+            print("5-Ottieni il successore di un elemento  [after(p)]\n")
+            print("6-Verifica se la lista è vuota [is_empty()]\n")
+            print("7-Verifica se la lista è ordinata [is_sorted()]\n")
+            print("8-Aggiungi in testa [add_first(e)]\n")
+            print("9-Aggiungi in coda [add_last(e)]\n")
+            print("10-Aggiungi prima di un elemento [add_before(p, e)]\n")
+            print("11-Aggiungi dopo un elemento [add_after(p, e)]\n")
+            print("12-Cerca un elemento nella lista [find(e)]\n")
+            print("13-Sostituisci un elemento presente con uno nuovo [replace(p, e)]\n")
+            print("14-Elimina un elemento dalla lista [delete(e)]\n")
+            print("15-Elimina tutti gli elementi della lista [clear()]\n")
+            print("16-Conta quante volte è presente nella lista un dato elemento [count(e)]\n")
+            print("17-Inverti l'ordine degli elementi nella lista [reverse()]\n")
+            print("18-Ottieni una copia della lista [copy()]\n")
+            print("19-Add di due liste [x + y]\n")
+            print("20-Verifica se una position è presente nella lista [ p in x]\n")
+            print("21-Restituisce l'elemento contenuto nella position p [ x[p] ]\n")
+            print("22-Restituisci il numero di elementi di x  [len(x)]\n")
+            print("23-Sostituisci l'elemento di p con e [x[p] = e]\n")
+            print("24-Rimuove l'elemento nella position p invalidando la position [del p]\n")
+            print("25-Generatore degli elementi [__iter__]\n")
+            print("26-Ritorna al passo precedente\n")
+            print("27-Termina test\n")
             print("-----------------------------------------------------")
             x = input("Scegli una delle opzioni:\n")
             print("-----------------------------------------------------")
             if int(x) == 1:
-                while exit == 0:
-                    print("-----------------------------------------------------")
-                    print("\nTest Circular Positional List\n")
-                    print("1-Visualizza gli elementi della lista [print(str(list))]\n")
-                    print("2-Ottieni il primo elemento della lista [first()]\n")
-                    print("3-Ottieni l'ultimo elemento della lista [last(p)]\n")
-                    print("4-Ottieni il predecessore di un elemento[before(p)]\n")
-                    print("5-Ottieni il successore di un elemento  [after(p)]\n")
-                    print("6-Verifica se la lista è vuota [is_empty()]\n")
-                    print("7-Verifica se la lista è ordinata [is_sorted()]\n")
-                    print("8-Aggiungi in testa [add_first(e)]\n")
-                    print("9-Aggiungi in coda [add_last(e)]\n")
-                    print("10-Aggiungi prima di un elemento [add_before(p, e)]\n")
-                    print("11-Aggiungi dopo un elemento [add_after(p, e)]\n")
-                    print("12-Cerca un elemento nella lista [find(e)]\n")
-                    print("13-Sostituisci un elemento presente con uno nuovo [replace(p, e)]\n")
-                    print("14-Elimina un elemento dalla lista [delete(e)]\n")
-                    print("15-Elimina tutti gli elementi della lista [clear()]\n")
-                    print("16-Conta quante volte è presente nella lista un dato elemento [count(e)]\n")
-                    print("17-Inverti l'ordine degli elementi nella lista [reverse()]\n")
-                    print("18-Ottieni una copia della lista [copy()]\n")
-                    print("19-Ritorna al passo precedente\n")
-                    print("20-Termina test\n")
-                    print("-----------------------------------------------------")
-                    x = input("Scegli una delle opzioni:\n")
-                    print("-----------------------------------------------------")
-                    if int(x) == 1:
-                        print(str(l_1))
-                    elif int(x) == 2:
-                        print("Il primo elemento della lista è: " + str(l_1.first().element()))
-                    elif int(x) == 3:
-                        print("L'ultimo elemento della lista è: " + str(l_1.last().element()))
-                    elif int(x) == 4:
-                        search = input("Di quale elemento vuole ottenere il predecessore:\n")
-                        print("Il predecessore di " + search + "è: " + str(l_1.before(l_1.find(int(search)))))
-                    elif int(x) == 5:
-                        search = input("Di quale elemento vuole ottenere il successore:\n")
-                        print("Il successore di " + search + "è: " + str(l_1.after(l_1.find(int(search)))))
-                    elif int(x) == 6:
-                        if l_1.is_empty():
-                            print("La lista è vuota")
-                        else:
-                            print("La lista non è vuota")
-                    elif int(x) == 7:
-                        if l_1.is_sorted():
-                            print("La lista è ordinata")
-                        else:
-                            print("La lista non è ordinata")
-                    elif int(x) == 8:
-                        risp = 1
-                        while risp == 1:
-                            insert = input("Inserisci il valore da aggiungere in testa:\n")
-                            print("Lista prima dell'inserimento: ", str(l_1))
-                            l_1.add_first(int(insert))
-                            print("Lista dopo l'inserimento: ", str(l_1))
-                            while True:
-                                risp = int(input("Vuole inserire un altro elemento?(1-yes or 2-no):\n"))
-                                if risp == 2 or risp == 1:
-                                    break
-                                else:
-                                    print("Scelta errata, ripeta")
-                    elif int(x) == 9:
-                        risp = 1
-                        while risp == 1:
-                            insert = input("Inserisci il valore da aggiungere in coda:\n")
-                            print("Lista prima dell'inserimento: ", str(l_1))
-                            l_1.add_last(int(insert))
-                            print("Lista dopo l'inserimento: ", str(l_1))
-                            while True:
-                                risp = int(input("Vuole inserire un altro elemento?(1-yes or 2-no):\n"))
-                                if risp == 2 or risp == 1:
-                                    break
-                                else:
-                                    print("Scelta errata, ripeta")
-                    elif int(x) == 10:
-                        risp = 1
-                        while risp == 1:
-                            befor = input("Di chi prima vuole inserire un valore:\n")
-                            insert = input("Inserisci il valore da aggiungere prima di " + befor + ":\n")
-                            print("Lista prima dell'inserimento: ", str(l_1))
-                            l_1.add_before(l_1.find(int(befor)), int(insert))
-                            print("Lista dopo l'inserimento: ", str(l_1))
-                            while True:
-                                risp = int(input("Vuole inserire un altro elemento?(1-yes or 2-no):\n"))
-                                if risp == 2 or risp == 1:
-                                    break
-                                else:
-                                    print("Scelta errata, ripeta")
-                    elif int(x) == 11:
-                        risp = 1
-                        while risp == 1:
-                            befor = input("Di chi dopo vuole inserire un valore:\n")
-                            insert = input("Inserisci il valore da aggiungere dopo " + befor + ":\n")
-                            print("Lista prima dell'inserimento: ", str(l_1))
-                            l_1.add_after(l_1.find(int(befor)), int(insert))
-                            print("Lista dopo l'inserimento: ", str(l_1))
-                            while True:
-                                risp = int(input("Vuole inserire un altro elemento?(1-yes or 2-no):\n"))
-                                if risp == 2 or risp == 1:
-                                    break
-                                else:
-                                    print("Scelta errata, ripeta")
-                    elif int(x) == 12:
-                        risp = 1
-                        while risp == 1:
-                            search = input("Quale elemento vuole cercare:\n")
-                            print("L'elemento " + str(l_1.find(int(search)).element()) + "è presente e la sua position è: " + str(l_1.find(int(search))) + "\n")
-                            while True:
-                                risp = int(input("Vuole cercare un altro elemento?(1-yes or 2-no):\n"))
-                                if risp == 2 or risp == 1:
-                                    break
-                                else:
-                                    print("Scelta errata, ripeta")
-                    elif int(x) == 13:
-                        risp = 1
-                        while risp == 1:
-                            p = input("Quale elemento vuole aggiornare:\n")
-                            e = input("Qual'e' l'elemento che vuole inserire:\n")
-                            print("Lista prima dell'aggiornamento: ", str(l_1))
-                            print("\nL'elemento "+ str(l_1.replace(l_1.find(int(p)), int(e))) + "è stato aggiornato al nuovo valore\n")
-                            print("Lista dopo dell'aggiornamento: ", str(l_1))
-                            while True:
-                                risp = int(input("Vuole aggiornare un altro elemento?(1-yes or 2-no):\n"))
-                                if risp == 2 or risp == 1:
-                                    break
-                                else:
-                                    print("Scelta errata, ripeta")
-                    elif int(x) == 14:
-                        risp = 1
-                        while risp == 1:
-                            e = input("Quale elemento vuole eliminare:\n")
-                            print("Lista prima dell'eliminazione: ", str(l_1))
-                            print("\nL'elemento "+ str(l_1.delete(l_1.find(int(e)))) + "è stato eliminato\n")
-                            print("Lista dopo dell'aggiornamento: ", str(l_1))
-                            while True:
-                                risp = int(input("Vuole eliminare un altro elemento?(1-yes or 2-no):\n"))
-                                if risp == 2 or risp == 1:
-                                    break
-                                else:
-                                    print("Scelta errata, ripeta")
-
-                    elif int(x) == 15:
-                        print("Lista prima della pulizia: ", str(l_1))
-                        l_1.clear()
-                        print("Lista dopo la pulizia: ", str(l_1))
-                    elif int(x) == 16:
-                        counter = input("Di quale elemento vuole trovare il numero di occorrenze nella lista:\n")
-                        print("L'elemento è presente " + str(l_1.count(int(counter))) + " volte nella lista")
-                    elif int(x) == 17:
-                        print("Lista prima dell'inversione: ", str(l_1))
-                        l_1.reverse()
-                        print("Lista dopo l'inversione: ", str(l_1))
-                    elif int(x) == 18:
-                        copy = l_1.copy()
-                        print("Lista: ",str(l_1))
-                        print("Copia della lista: ",str(copy))
-                        print("\nMINI TEST sulla correttezza della copia:")
-                        print("ELiminerò il primo elemento della copia della lista ")
-                        print("per verificare che una semplice modifica sulla copia ")
-                        print("della lista non apporta modifiche sulla lista di cui \n"+"si è effettuati la copia ")
-                        copy.delete(copy.first())
-                        print("Lista di cui si è effettuata una copia: ", str(l_1))
-                        print("Copia della lista dopo la modifica: ", str(copy))
-                    elif int(x) == 19:
-                        break
-                    elif int(x) == 20:
-                        exit = 1
-                    else:
-                        print("Scelta errata, ripeta")
+                print(str(l_1))
             elif int(x) == 2:
-                while exit == 0:
-                    print("-----------------------------------------------------")
-                    print("\nTest Circular Positional List\n")
-                    print("1-Visualizza gli elementi della lista [print(str(list))]\n")
-                    print("2-Add di due liste [x + y]\n")
-                    print("3-Verifica se una position è presente nella lista [ p in x]\n")
-                    print("4-Restituisce l'elemento contenuto nella position p [ x[p] ]\n")
-                    print("5-Restituisci il numero di elementi di x  [len(x)]\n")
-                    print("6-Sostituisci l'elemento di p con e [x[p] = e]\n")
-                    print("7-Rimuove l'elemento nella position p invalidando la position [del p]\n")
-                    print("8-Generatore degli elementi [__iter__]\n")
-                    print("9-Ritorna al passo precedente\n")
-                    print("10-Termina test\n")
-                    print("-----------------------------------------------------")
-                    x = input("Scegli una delle opzioni:\n")
-                    print("-----------------------------------------------------")
-                    if int(x) == 1:
+                print("Il primo elemento della lista è: " + str(l_1.first().element()))
+            elif int(x) == 3:
+                print("L'ultimo elemento della lista è: " + str(l_1.last().element()))
+            elif int(x) == 4:
+                search = input("Di quale elemento vuole ottenere il predecessore:\n")
+                print("Il predecessore di " + search + "è: " + str(l_1.before(l_1.find(int(search)))))
+            elif int(x) == 5:
+                search = input("Di quale elemento vuole ottenere il successore:\n")
+                print("Il successore di " + search + "è: " + str(l_1.after(l_1.find(int(search)))))
+            elif int(x) == 6:
+                if l_1.is_empty():
+                    print("La lista è vuota")
+                else:
+                    print("La lista non è vuota")
+            elif int(x) == 7:
+                if l_1.is_sorted():
+                    print("La lista è ordinata")
+                else:
+                    print("La lista non è ordinata")
+            elif int(x) == 8:
+                risp = 1
+                while risp == 1:
+                    insert = input("Inserisci il valore da aggiungere in testa:\n")
+                    print("Lista prima dell'inserimento: ", str(l_1))
+                    l_1.add_first(int(insert))
+                    print("Lista dopo l'inserimento: ", str(l_1))
+                    while True:
+                        risp = int(input("Vuole inserire un altro elemento?(1-yes or 2-no):\n"))
+                        if risp == 2 or risp == 1:
+                            break
+                        else:
+                            print("Scelta errata, ripeta")
+            elif int(x) == 9:
+                risp = 1
+                while risp == 1:
+                    insert = input("Inserisci il valore da aggiungere in coda:\n")
+                    print("Lista prima dell'inserimento: ", str(l_1))
+                    l_1.add_last(int(insert))
+                    print("Lista dopo l'inserimento: ", str(l_1))
+                    while True:
+                        risp = int(input("Vuole inserire un altro elemento?(1-yes or 2-no):\n"))
+                        if risp == 2 or risp == 1:
+                            break
+                        else:
+                            print("Scelta errata, ripeta")
+            elif int(x) == 10:
+                risp = 1
+                while risp == 1:
+                    befor = input("Di chi prima vuole inserire un valore:\n")
+                    insert = input("Inserisci il valore da aggiungere prima di " + befor + ":\n")
+                    print("Lista prima dell'inserimento: ", str(l_1))
+                    l_1.add_before(l_1.find(int(befor)), int(insert))
+                    print("Lista dopo l'inserimento: ", str(l_1))
+                    while True:
+                        risp = int(input("Vuole inserire un altro elemento?(1-yes or 2-no):\n"))
+                        if risp == 2 or risp == 1:
+                            break
+                        else:
+                            print("Scelta errata, ripeta")
+            elif int(x) == 11:
+                risp = 1
+                while risp == 1:
+                    befor = input("Di chi dopo vuole inserire un valore:\n")
+                    insert = input("Inserisci il valore da aggiungere dopo " + befor + ":\n")
+                    print("Lista prima dell'inserimento: ", str(l_1))
+                    l_1.add_after(l_1.find(int(befor)), int(insert))
+                    print("Lista dopo l'inserimento: ", str(l_1))
+                    while True:
+                        risp = int(input("Vuole inserire un altro elemento?(1-yes or 2-no):\n"))
+                        if risp == 2 or risp == 1:
+                            break
+                        else:
+                            print("Scelta errata, ripeta")
+            elif int(x) == 12:
+                risp = 1
+                while risp == 1:
+                    search = input("Quale elemento vuole cercare:\n")
+                    print("L'elemento " + str(l_1.find(int(search)).element()) + "è presente e la sua position è: " + str(l_1.find(int(search))) + "\n")
+                    while True:
+                        risp = int(input("Vuole cercare un altro elemento?(1-yes or 2-no):\n"))
+                        if risp == 2 or risp == 1:
+                            break
+                        else:
+                            print("Scelta errata, ripeta")
+            elif int(x) == 13:
+                risp = 1
+                while risp == 1:
+                    p = input("Quale elemento vuole aggiornare:\n")
+                    e = input("Qual'e' l'elemento che vuole inserire:\n")
+                    print("Lista prima dell'aggiornamento: ", str(l_1))
+                    print("\nL'elemento "+ str(l_1.replace(l_1.find(int(p)), int(e))) + "è stato aggiornato al nuovo valore\n")
+                    print("Lista dopo dell'aggiornamento: ", str(l_1))
+                    while True:
+                        risp = int(input("Vuole aggiornare un altro elemento?(1-yes or 2-no):\n"))
+                        if risp == 2 or risp == 1:
+                            break
+                        else:
+                            print("Scelta errata, ripeta")
+            elif int(x) == 14:
+                risp = 1
+                while risp == 1:
+                    e = input("Quale elemento vuole eliminare:\n")
+                    print("Lista prima dell'eliminazione: ", str(l_1))
+                    print("\nL'elemento "+ str(l_1.delete(l_1.find(int(e)))) + "è stato eliminato\n")
+                    print("Lista dopo dell'aggiornamento: ", str(l_1))
+                    while True:
+                        risp = int(input("Vuole eliminare un altro elemento?(1-yes or 2-no):\n"))
+                        if risp == 2 or risp == 1:
+                            break
+                        else:
+                            print("Scelta errata, ripeta")
+
+            elif int(x) == 15:
+                print("Lista prima della pulizia: ", str(l_1))
+                l_1.clear()
+                print("Lista dopo la pulizia: ", str(l_1))
+            elif int(x) == 16:
+                counter = input("Di quale elemento vuole trovare il numero di occorrenze nella lista:\n")
+                print("L'elemento è presente " + str(l_1.count(int(counter))) + " volte nella lista")
+            elif int(x) == 17:
+                print("Lista prima dell'inversione: ", str(l_1))
+                l_1.reverse()
+                print("Lista dopo l'inversione: ", str(l_1))
+            elif int(x) == 18:
+                copy = l_1.copy()
+                print("Lista: ",str(l_1))
+                print("Copia della lista: ",str(copy))
+                print("\nMINI TEST sulla correttezza della copia:")
+                print("ELiminerò il primo elemento della copia della lista ")
+                print("per verificare che una semplice modifica sulla copia ")
+                print("della lista non apporta modifiche sulla lista di cui \n"+"si è effettuati la copia ")
+                copy.delete(copy.first())
+                print("Lista di cui si è effettuata una copia: ", str(l_1))
+                print("Copia della lista dopo la modifica: ", str(copy))
+            elif int(x) == 19:
+                print("Le serve un altra lista per sommarla alla precedente")
+                while True:
+                    r = int(input("Vuole creare una nuova copia della lista per sommarla o vuole crearne una nuova?(1-copia or 2-nuova):\n"))
+                    if r == 2 or r == 1:
                         break
-                    elif int(x) == 2:
-                        break
-                    elif int(x) == 3:
-                        break
-                    elif int(x) == 4:
-                        break
-                    elif int(x) == 5:
-                        break
-                    elif int(x) == 6:
-                        break
-                    elif int(x) == 7:
-                        break
-                    elif int(x) == 8:
-                        break
-                    elif int(x) == 9:
-                        break
-                    elif int(x) == 10:
-                        exit = 1
                     else:
                         print("Scelta errata, ripeta")
-
-            elif int(x) == 3:
+                if r == 1:
+                    copy = l_1.copy()
+                    print("Lista iniziale: " + str(l_1))
+                    print("Copia della lista: " + str(copy))
+                    print(" x + y (Lista iniziale + Copia) = " + str(l_1+copy))
+                else:
+                    l_2 = CircularPositionalList()
+                    while True:
+                        risp = int(input("Vuole inserire un elemento in coda , in testa o non vuole inserire nessun altro valore?(1-coda or 2-testa or 3-Non voglio più inserire):\n"))
+                        if risp == 1:
+                            insert = input("Inserisci il valore da aggiungere in coda:\n")
+                            print("Lista prima dell'inserimento: ", str(l_2))
+                            l_2.add_last(int(insert))
+                            print("Lista dopo l'inserimento: ", str(l_2))
+                        elif risp == 2:
+                            insert = input("Inserisci il valore da aggiungere in testa:\n")
+                            print("Lista prima dell'inserimento: ", str(l_2))
+                            l_2.add_first(int(insert))
+                            print("Lista dopo l'inserimento: ", str(l_2))
+                        elif risp == 3:
+                            break
+                        else:
+                            print("Scelta errata, ripeta")
+                    print("Lista iniziale: " + str(l_1))
+                    print("Secodan lista: " + str(l_2))
+                    print(" x + y (Lista iniziale + Seconda lista) = " + str(l_1+l_2))
+            elif int(x) == 20:
+                print("Mini Test")
+                l_2 = CircularPositionalList()
+                l_2.add_first(57)
+                l_2.add_first(43)
+                l_2.add_first(9)
+                l_2.add_first(11)
+                l_2.add_first(2)
+                print("Ho questa lista: " + str(l_2))
+                print("Verifico se p di 57 è presente nella lista")
+                if l_2.find(57) in l_2:
+                    print("p di 57 è presente in lista")
+                print("Verifico se p di 100 è presente nella lista")
+                if not ((l_2.find(100) != None) in l_2):
+                    print("p di 100 non è presente in lista")
+            elif int(x) == 21:
+                print("Mini Test")
+                l_2 = CircularPositionalList()
+                l_2.add_first(57)
+                l_2.add_first(43)
+                l_2.add_first(9)
+                l_2.add_first(11)
+                l_2.add_first(2)
+                print("Ho questa lista: " + str(l_2))
+                print("L'elemento associato alla position dell'ultimo elemento della lista è: ", str(l_2[l_2.last()]))
+            elif int(x) == 22:
+                print("Mini Test")
+                l_2 = CircularPositionalList()
+                l_2.add_first(57)
+                l_2.add_first(43)
+                l_2.add_first(9)
+                l_2.add_first(11)
+                l_2.add_first(2)
+                print("Ho questa lista: " + str(l_2))
+                print("Il numero di elementi della lista è: ", str(len(l_2)))
+            elif int(x) == 23:
+                print("Mini Test")
+                l_2 = CircularPositionalList()
+                l_2.add_first(57)
+                l_2.add_first(43)
+                l_2.add_first(9)
+                l_2.add_first(11)
+                l_2.add_first(2)
+                print("Ho questa lista: " + str(l_2))
+                print("Sostituisco nella position di 57 il proprio elemento con 100 ")
+                l_2[l_2.find(57)] = 100
+                print("Lista dopo la sostituzione è: ", str(l_2))
+            elif int(x) == 24:
+                print("Mini Test")
+                l_2 = CircularPositionalList()
+                l_2.add_first(57)
+                l_2.add_first(43)
+                l_2.add_first(9)
+                l_2.add_first(11)
+                l_2.add_first(2)
+                print("Ho questa lista: " + str(l_2))
+                print("Elimino il primo elemento della lista")
+                del l_2[l_2.first()]
+                print("Lista dopo l'eliminazione è: ", str(l_2))
+            elif int(x) == 25:
+                print("Mini Test")
+                l_2 = CircularPositionalList()
+                l_2.add_first(57)
+                l_2.add_first(43)
+                l_2.add_first(9)
+                l_2.add_first(11)
+                l_2.add_first(2)
+                print("Ho questa lista: " + str(l_2))
+                print("Scorro la lista attraverso l'iteratore")
+                k = 1
+                for i in l_2:
+                    print(str(k) +  "°: " +str(i))
+                    k +=1
+            elif int(x) == 26:
                 break
-            elif int(x) == 4:
+            elif int(x) == 27:
                 exit = 1
             else:
                 print("Scelta errata, ripeta")
