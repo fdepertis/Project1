@@ -21,7 +21,7 @@
         <mark key="]" line="184" column="0" />
         <mark key="." line="184" column="0" />
       </file>
-      <file name="/Python Console" timestamp="1540206133494">
+      <file name="/Python Console" timestamp="1540226602610">
         <mark key="[" line="0" column="0" />
       </file>
       <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/project1/score_board.py" timestamp="1540221969297">
@@ -35,8 +35,8 @@
       <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tecniche di Programmazione/TdP_collections/TdP_collections/queue/array_queue.py" timestamp="1539674679896">
         <mark key="[" line="7" column="7" />
       </file>
-      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tecniche di Programmazione/TdP_collections/TdP_collections/list/doubly_linked_base.py" timestamp="1540206186951">
-        <mark key="[" line="29" column="0" />
+      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tecniche di Programmazione/TdP_collections/TdP_collections/list/doubly_linked_base.py" timestamp="1540228615593">
+        <mark key="[" line="73" column="71" />
       </file>
       <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tecniche di Programmazione/TdP_collections/TdP_collections/map/binary_search_tree.py" timestamp="1539071074438">
         <mark key="[" line="23" column="0" />
@@ -49,10 +49,10 @@
         <mark key="]" line="151" column="3" />
         <mark key="." line="151" column="3" />
       </file>
-      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/project1/verifica.py" timestamp="1540222403841">
-        <mark key="[" line="161" column="56" />
-        <mark key="]" line="453" column="16" />
-        <mark key="." line="453" column="16" />
+      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/project1/verifica.py" timestamp="1540227420226">
+        <mark key="[" line="491" column="24" />
+        <mark key="]" line="491" column="24" />
+        <mark key="." line="491" column="24" />
       </file>
       <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tecniche di Programmazione/TdP_collections/TdP_collections/tree/binary_tree.py" timestamp="1538985562353">
         <mark key="[" line="78" column="0" />
@@ -66,11 +66,8 @@
       <file name="$USER_HOME$/.PyCharmCE2018.2/system/python_stubs/1845667114/builtins.py" timestamp="1540033022759">
         <mark key="[" line="256" column="0" />
       </file>
-      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tecniche di Programmazione/TdP_collections/TdP_collections/list/positional_list.py" timestamp="1539767103996">
-        <mark key="[" line="60" column="14" />
-      </file>
-      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/project1/circular_positional_list.py" timestamp="1540029838280">
-        <mark key="[" line="17" column="0" />
+      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tecniche di Programmazione/TdP_collections/TdP_collections/list/positional_list.py" timestamp="1540227869984">
+        <mark key="[" line="122" column="6" />
       </file>
       <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/venv/test_circular_positional_list.py" timestamp="1539282243770">
         <mark key="[" line="19" column="40" />
@@ -95,6 +92,24 @@
     </jumps>
     <registers>
       <register name="1" type="4">
+        <text encoding="base64">CmlmIF9fbmFtZV9fID09ICdfX21haW5fXyc6CiAgICBwbCA9IFBvc2l0aW9uYWxMaXN0KCkKICAgIHBsLmFkZF9sYXN0KDMpCiAgICBwcmludChwbC5maXJzdCgpLl9ub2RlLl9uZXh0LHBsLmZpcnN0KCkuX25vZGUuX3ByZXYscGwuZmlyc3QoKS5fbm9kZS5fZWxlbWVudCkKICAgIHBsLmRlbGV0ZShwbC5maXJzdCgpKQogICAgcHJpbnQocGwuZmlyc3QoKS5fbm9kZS5fbmV4dCxwbC5maXJzdCgpLl9ub2RlLl9wcmV2LHBsLmZpcnN0KCkuX25vZGUuX2VsZW1lbnQp</text>
+      </register>
+      <register name="&quot;" type="4">
+        <text encoding="base64">CmlmIF9fbmFtZV9fID09ICdfX21haW5fXyc6CiAgICBwbCA9IFBvc2l0aW9uYWxMaXN0KCkKICAgIHBsLmFkZF9sYXN0KDMpCiAgICBwcmludChwbC5maXJzdCgpLl9ub2RlLl9uZXh0LHBsLmZpcnN0KCkuX25vZGUuX3ByZXYscGwuZmlyc3QoKS5fbm9kZS5fZWxlbWVudCkKICAgIHBsLmRlbGV0ZShwbC5maXJzdCgpKQogICAgcHJpbnQocGwuZmlyc3QoKS5fbm9kZS5fbmV4dCxwbC5maXJzdCgpLl9ub2RlLl9wcmV2LHBsLmZpcnN0KCkuX25vZGUuX2VsZW1lbnQp</text>
+      </register>
+      <register name="2" type="4">
+        <text>insert = input(&quot;Inserisci il valore da aggiungere in testa:\n&quot;)
+                        print(&quot;Lista prima dell'inserimento: &quot;, str(l_2))
+                        l_2.add_first(int(insert))
+                        print(&quot;Lista dopo l'inserimento: &quot;, str(l</text>
+      </register>
+      <register name="3" type="4">
+        <text>insert = input(&quot;Inserisci il valore da aggiungere in coda:\n&quot;)
+                        print(&quot;Lista prima dell'inserimento: &quot;, str(l_2))
+                        l_2.add_last(int(insert))
+                        print(&quot;Lista dopo l'inserimento: &quot;, str(l_2))</text>
+      </register>
+      <register name="4" type="4">
         <text>risp = 1
                 while risp == 1:
                     insert = input(&quot;Inserisci il valore :\n&quot;)
@@ -108,10 +123,7 @@
                         else:
                             print(&quot;Scelta errata, ripeta&quot;)</text>
       </register>
-      <register name="&quot;" type="4">
-        <text>b</text>
-      </register>
-      <register name="2" type="4">
+      <register name="5" type="4">
         <text>while exit == 0:
                     print(&quot;-----------------------------------------------------&quot;)
                     print(&quot;\nTest Circular Positional List\n&quot;)
@@ -151,10 +163,10 @@
                     else:
                         print(&quot;Scelta errata, ripeta&quot;)</text>
       </register>
-      <register name="3" type="4">
+      <register name="6" type="4">
         <text encoding="base64">ICAgIAogICAgICAgICAgICAgICAgICAgICAgICB3aGlsZSByID09IDE6CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgaW5zZXJ0ID0gaW5wdXQoIkluc2VyaXNjaSBpbCB2YWxvcmUgZGEgYWdnaXVuZ2VyZSBpbiB0ZXN0YTpcbiIpCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBwcmludCgiTGlzdGEgcHJpbWEgZGVsbCdpbnNlcmltZW50bzogIiwgc3RyKGxfMSkpCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBsXzEuYWRkX2ZpcnN0KGludChpbnNlcnQpKQogICAgICAgICAgICAgICAgICAgICAgICAgICAgcHJpbnQoIkxpc3RhIGRvcG8gbCdpbnNlcmltZW50bzogIiwgc3RyKGxfMSkpCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAg</text>
       </register>
-      <register name="4" type="4">
+      <register name="7" type="4">
         <text>while True:
                                 risp = int(input(&quot;Vuole inserire un altro elemento?(1-yes or 2-no):\n&quot;))
                                 if risp == 2 or risp == 1:
@@ -162,123 +174,12 @@
                                 else:
                                     print(&quot;Scelta errata, ripeta&quot;)</text>
       </register>
-      <register name="5" type="4">
+      <register name="8" type="4">
         <text>elif int(x) == 26:
                         break</text>
       </register>
-      <register name="6" type="4">
-        <text encoding="base64">CiAgICAgICAgICAgICAgICAgICAgICAgIGlmIGxfMS5pc19lbXB0eSgpOgogICAgICAgICAgICAgICAgICAgICAgICAgICAgcHJpbnQoIkxhIGxpc3RhIMOoIHZ1b3RhIikKICAgICAgICAgICAgICAgICAgICAgICAgZWxzZToKICAgICAgICAgICAgICAgICAgICAgICAgICAgIHByaW50KCJMYSBsaXN0YSBub24gw6ggdnVvdGEiKQ==</text>
-      </register>
-      <register name="7" type="4">
-        <text encoding="base64">CiAgICAgICAgICAgICAgICAgICAgICAgIHNlYXJjaCA9IGlucHV0KCJEaSBxdWFsZSBlbGVtZW50byB2dW9sZSBvdHRlbmVyZSBpbCBzdWNjZXNzb3JlOlxuIikKICAgICAgICAgICAgICAgICAgICAgICAgcHJpbnQoIklsIHN1Y2Nlc3NvcmUgZGkgIiArIHNlYXJjaCArICLDqDogIiArIHN0cihsXzEuYWZ0ZXIobF8xLmZpbmQoaW50KHNlYXJjaCkpKSkp</text>
-      </register>
-      <register name="8" type="4">
-        <text>search = input(&quot;Di quale elemento vuole ottenere il predecessore:\n&quot;)
-                        p</text>
-      </register>
       <register name="9" type="4">
-        <text>elif int(x) == 9:
-                        risp = 1
-                        while risp == 1:
-                            insert = input(&quot;Inserisci il valore da aggiungere in coda:\n&quot;)
-                            print(&quot;Lista prima dell'inserimento: &quot;, str(l_1))
-                            l_1.add_last(int(insert))
-                            print(&quot;Lista dopo l'inserimento: &quot;, str(l_1))
-                            while True:
-                                risp = int(input(&quot;Vuole inserire un altro elemento?(1-yes or 2-no):\n&quot;))
-                                if risp == 2 or risp == 1:
-                                    break
-                                else:
-                                    print(&quot;Scelta errata, ripeta&quot;)
-                    elif int(x) == 10:
-                        risp = 1
-                        while risp == 1:
-                            befor = input(&quot;Di chi prima vuole inserire un valore:\n&quot;)
-                            insert = input(&quot;Inserisci il valore da aggiungere prima di &quot; + befor + &quot;:\n&quot;)
-                            print(&quot;Lista prima dell'inserimento: &quot;, str(l_1))
-                            l_1.add_before(l_1.find(int(befor)), int(insert))
-                            print(&quot;Lista dopo l'inserimento: &quot;, str(l_1))
-                            while True:
-                                risp = int(input(&quot;Vuole inserire un altro elemento?(1-yes or 2-no):\n&quot;))
-                                if risp == 2 or risp == 1:
-                                    break
-                                else:
-                                    print(&quot;Scelta errata, ripeta&quot;)
-                    elif int(x) == 11:
-                        risp = 1
-                        while risp == 1:
-                            befor = input(&quot;Di chi dopo vuole inserire un valore:\n&quot;)
-                            insert = input(&quot;Inserisci il valore da aggiungere dopo &quot; + befor + &quot;:\n&quot;)
-                            print(&quot;Lista prima dell'inserimento: &quot;, str(l_1))
-                            l_1.add_after(l_1.find(int(befor)), int(insert))
-                            print(&quot;Lista dopo l'inserimento: &quot;, str(l_1))
-                            while True:
-                                risp = int(input(&quot;Vuole inserire un altro elemento?(1-yes or 2-no):\n&quot;))
-                                if risp == 2 or risp == 1:
-                                    break
-                                else:
-                                    print(&quot;Scelta errata, ripeta&quot;)
-                    elif int(x) == 12:
-                        risp = 1
-                        while risp == 1:
-                            search = input(&quot;Quale elemento vuole cercare:\n&quot;)
-                            print(&quot;L'elemento &quot; + str(l_1.find(int(search)).element()) + &quot;è presente e la sua position è: &quot; + str(l_1.find(int(search))) + &quot;\n&quot;)
-                            while True:
-                                risp = int(input(&quot;Vuole cercare un altro elemento?(1-yes or 2-no):\n&quot;))
-                                if risp == 2 or risp == 1:
-                                    break
-                                else:
-                                    print(&quot;Scelta errata, ripeta&quot;)
-                    elif int(x) == 13:
-                        risp = 1
-                        while risp == 1:
-                            p = input(&quot;Quale elemento vuole aggiornare:\n&quot;)
-                            e = input(&quot;Qual'e' l'elemento che vuole inserire:\n&quot;)
-                            print(&quot;Lista prima dell'aggiornamento: &quot;, str(l_1))
-                            print(&quot;\nL'elemento &quot;+ str(l_1.replace(l_1.find(int(p)), int(e))) + &quot;è stato aggiornato al nuovo valore\n&quot;)
-                            print(&quot;Lista dopo dell'aggiornamento: &quot;, str(l_1))
-                            while True:
-                                risp = int(input(&quot;Vuole aggiornare un altro elemento?(1-yes or 2-no):\n&quot;))
-                                if risp == 2 or risp == 1:
-                                    break
-                                else:
-                                    print(&quot;Scelta errata, ripeta&quot;)
-                    elif int(x) == 14:
-                        risp = 1
-                        while risp == 1:
-                            e = input(&quot;Quale elemento vuole eliminare:\n&quot;)
-                            print(&quot;Lista prima dell'eliminazione: &quot;, str(l_1))
-                            print(&quot;\nL'elemento &quot;+ str(l_1.delete(l_1.find(int(e)))) + &quot;è stato eliminato\n&quot;)
-                            print(&quot;Lista dopo dell'aggiornamento: &quot;, str(l_1))
-                            while True:
-                                risp = int(input(&quot;Vuole eliminare un altro elemento?(1-yes or 2-no):\n&quot;))
-                                if risp == 2 or risp == 1:
-                                    break
-                                else:
-                                    print(&quot;Scelta errata, ripeta&quot;)
-
-                    elif int(x) == 15:
-                        print(&quot;Lista prima della pulizia: &quot;, str(l_1))
-                        l_1.clear()
-                        print(&quot;Lista dopo la pulizia: &quot;, str(l_1))
-                    elif int(x) == 16:
-                        counter = input(&quot;Di quale elemento vuole trovare il numero di occorrenze nella lista:\n&quot;)
-                        print(&quot;L'elemento è presente &quot; + str(l_1.count(int(counter))) + &quot; volte nella lista&quot;)
-                    elif int(x) == 17:
-                        print(&quot;Lista prima dell'inversione: &quot;, str(l_1))
-                        l_1.reverse()
-                        print(&quot;Lista dopo l'inversione: &quot;, str(l_1))
-                    elif int(x) == 18:
-                        copy = l_1.copy()
-                        print(&quot;Lista: &quot;,str(l_1))
-                        print(&quot;Copia della lista: &quot;,str(copy))
-                        print(&quot;\nMINI TEST sulla correttezza della copia:&quot;)
-                        print(&quot;ELiminerò il primo elemento della copia della lista &quot;)
-                        print(&quot;per verificare che una semplice modifica sulla copia &quot;)
-                        print(&quot;della lista non apporta modifiche sulla lista di cui \n&quot;+&quot;si è effettuati la copia &quot;)
-                        copy.delete(copy.first())
-                        print(&quot;Lista di cui si è effettuata una copia: &quot;, str(l_1))
-                        print(&quot;Copia della lista dopo la modifica: &quot;, str(copy))</text>
+        <text encoding="base64">CiAgICAgICAgICAgICAgICAgICAgICAgIGlmIGxfMS5pc19lbXB0eSgpOgogICAgICAgICAgICAgICAgICAgICAgICAgICAgcHJpbnQoIkxhIGxpc3RhIMOoIHZ1b3RhIikKICAgICAgICAgICAgICAgICAgICAgICAgZWxzZToKICAgICAgICAgICAgICAgICAgICAgICAgICAgIHByaW50KCJMYSBsaXN0YSBub24gw6ggdnVvdGEiKQ==</text>
       </register>
       <register name="-" type="4">
         <text>b</text>
