@@ -49,10 +49,10 @@
         <mark key="]" line="151" column="3" />
         <mark key="." line="151" column="3" />
       </file>
-      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/project1/verifica.py" timestamp="1540227420226">
-        <mark key="[" line="491" column="24" />
-        <mark key="]" line="491" column="24" />
-        <mark key="." line="491" column="24" />
+      <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tdp_repository/project1/verifica.py" timestamp="1540231618256">
+        <mark key="[" line="502" column="32" />
+        <mark key="]" line="502" column="32" />
+        <mark key="." line="502" column="32" />
       </file>
       <file name="$USER_HOME$/Documenti/Magistrale/TDP/Tecniche di Programmazione/TdP_collections/TdP_collections/tree/binary_tree.py" timestamp="1538985562353">
         <mark key="[" line="78" column="0" />
@@ -92,24 +92,33 @@
     </jumps>
     <registers>
       <register name="1" type="4">
-        <text encoding="base64">CmlmIF9fbmFtZV9fID09ICdfX21haW5fXyc6CiAgICBwbCA9IFBvc2l0aW9uYWxMaXN0KCkKICAgIHBsLmFkZF9sYXN0KDMpCiAgICBwcmludChwbC5maXJzdCgpLl9ub2RlLl9uZXh0LHBsLmZpcnN0KCkuX25vZGUuX3ByZXYscGwuZmlyc3QoKS5fbm9kZS5fZWxlbWVudCkKICAgIHBsLmRlbGV0ZShwbC5maXJzdCgpKQogICAgcHJpbnQocGwuZmlyc3QoKS5fbm9kZS5fbmV4dCxwbC5maXJzdCgpLl9ub2RlLl9wcmV2LHBsLmZpcnN0KCkuX25vZGUuX2VsZW1lbnQp</text>
+        <text>elif risp == 3:
+                                    break</text>
       </register>
       <register name="&quot;" type="4">
-        <text encoding="base64">CmlmIF9fbmFtZV9fID09ICdfX21haW5fXyc6CiAgICBwbCA9IFBvc2l0aW9uYWxMaXN0KCkKICAgIHBsLmFkZF9sYXN0KDMpCiAgICBwcmludChwbC5maXJzdCgpLl9ub2RlLl9uZXh0LHBsLmZpcnN0KCkuX25vZGUuX3ByZXYscGwuZmlyc3QoKS5fbm9kZS5fZWxlbWVudCkKICAgIHBsLmRlbGV0ZShwbC5maXJzdCgpKQogICAgcHJpbnQocGwuZmlyc3QoKS5fbm9kZS5fbmV4dCxwbC5maXJzdCgpLl9ub2RlLl9wcmV2LHBsLmZpcnN0KCkuX25vZGUuX2VsZW1lbnQp</text>
+        <text>elif risp == 3:
+                                    break</text>
       </register>
       <register name="2" type="4">
+        <text>elif risp == 3:
+                                break</text>
+      </register>
+      <register name="3" type="4">
+        <text encoding="base64">CmlmIF9fbmFtZV9fID09ICdfX21haW5fXyc6CiAgICBwbCA9IFBvc2l0aW9uYWxMaXN0KCkKICAgIHBsLmFkZF9sYXN0KDMpCiAgICBwcmludChwbC5maXJzdCgpLl9ub2RlLl9uZXh0LHBsLmZpcnN0KCkuX25vZGUuX3ByZXYscGwuZmlyc3QoKS5fbm9kZS5fZWxlbWVudCkKICAgIHBsLmRlbGV0ZShwbC5maXJzdCgpKQogICAgcHJpbnQocGwuZmlyc3QoKS5fbm9kZS5fbmV4dCxwbC5maXJzdCgpLl9ub2RlLl9wcmV2LHBsLmZpcnN0KCkuX25vZGUuX2VsZW1lbnQp</text>
+      </register>
+      <register name="4" type="4">
         <text>insert = input(&quot;Inserisci il valore da aggiungere in testa:\n&quot;)
                         print(&quot;Lista prima dell'inserimento: &quot;, str(l_2))
                         l_2.add_first(int(insert))
                         print(&quot;Lista dopo l'inserimento: &quot;, str(l</text>
       </register>
-      <register name="3" type="4">
+      <register name="5" type="4">
         <text>insert = input(&quot;Inserisci il valore da aggiungere in coda:\n&quot;)
                         print(&quot;Lista prima dell'inserimento: &quot;, str(l_2))
                         l_2.add_last(int(insert))
                         print(&quot;Lista dopo l'inserimento: &quot;, str(l_2))</text>
       </register>
-      <register name="4" type="4">
+      <register name="6" type="4">
         <text>risp = 1
                 while risp == 1:
                     insert = input(&quot;Inserisci il valore :\n&quot;)
@@ -123,7 +132,7 @@
                         else:
                             print(&quot;Scelta errata, ripeta&quot;)</text>
       </register>
-      <register name="5" type="4">
+      <register name="7" type="4">
         <text>while exit == 0:
                     print(&quot;-----------------------------------------------------&quot;)
                     print(&quot;\nTest Circular Positional List\n&quot;)
@@ -163,23 +172,16 @@
                     else:
                         print(&quot;Scelta errata, ripeta&quot;)</text>
       </register>
-      <register name="6" type="4">
+      <register name="8" type="4">
         <text encoding="base64">ICAgIAogICAgICAgICAgICAgICAgICAgICAgICB3aGlsZSByID09IDE6CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgaW5zZXJ0ID0gaW5wdXQoIkluc2VyaXNjaSBpbCB2YWxvcmUgZGEgYWdnaXVuZ2VyZSBpbiB0ZXN0YTpcbiIpCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBwcmludCgiTGlzdGEgcHJpbWEgZGVsbCdpbnNlcmltZW50bzogIiwgc3RyKGxfMSkpCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBsXzEuYWRkX2ZpcnN0KGludChpbnNlcnQpKQogICAgICAgICAgICAgICAgICAgICAgICAgICAgcHJpbnQoIkxpc3RhIGRvcG8gbCdpbnNlcmltZW50bzogIiwgc3RyKGxfMSkpCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAg</text>
       </register>
-      <register name="7" type="4">
+      <register name="9" type="4">
         <text>while True:
                                 risp = int(input(&quot;Vuole inserire un altro elemento?(1-yes or 2-no):\n&quot;))
                                 if risp == 2 or risp == 1:
                                     break
                                 else:
                                     print(&quot;Scelta errata, ripeta&quot;)</text>
-      </register>
-      <register name="8" type="4">
-        <text>elif int(x) == 26:
-                        break</text>
-      </register>
-      <register name="9" type="4">
-        <text encoding="base64">CiAgICAgICAgICAgICAgICAgICAgICAgIGlmIGxfMS5pc19lbXB0eSgpOgogICAgICAgICAgICAgICAgICAgICAgICAgICAgcHJpbnQoIkxhIGxpc3RhIMOoIHZ1b3RhIikKICAgICAgICAgICAgICAgICAgICAgICAgZWxzZToKICAgICAgICAgICAgICAgICAgICAgICAgICAgIHByaW50KCJMYSBsaXN0YSBub24gw6ggdnVvdGEiKQ==</text>
       </register>
       <register name="-" type="4">
         <text>b</text>
