@@ -233,27 +233,11 @@ class CircularPositionalList(PositionalList):
     def reverse(self):
         """Inverte l'ordine degli elementi nella lista"""
         if not self.is_empty():
-            tmp = None
             cursor = self._header
             for i in range(self._size):
-                tmp = cursor._prev
-                cursor._prev = cursor._next
-                cursor._next = tmp
+                cursor._prev, cursor._next = cursor._next, cursor._prev
                 cursor = cursor._prev
-            self._header = tmp._prev
-
-    """    
-    old reverse
-    def reverse2(self):
-        Inverte l'ordine degli elementi nella lista
-        left_cursor = self.first()
-        copy = self.copy()
-        right_cursor = copy.last()
-        for i in range(self._size):
-            left_cursor._node._element = right_cursor.element()
-            left_cursor = self._next(left_cursor)
-            right_cursor = copy._prev(right_cursor)
-    """
+            self._header = cursor._next
 
     def copy(self):
         """Restituisce una nuova CircularPositionalList che contiene gli stessi elementi
@@ -375,9 +359,7 @@ def bubblesorted(list1):
             modified = False
             for j in range(list1._size-i-1):
                 if array[j] > array[j+1]:
-                    temp = array[j]
-                    array[j] = array[j+1]
-                    array[j+1] = temp
+                    array[j], array[j+1] = array[j+1], array[j]
                     modified = True
             if not modified:
                 break
