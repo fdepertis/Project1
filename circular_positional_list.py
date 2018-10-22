@@ -353,7 +353,11 @@ def bubblesorted(list1):
     :param list1: lista da ordinare
     :return: restituisce iteratore della lista ordinata
     """
-    if list1._is_sortable():
+    if type(list1) is not CircularPositionalList:
+        raise TypeError("List to order must be a CircularPositionList.")
+    elif not list1._is_sortable():
+        raise ValueError("List cannot be ordered.")
+    else:
         array = list(list1)
         for i in range(list1._size-1):
             modified = False
@@ -374,7 +378,7 @@ def merge(list1, list2):
     :param list2: Seconda Lista ordinata
     :return: new_list: Fusione ordinata delle due liste list1, list2
     """
-    if type(list1) is not type(list2):
+    if type(list1) is not type(list2) is not CircularPositionalList:
         raise TypeError("Lists to merge are not of the same type.")
     elif not (list1.is_sorted() and list2.is_sorted()):
         raise ValueError("Lists to merge are not already sorted.")
