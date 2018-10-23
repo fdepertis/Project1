@@ -203,8 +203,11 @@ class CircularPositionalList(PositionalList):
         :param p: Position p da eliminare e invalidare
         :return: del_node: Restituisce l'elemento della Position p eliminata
         """
-        if p == self.first() and self._size > 1:
-            self._header = self._header._next
+        if p == self.first():
+            if self._size == 1:
+                self._header = None
+            else:
+                self._header = self._header._next
         del_node = super().delete(p)
         p._node = None
         p._container = None

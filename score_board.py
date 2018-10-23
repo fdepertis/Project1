@@ -92,43 +92,51 @@ class ScoreBoard():
         """
         Inserisce un nuovo Score nello ScoreBoard se e solo se non è peggiore dei risultati correntemente salvati.
         Non incrementa la dimensione dello Scoreboard.
-        :param s: L'oggetto score da inserire.
+        :param s: Rappresenta l'oggetto Score da inserire.
         """
         if type(s) is not ScoreBoard.Score:
             raise TypeError("Parameter must be Score typed")
-        if self.is_empty():
+        elif self.is_empty():
             self._cpl.add_last(s)
         else:
             cursor = self._cpl.first()
             added = False
             for i in range(self.size()):
                 if cursor.element() == s:
+                    """Se lo Score è già presente nella Scoreboard, non viene inserito.
+                    Lo Score viene trovato invocando il magic method __eq__ definito nella classe annidata Score."""
                     return
                 elif cursor.element()._value > s._value:
+                    """Uno score è definito migliore di un altro se e solo se il suo attributo value è minore.
+                    Tale scelta è giustificata dallo sviluppo del test 'verifica.py' dove il valore dello score
+                    rappresenta i migliori tempi di percorrenza dei 100m piani della storia."""
                     self._cpl.add_before(cursor, s)
                     added = True
                     break
                 else:
                     cursor = self._cpl._next(cursor)
             if not added and self.size() < len(self):
+                """Se non è stato trovato uno Score migliore ma la Scoreboard non è piena, lo Score viene aggiunto in coda"""
                 self._cpl.add_last(s)
             elif self.size() > len(self):
+                """Se la Scoreboard ha superato la sua dimensione massima, viene eliminato l'ultimo Score"""
                 self._cpl.delete(self._cpl.last())
 
     def merge(self, new):
         """Fonde lo Scoreboard corrente con new selezionando gli x migliori risultati.
         :param new: Rappresenta la lista che verrà accoppiata con self.
         """
-        if type(self) is not type(new):
-            raise TypeError("The lists to merge are not ScoreBoard typed.")
+        if type(new) is not ScoreBoard:
+            raise TypeError("The list to merge are not ScoreBoard typed.")
         else:
             for s in new._cpl:
                 self.insert(s)
 
     def top(self, i = 1):
         """
-        :param i: Il numero di risultati da ritornare.
+        :param i: Rappresenta il numero di risultati da ritornare.
         :return: Restituisce i migliori i Score nello Scoreboard.
+        Attraverso
         """
         cursor = self._cpl.first()
         new_list = CircularPositionalList()
@@ -139,7 +147,7 @@ class ScoreBoard():
 
     def last(self, i = 1):
         """
-        :param i: Il numero di risultati da ritornare.
+        :param i: Rappresenta il numero di risultati da ritornare.
         :return: Restituisce i peggiori i Score nello Scoreboard.
         """
         cursor = self._cpl.last()
