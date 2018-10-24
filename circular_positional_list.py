@@ -203,8 +203,11 @@ class CircularPositionalList(PositionalList):
         :param p: Position p da eliminare e invalidare
         :return: del_node: Restituisce l'elemento della Position p eliminata
         """
-        if p == self.first() and self._size > 1:
-            self._header = self._header._next
+        if p == self.first():
+            if self._size == 1:
+                self._header = None
+            else:
+                self._header = self._header._next
         del_node = super().delete(p)
         p._node = None
         p._container = None
@@ -233,27 +236,11 @@ class CircularPositionalList(PositionalList):
     def reverse(self):
         """Inverte l'ordine degli elementi nella lista"""
         if not self.is_empty():
-            tmp = None
             cursor = self._header
             for i in range(self._size):
-                tmp = cursor._prev
-                cursor._prev = cursor._next
-                cursor._next = tmp
+                cursor._prev, cursor._next = cursor._next, cursor._prev
                 cursor = cursor._prev
-            self._header = tmp._prev
-
-    """    
-    old reverse
-    def reverse2(self):
-        Inverte l'ordine degli elementi nella lista
-        left_cursor = self.first()
-        copy = self.copy()
-        right_cursor = copy.last()
-        for i in range(self._size):
-            left_cursor._node._element = right_cursor.element()
-            left_cursor = self._next(left_cursor)
-            right_cursor = copy._prev(right_cursor)
-    """
+            self._header = cursor._next
 
     def copy(self):
         """Restituisce una nuova CircularPositionalList che contiene gli stessi elementi
@@ -369,15 +356,17 @@ def bubblesorted(list1):
     :param list1: lista da ordinare
     :return: restituisce iteratore della lista ordinata
     """
-    if list1._is_sortable():
+    if type(list1) is not CircularPositionalList:
+        raise TypeError("List to order must be a CircularPositionList.")
+    elif not list1._is_sortable():
+        raise ValueError("List cannot be ordered.")
+    else:
         array = list(list1)
         for i in range(list1._size-1):
             modified = False
             for j in range(list1._size-i-1):
                 if array[j] > array[j+1]:
-                    temp = array[j]
-                    array[j] = array[j+1]
-                    array[j+1] = temp
+                    array[j], array[j+1] = array[j+1], array[j]
                     modified = True
             if not modified:
                 break
@@ -392,7 +381,7 @@ def merge(list1, list2):
     :param list2: Seconda Lista ordinata
     :return: new_list: Fusione ordinata delle due liste list1, list2
     """
-    if type(list1) is not type(list2):
+    if type(list1) is not type(list2) is not CircularPositionalList:
         raise TypeError("Lists to merge are not of the same type.")
     elif not (list1.is_sorted() and list2.is_sorted()):
         raise ValueError("Lists to merge are not already sorted.")
