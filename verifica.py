@@ -1,11 +1,11 @@
 from score_board import ScoreBoard
 from circular_positional_list import CircularPositionalList, merge, bubblesorted
 from datetime import date
-import sys
 
 """Scrivere uno script verifica.py che testi tutte le funzionalità implementate.
 In particolare se l_uno è una lista e l_due = l_uno.copy(), allora la stessa operazione
 su entrambe le sequenze deve produrre lo stesso risultato."""
+
 def test_default():
     #CircularPositionList Test
     l_uno = CircularPositionalList()
